@@ -15,7 +15,15 @@ docs_dir: docs
 nav:
   - 'Welcome': 'index.md'
   - 'Reserve the IBM Technology Zone environment': 'TechZoneEnvironment.md'
-  - 'Demonstration guidance': 'DemoGuidance.md'
+  - 'Guidance for delivering a demonstration': 'DemoGuidance.md'
+  - 'Demonstration scenarios':
+    - 'Introduction': 'scenarios/Introduction.md'
+    - 'Scenario 1: Authorized Program Facility': 'scenarios/APF.md'
+    - 'Scenario 2: Certificate renewal': 'scenarios/CertRenewal.md'
+    - 'Scenario 3: Db2 versioning': 'scenarios/db2Versioning.md'
+    - 'Scenario 4: Initial Program Load on Z': 'scenarios/ipl.md'
+    - 'Additional Z related queries': 'scenarios/extra.md'
+  - 'Next steps': 'NextSteps.md'
 
 
 
