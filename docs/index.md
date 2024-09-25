@@ -3,7 +3,7 @@ Welcome to the **{{learningplan.name}}** course and demonstration guide! The goa
 This course is not intended to serve as an in-depth study of {{offering.name}}, watsonx, or IBM Z; rather the focus is on learning how to perform a client demonstration of {{offering.name}}.
 
 ## Obtaining the {{badge.name}} badge
-**Business Partner technical sellers** must pass a short quiz upon completing the course. The quiz consists of multiple-choice questions, with four possible responses (and only one correct answer) for each question. The questions do not test your understanding of {{offering.name}}, rather the questions validate your use of the provided demonstration environment.**Hint: When taking the quiz, keep the demonstration guide open and the associated IBM Technology Zone (ITZ) environment active.**
+**Business Partner technical sellers** must pass a short quiz upon completing the course. The quiz consists of multiple-choice questions, with four possible responses (and only one correct answer) for each question. The questions do not test your understanding of {{offering.name}}, rather the questions validate your use of the provided demonstration environment. **Hint: When taking the quiz, keep the demonstration guide open and the associated IBM Technology Zone (ITZ) environment active.**
 
 **IBM technical sellers** must develop and record a Stand and Deliver presentation. This video is intended to simulate your delivery of a “live” demo in front of a client. IBMers have the flexibility to define a hypothetical client, the challenges the client has, and the goals they aspire to achieve. The recording must be a demonstration that pitches the value of the solution by using the environments and techniques that are described in the demonstration guide. Specific criteria that must be demonstrated as part of the Stand and Deliver recordings are provided within the documentation that accompanies the Level 3 course in Your Learning. **Hint: When creating your Stand and Deliver, keep the demonstration guide and the associated ITZ environment active.**
 
@@ -36,6 +36,7 @@ However, if the browser window is sized smaller, the table of contents is access
 
 ![](_attachments/demoGuide2.png)
 
+
 Click the main menu icon (![](_attachments/MainMenuIcon.png)) to expand the table of contents.
 
 ![](_attachments/demoGuide3.png)
@@ -50,4 +51,3 @@ In some images, the following styles of highlighting are used:
 
 - **Copy to the clipboard**: The text is copied to the clipboard. Click the copy icon (highlighted) and then use the operating system paste function. For example, entering ```Ctrl+v```, ```Cmd+v```, or right-click and select ```Paste```.
 ![](_attachments/welcome-3.png)
-
