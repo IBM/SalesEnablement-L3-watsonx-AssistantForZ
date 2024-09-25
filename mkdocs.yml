@@ -1,0 +1,90 @@
+# Project info
+site_name: IBM watsonx Assistant for Z
+site_description: IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide 
+site_author: Andrew R. Jones (andrewj@us.ibm.com)
+copyright: Copyright &copy; 2024 IBM
+
+# Repository
+repo_name:  IBM/SalesEnablement-L3-watsonx-AssistantForZ
+
+#repo_url: https://github.com/IBM/SalesEnablement-L3-watsonx-AssistantForZ
+#edit_uri: edit/master/docs
+docs_dir: docs
+
+
+nav:
+  - 'Welcome': 'index.md'
+  - 'Reserve the IBM Technology Zone environment': 'TechZoneEnvironment.md'
+  - 'Demonstration guidance': 'DemoGuidance.md'
+
+
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.annotate
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+plugins:
+    - mkdocs-video
+    - macros
+    - search
+
+markdown_extensions:
+  - sane_lists
+  - pymdownx.details
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+extra:
+  generator: false
+  supportEmail: "andrewj@us.ibm.com"
+  supportSlack: 
+    name: "#watsonx-assistant-z-technical"
+    url: "https://ibm.enterprise.slack.com/archives/C07ARLXF2R1"
+  gitRepo: "https://github.com/IBM/SalesEnablement-L3-watsonx-AssistantForZ"
+  learningplan:
+    name: "IBM watsonx Assistant for Z for Technical Sales Level 3"
+    YLurl: ""
+    BPurl: ""
+  level2learningplan:
+    name: "IBM watsonx Assistant for Z Level 2"
+    YLurl: "https://yourlearning.ibm.com/activity/PLAN-8281F4855A45"
+    BPurl: "https://learn.ibm.com/course/view.php?id=16848"
+  badge:
+    name: "IBM watsonx Assistant for Z Technical Sales Intermediate"
+  offering:
+    name: "IBM watsonx Assistant for Z"
+  guide:
+    name: "IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide"
+    url: "https://ibm.github.io/SalesEnablement-L3-watsonx-AssistantForZ/"
+  # clickthru:
+  #   vcsProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3/includes/VCF-Classic-Provisioning/index.html"
+  itz:
+    # account: "23269B285157EA97338 - ITZ-VMWARE"
+    collectionName: "IBM watsonx Assistant for Z"
+    collectionURL: "https://techzone.ibm.com/collection/6633e75d979046001eea2b77"
+    environment: "https://techzone.ibm.com/my/reservations/create/66da252ae16da2001edc932d"
