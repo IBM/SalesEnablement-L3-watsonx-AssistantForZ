@@ -48,7 +48,7 @@ How do you update the APF list in z/OS?
 
     ![](_attachments/apf-003.png)
 
-=== "Prompt 4
+=== "Prompt 4"
     
     ```
     What is the command to add PROD1.LOADLIB on volume PRD001 to the APF list?
