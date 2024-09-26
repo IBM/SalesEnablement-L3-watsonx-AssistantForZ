@@ -67,6 +67,7 @@ plugins:
 
 markdown_extensions:
   - sane_lists
+  - abbr
   - pymdownx.details
   - admonition
   - pymdownx.highlight:
