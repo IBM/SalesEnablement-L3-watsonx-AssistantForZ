@@ -11,6 +11,8 @@ In addition, it is always a good idea to:
 - Have a backup plan like a video recording of the demonstration in case of events like network failures, unexpected errors, etc.
 - If the demonstration is to be delivered virtually, make sure everything works as planned using the e-meeting technology that will be used.
 - Try not to deviate from your script unless the client forces you in a different direction. Adlibbing during a demonstration can lead to unexpected results and failure.
+- If possible, and time permits, make the demonstration interactive. If that isn't possible, be sure to leave time for questions.
+- Always conclude with a **call to action**, for example, next steps, follow-on activities, etc.
 
 And, most importantly, practice, practice, and practice.
 

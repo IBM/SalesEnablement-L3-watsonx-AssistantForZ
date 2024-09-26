@@ -7,7 +7,7 @@ In addition to the previous scenarios, here are other common queries that would 
 None.
 
 ## Prompts
-#### SMF data
+#### ^^SMF data^^
 <!--- begin-tab-group --->
 === "Prompt 1"
 
@@ -57,7 +57,7 @@ None.
     What type of information do SMF 30 records include? Please provide a detailed answer.
     ```
 <!--- end-tab-group --->
-#### z/OS software maintenance
+#### ^^z/OS software maintenance^^
 <!--- begin-tab-group --->
 === "Prompt 1"
 
@@ -79,12 +79,12 @@ None.
     How to check if a prerequisite APAR or PTF is already applied to the z/OS system?
     ```
 <!--- end-tab-group --->
-#### ISPF and SDSF
+#### ^^ISPF and SDSF^^
 <!--- begin-tab-group --->
 === "Prompt 1"
 
     ```
-    WWhich tool in ISPF can I use to edit a JCL job? Please provide a step by step guidance.
+    Which tool in ISPF can I use to edit a JCL job? Please provide a step by step guidance.
     ```
 <!--- end-tab-group --->
 <!--- begin-tab-group --->
@@ -115,7 +115,7 @@ None.
     How can I use a search function in ISPF to find a JCL job by its name? Please provide a step by step description.
     ```
 <!--- end-tab-group --->
-#### z/OS HIPERS and PEs
+#### ^^z/OS HIPERS and PEs^^
 <!--- begin-tab-group --->
 === "Prompt 1"
 
@@ -141,17 +141,17 @@ None.
 None.
 
 <!-- Terminology -->
-*[SMF]:
-*[CICS]:
-*[APAR]:
-*[APARs]:
-*[PTF]:
-*[PTFs]:
-*[ISPF]:
-*[SDSF]:
-*[JCL]:
-*[HIPER]:
-*[HIPERs]:
-*[PE]:
-*[PEs]:
+*[SMF]: System Management Facility
+*[CICS]: Custom Information Control System
+*[APAR]: Authorized Program Analysis Report
+*[APARs]: Authorized Program Analysis Report
+*[PTF]: Program Temporary Fix
+*[PTFs]:Program Temporary Fixes
+*[ISPF]: Interactive System Productivity Facility
+*[SDSF]: System Display and Search Facility
+*[JCL]: Job Control Language
+*[HIPER]: HIghly PERvasive
+*[HIPERs]: HIghly PERvasive
+*[PE]: Pause element
+*[PEs]: Pause elements
 *[PSI]: Problem Source Identification

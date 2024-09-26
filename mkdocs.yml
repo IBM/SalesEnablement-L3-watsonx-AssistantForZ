@@ -22,7 +22,8 @@ nav:
     - 'Scenario 2: Certificate renewal': 'scenarios/CertRenewal.md'
     - 'Scenario 3: Db2 versioning': 'scenarios/db2Versioning.md'
     - 'Scenario 4: Initial Program Load on Z': 'scenarios/ipl.md'
-    - 'Additional Z related queries': 'scenarios/extra.md'
+    - 'Additional IBM Z related prompts': 'scenarios/extra.md'
+    - 'Conclusion': 'scenarios/Conclusion.md'
   - 'Next steps': 'NextSteps.md'
 
 
@@ -67,6 +68,11 @@ plugins:
 
 markdown_extensions:
   - sane_lists
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - abbr
   - pymdownx.details
   - admonition

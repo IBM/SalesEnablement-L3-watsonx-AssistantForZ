@@ -30,8 +30,4 @@ Each scenario overview is written as if being presented to the client versus the
 
 When performing a client demonstration, choose the scenarios that best fit the client's requirements.
 
-<!-- Terminology -->
-
-*[AI]: Artificial intelligence
-*[LLM]: Large language model 
-*[RAG]: Retrieval augmented generation
+--8<-- "../terminology.md"
