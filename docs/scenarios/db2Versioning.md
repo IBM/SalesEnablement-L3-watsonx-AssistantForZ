@@ -12,8 +12,7 @@ None.
 === "Prompt 1"
 
     ```
-    Why is Db2 different than other database systems?
-    ```
+    Why is Db2 different than other database systems?```
 
 === "Sample output"
     ![](_attachments/db2-001a.png)
@@ -21,9 +20,7 @@ None.
 <!--- begin-tab-group --->
 === "Prompt 2"
 
-    ```
-    What is the difference between Db2 for z/OS and Db2 on distributed?
-    ```
+    ```What is the difference between Db2 for z/OS and Db2 on distributed?```
 
 === "Sample output"
     ![](_attachments/cert-002a.png)

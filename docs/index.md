@@ -47,6 +47,8 @@ Click the main menu icon (![](_attachments/MainMenuIcon.png)) to expand the tabl
 
 ![](_attachments/demoGuide3.png)
 
+Acronyms that are not initially spelled out on a page may contain additional information accessible by hovering over the acronym. A question mark will first appear and after a second the acronym meaning is displayed. Try it here: LPAR. 
+
 In some images, the following styles of highlighting are used:
 
 - **Solid highlight box**: This style of box highlights where to click, enter, or select an item.
@@ -57,3 +59,5 @@ In some images, the following styles of highlighting are used:
 
 - **Copy to the clipboard**: The text is copied to the clipboard. Click the copy icon (highlighted) and then use the operating system paste function. For example, entering ```Ctrl+v```, ```Cmd+v```, or right-click and select ```Paste```.
 ![](_attachments/welcome-3.png)
+
+*[LPAR]: Logical Partition
