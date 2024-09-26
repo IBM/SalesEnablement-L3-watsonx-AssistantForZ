@@ -6,7 +6,7 @@
     
     As you will see, in the last prompt, the virtual assistant powered by IBM watsonx will respond with the command you will need to run to add the library to the APF authorized list, followed by prompting you to run a skill (issuing a z/OS console command) on your behalf which will perform the task.
 
-## Prerequisites
+## Prerequisites steps
 None.
 
 ## Prompts and sample outputs
@@ -67,9 +67,10 @@ What is the command to add PROD1.LOADLIB on volume PRD001 to the APF list?
 
     3. View the *"cmd-response"* field to verify the command was successful.
 
+    <details>
+    <summary>Sample output</summary>
     ![](_attachments/apf-005b.png)
+    </details>
 
-## Cleanup
+## Cleanup steps
 None.
-
-
