@@ -2,7 +2,7 @@
 
 !!! Quote "Speaker's script"
 
-    Imagine you are an early-tenure Sysprog that is tasked with updating the Authorized Program Facility (APF) authorized list on an logical partition (LPAR) and would like to quickly find guidance on doing this without having to read a bunch of manuals. In z/OS, the APF list includes information about libraries that contain APF-authorized programs. You would also like to take advantage of some simple automation to complete this task if possible. 
+    Imagine you are an early-tenure systems programmer (sysprog) that is tasked with updating the Authorized Program Facility (APF) authorized list on an logical partition (LPAR) and would like to quickly find guidance on doing this without having to read a bunch of manuals. In z/OS, the APF list includes information about libraries that contain APF-authorized programs. You would also like to take advantage of some simple automation to complete this task if possible. 
     
     As you will see, in the last prompt, the virtual assistant powered by IBM watsonx will respond with the command you will need to run to add the library to the APF authorized list, followed by prompting you to run a skill (issuing a z/OS console command) on your behalf which will perform the task.
 
@@ -86,3 +86,12 @@ None.
     <!--- end-tab-group --->
 ## Cleanup steps
 None.
+
+<!-- Terminology -->
+*[LPAR]: Logical Partition
+*[OS]: Operating System
+*[RAG]: Retrieval-Augmented Generation
+*[zparm]: Subsystem parameter
+*[zparms]: Subsystem parameters
+*[APF]: Authorized Program Facility
+*[sysprog]: Systems programmer

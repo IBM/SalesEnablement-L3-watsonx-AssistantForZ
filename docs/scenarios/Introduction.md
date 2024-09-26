@@ -7,7 +7,7 @@ In this chapter, find several modules that provide step-by-step guidance for usi
 
 !!! warning "Responses from the virtual assistant may change"
 
-    Responses are subject to change as updates are made {{offering.name}} and the large language model (LLM) and retrieval augmented generation (RAG) used in the demonstration environment. The responses you see when you run the queries may differ from the screen images captured in the {{guide.name}}.
+    Responses are subject to change as updates are made {{offering.name}} and the LLM and RAG used in the demonstration environment. The responses you see when you run the queries may differ from the screen images captured in the {{guide.name}}.
 
 Each scenario overview is written as if being presented to the client versus the typical prose of the demonstration guide. Additional *"Speaker's scripts"* may be included with some prompts. To illustrate, here is a introduction that may be used to start a client demonstration.
 
@@ -29,3 +29,9 @@ Each scenario overview is written as if being presented to the client versus the
     Let's get started.
 
 When performing a client demonstration, choose the scenarios that best fit the client's requirements.
+
+<!-- Terminology -->
+
+*[AI]: Artificial intelligence
+*[LLM]: Large language model 
+*[RAG]: Retrieval augmented generation

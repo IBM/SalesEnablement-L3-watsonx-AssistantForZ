@@ -60,4 +60,7 @@ In some images, the following styles of highlighting are used:
 - **Copy to the clipboard**: The text is copied to the clipboard. Click the copy icon (highlighted) and then use the operating system paste function. For example, entering ```Ctrl+v```, ```Cmd+v```, or right-click and select ```Paste```.
 ![](_attachments/welcome-3.png)
 
+<!-- Terminology -->
 *[LPAR]: Logical Partition
+*[OS]: Operating System
+*[RAG]: Retrieval-Augmented Generation

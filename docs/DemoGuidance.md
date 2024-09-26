@@ -21,10 +21,18 @@ Following the scripts provided in the {{guide.name}} will help guarantee a succe
 - Perform any pre-requisites steps prior to presenting. These are described with each demonstration scenario.
 - Anticipate different responses from the scripted queries. This is a live and changing demonstration environment. Responses are subject to change as updates are made to the large language model (LLM) and retrieval augmented generation (RAG) used by {{offering.name}}.
 - Procedural questions provide better structure to responses. For example, in a query it is better to use "Please explain how to estimate space requirements for Db2 table spaces without using db2 admin tool. Provide a step-by-step answer.” versus "how to estimate space requirements for tablespaces."
-- When asking a generic question, responses are usually more accurate when possessive adjectives are avoided. For instance, "How do I check the Db2 for z/OS version on an LPAR?” versus "How do I check *my* Db2 for z/OS version on *my* LPAR?”
+- When asking a generic question, responses are usually more accurate when possessive adjectives are avoided. For instance, "How do I check the Db2 for z/OS version on an logical partition (LPAR)?” versus "How do I check *my* Db2 for z/OS version on *my* LPAR?”
 - Compound questions perform better. As an example, “Categorize the various zparms available.” versus “What is zparm?”
 - Question styles like pros and cons and *A* versus *B* work better. For instance, “What are the pros and cons for setting GMTRAN to EXIT? Please provide a detailed answer.”
 
 If you know your client and the client's environment well, customer specific questions will add value to the demonstration. However, it is critical to validate the accuracy of the responses before doing so in front of the client.
 
 Next, explore the scripted demonstrations that have been created by the {{offering.name}} experts.
+
+<!-- Terminology -->
+*[LPAR]: Logical Partition
+*[OS]: Operating System
+*[RAG]: Retrieval-Augmented Generation
+*[zparm]: Subsystem parameter
+*[zparms]: Subsystem parameters
+*[GMTRAN]: System initialization parameter specifying the ID of a transaction
