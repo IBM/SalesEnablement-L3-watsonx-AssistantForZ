@@ -55,7 +55,7 @@ None.
 <!--- begin-tab-group --->
 === "Prompt 6"
 
-    ```Can you run this command for me to check my version level```
+    ```Can you run this command for me to check my version level?```
 
 === "Sample output"
     ![](_attachments/db2-006a.png)
