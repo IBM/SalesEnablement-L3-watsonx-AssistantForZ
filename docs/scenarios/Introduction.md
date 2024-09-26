@@ -9,9 +9,9 @@ In this chapter, find several modules that provide step-by-step guidance for usi
 
     Responses are subject to change as updates are made {{offering.name}} and the large language model (LLM) and retrieval augmented generation (RAG) used in the demonstration environment. The responses you see when you run the queries may differ from the screen images captured in the {{guide.name}}.
 
-Each scenario overview is written as if being presented to the client versus the typical prose of the demonstration guide. To illustrate, here is a introduction that may be used to start a client demonstration.
+Each scenario overview is written as if being presented to the client versus the typical prose of the demonstration guide. Additional *"Speaker's scripts"* may be included with some prompts. To illustrate, here is a introduction that may be used to start a client demonstration.
 
-!!! Abstract "Speaker's script"
+!!! Quote "Speaker's script"
 
     Hello *[insert customer name]*, Welcome to this demonstration of {{offering.name}}. Today, many early tenure IBM Z users spend hours looking for current information, accurate information, and performing time-consuming manual tasks. And they are very dependent on the Subject Matter Experts to complete their tasks.
 

@@ -1,6 +1,6 @@
 ## Scenario overview
 
-!!! Abstract "Speaker's script"
+!!! Quote "Speaker's script"
 
     Imagine you are an early-tenure Sysprog that is tasked with updating the Authorized Program Facility (APF) authorized list on an logical partition (LPAR) and would like to quickly find guidance on doing this without having to read a bunch of manuals. In z/OS, the APF list includes information about libraries that contain APF-authorized programs. You would also like to take advantage of some simple automation to complete this task if possible. 
     
@@ -20,7 +20,7 @@ What is the APF list in z/OS? Provide a detailed explanation.
     ![](_attachments/apf-001.png)
     </details>
 
-!!! Abstract "Speaker's script"
+!!! Quote "Speaker's script"
 
     Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. If I expand the section we see the referenced sources that were used to build the answer. This illustrates just part of the explainable AI of watsonx.
 
@@ -56,7 +56,7 @@ What is the command to add PROD1.LOADLIB on volume PRD001 to the APF list?
     ![](_attachments/apf-005a.png)
     </details>
 
-!!! Note "Follow-up actions"
+!!! Abstract "Follow-up actions"
 
     Following the response, you’ll be prompted by the assistant to run the proposed automation on your behalf. 
     
