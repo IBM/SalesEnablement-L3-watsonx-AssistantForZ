@@ -8,7 +8,10 @@
 !!! Quote "Speaker's script"
 
     Let us change our role to that of a security administrator. We have just been informed that one of our SSL certificates signed by an existing Certificate Authority is expiring soon. Secure Sockets Layer (SSL) certificates, sometimes called digital certificates, are used to establish an encrypted connection between communicating parties over a network. Certificate management is crucial for maintaining the security of our z/OS environment, but it has been a while since we have performed this action. We recall there are many steps required on z/OS and various RACF commands that need to be run to renew the certificate. Rather than going to our senior security administrator for assistance, let us leverage our virtual assistant powered by watsonx to help automate the certificate renewal process. By automating these processes with Ansible, we can ensure the certificates are always up to date and reduce the risk of expired certificates disrupting our services.
+??? warning "Responses from the virtual assistant may change"
 
+    Responses are subject to change as updates are made to  {{offering.name}} and the LLM and RAG used in the demonstration environment. The responses you see when you run the queries may differ from the screen images captured in the {{guide.name}}.
+    
 ## Prerequisites steps
 These steps should be performed before demonstrating the prompts to the client. To run this scenario, a certificate must first be created. Using the virtual assistant, perform the following actions.
 
