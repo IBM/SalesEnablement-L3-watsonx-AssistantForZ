@@ -11,16 +11,13 @@ None.
 
 ## Prompts and sample outputs
 
-#### Prompt
+###### Prompt 1
 ```
 What is the APF list in z/OS? Provide a detailed explanation.
 ```
-
 <details>
-
 <summary>Sample output</summary>
-
-![](_attachments/apf-001.png)
+    ![](_attachments/apf-001.png)
 </details>
 
 !!! Abstract "Speaker's script"
