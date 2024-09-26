@@ -645,7 +645,7 @@
 <p>Let us change our role to that of a security administrator. We have just been informed that one of our SSL certificates signed by an existing Certificate Authority is expiring soon. Secure Sockets Layer (SSL) certificates, sometimes called digital certificates, are used to establish an encrypted connection between communicating parties over a network. Certificate management is crucial for maintaining the security of our z/OS environment, but it has been a while since we have performed this action. We recall there are many steps required on z/OS and various RACF commands that need to be run to renew the certificate. Rather than going to our senior security administrator for assistance, let us leverage our virtual assistant powered by watsonx to help automate the certificate renewal process. By automating these processes with Ansible, we can ensure the certificates are always up to date and reduce the risk of expired certificates disrupting our services.</p>
 </div>
 <h2 id="prerequisites-steps">Prerequisites steps</h2>
-<p>These steps should be performed before demonstrating the prompts. To run this scenario, a certificate must first be created. Using the virtual assistant, perform the following actions.</p>
+<p>These steps should be performed before demonstrating the prompts to the client. To run this scenario, a certificate must first be created. Using the virtual assistant, perform the following actions.</p>
 <ol>
 <li>
 <p>Enter <strong>create cert</strong>.</p>
@@ -743,13 +743,21 @@
 <li>Complete the form using these values: </li>
 </ol>
 <ul>
-<li><strong>CERT LABEL</strong>: 
-        <em>Enter the same unique label of your certificate.</em></li>
-<li><strong>CERT TYPE</strong>: SITE</li>
+<li>
+<p><strong>CERT LABEL</strong>: </p>
+<div class="highlight"><pre><span></span><code>*Enter the same unique label of your certificate.*
+</code></pre></div>
+</li>
+<li>
+<p><strong>CERT TYPE</strong>: SITE</p>
+</li>
 <li><strong>SIGN WITH</strong>: CERTAUTH</li>
 <li><strong>SIGN LABEL</strong>: TESTCA</li>
-<li><strong>extra_vars.new_expiry_date_survey</strong>:
-        <em>Enter an expiration date on year from today.</em>  </li>
+<li>
+<p><strong>extra_vars.new_expiry_date_survey</strong>:</p>
+<div class="highlight"><pre><span></span><code>*Enter an expiration date on year from today.*
+</code></pre></div>
+</li>
 </ul>
 <ol start="3">
 <li>
@@ -794,11 +802,16 @@
 <li>Complete the form using these values: </li>
 </ol>
 <ul>
-<li><strong>CERT LABEL</strong>: 
-        <em>Enter the same unique label of your certificate.</em></li>
-<li><strong>CERT TYPE</strong>: SITE</li>
+<li>
+<p><strong>CERT LABEL</strong>: </p>
+<div class="highlight"><pre><span></span><code>*Enter the same unique label of your certificate.*
+</code></pre></div>
+</li>
+<li>
+<p><strong>CERT TYPE</strong>: SITE</p>
+</li>
 </ul>
-<ol start="3">
+<ol start="2">
 <li>
 <p>Click <strong>Apply</strong>.</p>
 <p>Another form will return showing the corresponding <strong>ID</strong> for the previous job.</p>
@@ -827,9 +840,14 @@
 <li>Enter in the following values into the fields</li>
 </ol>
 <ul>
-<li><strong>CERT LABEL</strong>: 
-        *Enter the original certificate label you created.</li>
-<li><strong>CERT TYPE</strong>: SITE</li>
+<li><strong>CERT LABEL</strong>: </li>
+<li>
+<div class="highlight"><pre><span></span><code>*Enter the original certificate label you created.*
+</code></pre></div>
+</li>
+<li>
+<p><strong>CERT TYPE</strong>: SITE</p>
+</li>
 </ul>
 <ol start="3">
 <li>Click <strong>Apply</strong>.</li>
