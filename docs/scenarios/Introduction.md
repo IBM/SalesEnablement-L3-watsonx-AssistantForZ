@@ -3,7 +3,7 @@ In this chapter, find several modules that provide step-by-step guidance for usi
 - A brief overview of the scenario.
 - Any pre-requisite or setup steps necessary for the scenario to work in the demonstration environment.
 - A list of queries and sample output that illustrate the scenario using {{offering.name}}.
-- Any clean-up steps that should be performed for the scenario.
+- Any cleanup steps that should be performed for the scenario.
 
 !!! warning "Responses from the virtual assistant may change"
 
