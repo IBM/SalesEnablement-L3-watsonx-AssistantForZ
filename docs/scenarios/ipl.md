@@ -15,7 +15,9 @@ None.
 <!--- begin-tab-group --->
 === "Prompt 1"
 
-    ```What happens during an IPL on IBM Z?```
+    ```
+    What happens during an IPL on IBM Z?
+    ```
 
 === "Sample output"
     ![](_attachments/ipl-001a.png)
@@ -23,7 +25,9 @@ None.
 <!--- begin-tab-group --->
 === "Prompt 2"
 
-    ```How to perform an IPL on IBM Z? Provide a step by step guidance.```
+    ```
+    How to perform an IPL on IBM Z? Provide a step by step guidance.
+    ```
 
 === "Sample output"
     ![](_attachments/ipl-002a.png)
@@ -31,7 +35,9 @@ None.
 <!--- begin-tab-group --->
 === "Prompt 3"
 
-    ```What is the IPL LOAD PARM for my running system and database?```
+    ```
+    What is the IPL LOAD PARM for my running system and database?
+    ```
 
 === "Sample output"
     ![](_attachments/ipl-003a.png)
@@ -39,7 +45,9 @@ None.
 <!--- begin-tab-group --->
 === "Prompt 4"
 
-    ```What is the operator command to find the IPL INFO for my system?```
+    ```
+    What is the operator command to find the IPL INFO for my system?
+    ```
 
 === "Sample output"
     ![](_attachments/ipl-004a.png)
@@ -47,7 +55,9 @@ None.
 <!--- begin-tab-group --->
 === "Prompt 5"
 
-    ```Run command from operator console.```
+    ```
+    Run command from operator console.
+    ```
 
 === "Sample output"
     ![](_attachments/ipl-005a.png)
@@ -71,17 +81,24 @@ None.
 
         3. Click **Apply**.
    
-            Review the output of the command, including the IPL LOAD PARM (LOADK2 member in SYS0.IPLPARM), the last time the system was IPLed, the z/OS version, and the IPL boot volume (D25VS1).
-
-    === "Sample output"
+            Review the output of the command, including **(a)** the last time the system was IPLed, the z/OS version, **(b)** the IPL LOAD PARM (LOADK2 member in SYS0.IPLPARM), and **(c)** the IPL boot volume (D25VS1).
+    
+    === "Sample input"
     
         ![](_attachments/ipl-005b.png)
+        ![](_attachments/ipl-005c.png)
+    
+    === "Sample output"
+    
+        ![](_attachments/ipl-005d.png)
     <!--- end-tab-group --->
 <!--- end-tab-group --->
 <!--- begin-tab-group --->
 === "Prompt 6"
 
-    ```What needs to be done after an IPL completes successfully? Provide a detailed answer.```
+    ```
+    What needs to be done after an IPL completes successfully? Provide a detailed answer.
+    ```
 
 === "Sample output"
     ![](_attachments/ipl-006a.png)
