@@ -22,10 +22,11 @@ These steps should be performed before demonstrating the prompts to the client. 
         
         *Enter a unique label of your choice, for example "<your name>Cert"*
         *Be sure to remember the name as it will be needed later.*
+
     - **CERT TYPE**: SITE
     - **Expiration date**:
         
-    *Enter an expiration date within the next 30 days.*
+        *Enter an expiration date within the next 30 days.*
     
     - **Common name**: test.com
     - **SIGN WITH**: CERTAUTH
@@ -39,7 +40,7 @@ These steps should be performed before demonstrating the prompts to the client. 
 
     ??? Example "Sample ouptut"
 
-        ![](_attachmetns/cert-Setup002.png)
+        ![](_attachments/cert-Setup002.png)
 
 ## Prompts and sample outputs
 <!--- begin-tab-group --->
@@ -63,7 +64,9 @@ These steps should be performed before demonstrating the prompts to the client. 
         2. Complete the form using these values: 
         
            - **Certificate Label**: 
+                
                 *Enter a unique label of your choice, for example "<your name>Cert"*
+
            - **CERT TYPE**: SITE
 
         3. Click **Apply**.
@@ -102,14 +105,14 @@ These steps should be performed before demonstrating the prompts to the client. 
         
            - **CERT LABEL**: 
                 
-                *Enter the same unique label of your certificate.*
+               *Enter the same unique label of your certificate.*
            
            - **CERT TYPE**: SITE
            - **SIGN WITH**: CERTAUTH
            - **SIGN LABEL**: TESTCA
            - **extra_vars.new_expiry_date_survey**:
-                
-                *Enter an expiration date on year from today.*  
+           
+            *Enter an expiration date on year from today.*  
 
         3. Click **Apply**.
 
