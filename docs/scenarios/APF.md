@@ -15,10 +15,11 @@ None.
 ```
 What is the APF list in z/OS? Provide a detailed explanation.
 ```
-    <details>
-    <summary>Sample output</summary>
+
+??? Example "Sample output"
+
     ![](_attachments/apf-001.png)
-    </details>
+
 
 !!! Quote "Speaker's script"
 
@@ -30,22 +31,36 @@ What is the APF list in z/OS? Provide a detailed explanation.
     </details>
 
 ###### Prompt 2
+!!! info inline end "Sample output"
+
+    ![](_attachments/apf-002.png)
+
 ```
 How do you update the APF list in z/OS?
 ```
-    <details>
+    <!-- <details>
     <summary>Sample output</summary>
     ![](_attachments/apf-002.png)
-    </details>
+    </details> -->
 
-###### Prompt 3
+<!-- ###### Prompt 3
 ```
 What is the parmlib member to update the APF list in z/OS?
 ```
     <details>
     <summary>Sample output</summary>
     ![](_attachments/apf-003.png)
-    </details>
+    </details> -->
+
+=== "Prompt 3"
+
+    ```
+    What is the parmlib member to update the APF list in z/OS?
+    ```
+
+=== "Sample output"
+
+    ![](_attachments/apf-003.png)
 
 ###### Prompt 4
 ```

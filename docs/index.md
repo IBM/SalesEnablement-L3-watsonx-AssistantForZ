@@ -7,7 +7,7 @@ This course is not intended to serve as an in-depth study of {{offering.name}}, 
 
 **IBM technical sellers** must develop and record a Stand and Deliver presentation. This video is intended to simulate your delivery of a “live” demo in front of a client. IBMers have the flexibility to define a hypothetical client, the challenges the client has, and the goals they aspire to achieve. The recording must be a demonstration that pitches the value of the solution by using the environments and techniques that are described in the demonstration guide. Specific criteria that must be demonstrated as part of the Stand and Deliver recordings are provided within the documentation that accompanies the Level 3 course in Your Learning. 
 
-??? Hint "Keep the demonstration guide and ITZ environment active"
+??? Tip "Keep the demonstration guide and ITZ environment active"
     
     Business Partners, keep the demonstration guide and ITZ environment active while you take the quiz. 
 
