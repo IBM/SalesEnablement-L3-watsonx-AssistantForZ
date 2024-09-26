@@ -655,10 +655,10 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="prompt-1" name="__tabbed_1" type="radio"><input id="sample-output" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="prompt-1">Prompt 1</label><label for="sample-output">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><code>Why is Db2 different than other database systems?</code></p>
+<p><code>What happens during an IPL on IBM Z?</code></p>
 </div>
 <div class="tabbed-block">
-<p><img alt="" src="../_attachments/db2-001a.png"></p>
+<p><img alt="" src="_attachments/ipl-001a.png"></p>
 </div>
 </div>
 </div>
@@ -667,10 +667,10 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="prompt-2" name="__tabbed_2" type="radio"><input id="sample-output_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="prompt-2">Prompt 2</label><label for="sample-output_1">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><code>What is the difference between Db2 for z/OS and Db2 on distributed?</code></p>
+<p><code>How to perform an IPL on IBM Z? Provide a step by step guidance.</code></p>
 </div>
 <div class="tabbed-block">
-<p><img alt="" src="../_attachments/db2-002a.png"></p>
+<p><img alt="" src="_attachments/ipl-002a.png"></p>
 </div>
 </div>
 </div>
@@ -679,10 +679,10 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="prompt-3" name="__tabbed_3" type="radio"><input id="sample-output_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="prompt-3">Prompt 3</label><label for="sample-output_2">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><code>What is the latest release of Db2 for z/OS?</code></p>
+<p><code>What is the IPL LOAD PARM for my running system and database?</code></p>
 </div>
 <div class="tabbed-block">
-<p><img alt="" src="../_attachments/db2-003a.png"></p>
+<p><img alt="" src="_attachments/ipl-003a.png"></p>
 </div>
 </div>
 </div>
@@ -691,10 +691,10 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked id="prompt-4" name="__tabbed_4" type="radio"><input id="sample-output_3" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="prompt-4">Prompt 4</label><label for="sample-output_3">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><code>What version of z/OS does Db2 v13 run on?</code></p>
+<p><code>What is the operator command to find the IPL INFO for my system?</code></p>
 </div>
 <div class="tabbed-block">
-<p><img alt="" src="../_attachments/db2-004a.png"></p>
+<p><img alt="" src="_attachments/ipl-004a.png"></p>
 </div>
 </div>
 </div>
@@ -703,22 +703,10 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked id="prompt-5" name="__tabbed_5" type="radio"><input id="sample-output_4" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="prompt-5">Prompt 5</label><label for="sample-output_4">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><code>How do I check the Db2 for z/OS version on an LPAR using an operator command?</code></p>
+<p><code>Run command from operator console.</code></p>
 </div>
 <div class="tabbed-block">
-<p><img alt="" src="../_attachments/db2-005a.png"></p>
-</div>
-</div>
-</div>
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="prompt-6" name="__tabbed_6" type="radio"><input id="sample-output_5" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="prompt-6">Prompt 6</label><label for="sample-output_5">Sample output</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><code>Can you run this command for me to check my version level</code></p>
-</div>
-<div class="tabbed-block">
-<p><img alt="" src="../_attachments/db2-006a.png"></p>
+<p><img alt="" src="_attachments/ipl-005a.png"></p>
 </div>
 </div>
 </div>
@@ -726,19 +714,31 @@
 <div class="admonition abstract">
 <p class="admonition-title">Follow-up</p>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked id="actions" name="__tabbed_7" type="radio"><input id="sample-output_6" name="__tabbed_7" type="radio"><div class="tabbed-labels"><label for="actions">Actions</label><label for="sample-output_6">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="actions" name="__tabbed_6" type="radio"><input id="sample-output_5" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="actions">Actions</label><label for="sample-output_5">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>A skill is triggered to use an Ansible playbook that runs the referenced operator command to return the Db2 details. </p>
+<p>A skill is triggered to execute an operator command on the <abbr title="Logical Partition">LPAR</abbr>.</p>
 <ol>
 <li>
+<p>Complete the form using these values: </p>
+<ul>
+<li><strong>Field 1</strong>: &lt;<em>Leave the default value.</em>&gt;</li>
+<li><strong>Field 2</strong>: &lt;<em>Leave the default value.</em>&gt;</li>
+<li><strong>extra-vars.zos_operator_command_survey</strong>: D IPLINFO</li>
+</ul>
+</li>
+<li>
 <p>Click <strong>Apply</strong>.</p>
-<p>Point out the Db2 version levels on the <abbr title="Logical Partition">LPAR</abbr>.</p>
+<p>Another form will return showing the corresponding <strong>ID</strong> for the previous job.</p>
+</li>
+<li>
+<p>Click <strong>Apply</strong>.</p>
+<p>Review the output of the command, including the <abbr title="Initial Program Load">IPL</abbr> LOAD PARM (LOADK2 member in SYS0.IPLPARM), the last time the system was IPLed, the z/<abbr title="Operating System">OS</abbr> version, and the <abbr title="Initial Program Load">IPL</abbr> boot volume (D25VS1).</p>
 </li>
 </ol>
 </div>
 <div class="tabbed-block">
-<p><img alt="" src="../_attachments/db2-006b.png"></p>
+<p><img alt="" src="_attachments/ipl-005b.png"></p>
 </div>
 </div>
 </div>
@@ -746,13 +746,13 @@
 </div>
 <!--- end-tab-group --->
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked id="prompt-7" name="__tabbed_8" type="radio"><input id="sample-output_7" name="__tabbed_8" type="radio"><div class="tabbed-labels"><label for="prompt-7">Prompt 7</label><label for="sample-output_7">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked id="prompt-6" name="__tabbed_7" type="radio"><input id="sample-output_6" name="__tabbed_7" type="radio"><div class="tabbed-labels"><label for="prompt-6">Prompt 6</label><label for="sample-output_6">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><code>How do I migrate from Db2 v12 to Db2 v13 on z/OS?</code></p>
+<p><code>What needs to be done after an IPL completes successfully? Provide a detailed answer.</code></p>
 </div>
 <div class="tabbed-block">
-<p><img alt="" src="../_attachments/db2-007a.png"></p>
+<p><img alt="" src="_attachments/ipl-006a.png"></p>
 </div>
 </div>
 </div>
