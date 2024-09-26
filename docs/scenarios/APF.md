@@ -63,11 +63,11 @@ What is the command to add PROD1.LOADLIB on volume PRD001 to the APF list?
     1. Click **Yes**.
     2. Click **Apply** to run the skill. 
         
-        Note, there are no additional parameters to fill in the form, hence the *“Form is empty”* message.
-        
+        Note, there are no additional parameters to fill in the form, hence the *“Form is empty”* message. It will take about 30 seconds for the command to run.
+
     3. View the *"cmd-response"* field to verify the command was successful.
 
-    ![](_attachments/apt-005b.png)
+    ![](_attachments/apf-005b.png)
 
 ## Cleanup
 None.
