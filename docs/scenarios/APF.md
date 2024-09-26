@@ -10,33 +10,46 @@
 None.
 
 ## Prompts and sample outputs
+<!--- begin-tab-group --->
+=== "Prompt 1"
 
-###### <ins>Prompt 1<ins>
-```
-What is the APF list in z/OS? Provide a detailed explanation.
-```
+    ```
+    What is the APF list in z/OS? Provide a detailed explanation.
+    ```
 
-??? Example "Sample output"
-
+=== "Sample output"
     ![](_attachments/apf-001.png)
-
+<!--- end-tab-group --->
 
 !!! Quote "Speaker's script"
 
-    Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. If I expand the section we see the referenced sources that were used to build the answer. This illustrates just part of the explainable AI of watsonx.
+    Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. If I expand the section we see the referenced sources that were used to build the answer. This illustrates just part of the explainable AI capabilities of watsonx.
 
     ??? Example "Sample output"
     
         ![](_attachments/apf-001b.png)
 
-###### <ins>Prompt 2<ins>
+!!! Quote 
 
-```
-How do you update the APF list in z/OS?
-```
-??? Example "Sample output"
+    <!--- begin-tab-group --->
+    === "Speaker's script"
+    Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. If I expand the section we see the referenced sources that were used to build the answer. This illustrates just part of the explainable AI capabilities of watsonx.
+
+    === "Sample output"
+    
+        ![](_attachments/apf-001b.png)        
+    <!--- end-tab-group --->
+
+<!--- begin-tab-group --->
+=== "Prompt 2"
+
+    ```
+    How do you update the APF list in z/OS?
+    ```
+=== "Sample output"
 
     ![](_attachments/apf-002.png)
+<!--- end-tab-group --->
 <!--- begin-tab-group --->
 === "Prompt 3"
 
