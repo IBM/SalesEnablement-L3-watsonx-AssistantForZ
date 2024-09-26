@@ -25,32 +25,18 @@ What is the APF list in z/OS? Provide a detailed explanation.
 
     Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. If I expand the section we see the referenced sources that were used to build the answer. This illustrates just part of the explainable AI of watsonx.
 
-    <details>
-    <summary>Sample output</summary>
-    ![](_attachments/apf-001b.png)
-    </details>
+    ??? Example "Sample output"
+    
+        ![](_attachments/apf-001b.png)
 
 ###### Prompt 2
-!!! info inline end "Sample output"
-
-    ![](_attachments/apf-002.png)
 
 ```
 How do you update the APF list in z/OS?
 ```
-    <!-- <details>
-    <summary>Sample output</summary>
-    ![](_attachments/apf-002.png)
-    </details> -->
+??? Example "Sample output"
 
-<!-- ###### Prompt 3
-```
-What is the parmlib member to update the APF list in z/OS?
-```
-    <details>
-    <summary>Sample output</summary>
-    ![](_attachments/apf-003.png)
-    </details> -->
+    ![](_attachments/apf-002.png)
 
 === "Prompt 3"
 
@@ -62,14 +48,15 @@ What is the parmlib member to update the APF list in z/OS?
 
     ![](_attachments/apf-003.png)
 
-###### Prompt 4
-```
-What is the command to add PROD1.LOADLIB on volume PRD001 to the APF list?
-```
-    <details>
-    <summary>Sample output</summary>
+=== "Prompt 4
+    
+    ```
+    What is the command to add PROD1.LOADLIB on volume PRD001 to the APF list?
+    ```
+    
+=== "Sample output"
+
     ![](_attachments/apf-005a.png)
-    </details>
 
 !!! Abstract "Follow-up actions"
 
@@ -82,10 +69,9 @@ What is the command to add PROD1.LOADLIB on volume PRD001 to the APF list?
 
     3. View the *"cmd-response"* field to verify the command was successful.
 
-    <details>
-    <summary>Sample output</summary>
-    ![](_attachments/apf-005b.png)
-    </details>
+    ??? Example "Sample output"
+    
+        ![](_attachments/apf-005b.png)
 
 ## Cleanup steps
 None.
