@@ -102,6 +102,8 @@ extra:
     name: "IBM watsonx Assistant for Z"
   guide:
     name: "IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide"
+    version: "2.1"
+    lastUpdate: "26 September 2024"
     url: "https://ibm.github.io/SalesEnablement-L3-watsonx-AssistantForZ/"
   # clickthru:
   #   vcsProvisioning: "https://ibm.github.io/SalesEnablement-VMware-L3/includes/VCF-Classic-Provisioning/index.html"
@@ -110,3 +112,6 @@ extra:
     collectionName: "IBM watsonx Assistant for Z"
     collectionURL: "https://techzone.ibm.com/collection/6633e75d979046001eea2b77"
     environment: "https://techzone.ibm.com/my/reservations/create/66da252ae16da2001edc932d"
+  watsonx4Z:
+    version: "V 2"
+  

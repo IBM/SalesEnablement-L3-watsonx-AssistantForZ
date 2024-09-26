@@ -1,3 +1,8 @@
+!!! Bug "This scenario not working as documented!"
+
+    As of 09/26/2024, when performing this scenario all submitted jobs seem to be stuck in a *pending* state.
+    Waiting for guidance.
+    
 ## Scenario overview
 
 !!! Quote "Speaker's script"
@@ -5,7 +10,7 @@
     Let us change our role to that of a security administrator. We have just been informed that one of our SSL certificates signed by an existing Certificate Authority is expiring soon. Secure Sockets Layer (SSL) certificates, sometimes called digital certificates, are used to establish an encrypted connection between communicating parties over a network. Certificate management is crucial for maintaining the security of our z/OS environment, but it has been a while since we have performed this action. We recall there are many steps required on z/OS and various RACF commands that need to be run to renew the certificate. Rather than going to our senior security administrator for assistance, let us leverage our virtual assistant powered by watsonx to help automate the certificate renewal process. By automating these processes with Ansible, we can ensure the certificates are always up to date and reduce the risk of expired certificates disrupting our services.
 
 ## Prerequisites steps
-These steps should be performed before demonstrating the prompts. To run this scenario, a certificate must first be created. Using the virtual assistant, perform the following actions.
+These steps should be performed before demonstrating the prompts to the client. To run this scenario, a certificate must first be created. Using the virtual assistant, perform the following actions.
 
 1. Enter **create cert**.
 
@@ -14,11 +19,14 @@ These steps should be performed before demonstrating the prompts. To run this sc
 2. Complete the form using these values:
 
     - **Certificate Label**: 
+        
         *Enter a unique label of your choice, for example "<your name>Cert"*
         *Be sure to remember the name as it will be needed later.*
     - **CERT TYPE**: SITE
     - **Expiration date**:
-        *Enter an expiration date within the next 30 days.*
+        
+    *Enter an expiration date within the next 30 days.*
+    
     - **Common name**: test.com
     - **SIGN WITH**: CERTAUTH
     - **SIGN LABEL**: TESTCA
@@ -26,6 +34,12 @@ These steps should be performed before demonstrating the prompts. To run this sc
     ??? Example "Sample input"
 
         ![](_attachments/cert-Setup001.png)
+
+    The virtual assistant will return a job number and a status.
+
+    ??? Example "Sample ouptut"
+
+        ![](_attachmetns/cert-Setup002.png)
 
 ## Prompts and sample outputs
 <!--- begin-tab-group --->
@@ -63,6 +77,8 @@ These steps should be performed before demonstrating the prompts. To run this sc
     === "Sample output"
     
         ![](_attachments/cert-001b.png)
+        ![](_attachments/cert-001c.png)
+        ![](_attachments/cert-001d.png)
     <!--- end-tab-group --->
 <!--- begin-tab-group --->
 === "Prompt 2"
@@ -85,11 +101,14 @@ These steps should be performed before demonstrating the prompts. To run this sc
         2. Complete the form using these values: 
         
            - **CERT LABEL**: 
+                
                 *Enter the same unique label of your certificate.*
+           
            - **CERT TYPE**: SITE
            - **SIGN WITH**: CERTAUTH
            - **SIGN LABEL**: TESTCA
            - **extra_vars.new_expiry_date_survey**:
+                
                 *Enter an expiration date on year from today.*  
 
         3. Click **Apply**.
@@ -103,6 +122,7 @@ These steps should be performed before demonstrating the prompts. To run this sc
     === "Sample output"
     
         ![](_attachments/cert-002b.png)
+        ![](_attachments/cert-002c.png)
     <!--- end-tab-group --->
 <!--- end-tab-group --->
 <!--- begin-tab-group --->
@@ -125,14 +145,16 @@ These steps should be performed before demonstrating the prompts. To run this sc
         1. Complete the form using these values: 
         
            - **CERT LABEL**: 
+  
                 *Enter the same unique label of your certificate.*
+  
            - **CERT TYPE**: SITE
 
-        3. Click **Apply**.
+        2. Click **Apply**.
 
             Another form will return showing the corresponding **ID** for the previous job.
 
-        4. Click **Apply**.
+        3. Click **Apply**.
    
             You will now be able to view the details of your certificate following the renewal execution. Notice the new expiration date of your certificate, indicating that the certificate was renewed and won’t expire for another year.
 
@@ -151,7 +173,9 @@ This will return a form to fill out.
 2. Enter in the following values into the fields
    
    - **CERT LABEL**: 
-        *Enter the original certificate label you created.
+   - 
+        *Enter the original certificate label you created.*
+
    - **CERT TYPE**: SITE
 
 3. Click **Apply**.
