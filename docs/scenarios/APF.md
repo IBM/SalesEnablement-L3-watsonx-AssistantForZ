@@ -37,7 +37,7 @@ How do you update the APF list in z/OS?
 ??? Example "Sample output"
 
     ![](_attachments/apf-002.png)
-
+<!--- begin-tab-group --->
 === "Prompt 3"
 
     ```
@@ -48,8 +48,8 @@ How do you update the APF list in z/OS?
 
     ![](_attachments/apf-003.png)
 
-
-
+<!--- end-tab-group --->
+<!--- begin-tab-group --->
 === "Prompt 4"
     
     ```
@@ -59,7 +59,7 @@ How do you update the APF list in z/OS?
 === "Sample output"
 
     ![](_attachments/apf-005a.png)
-
+<!--- end-tab-group --->
 !!! Abstract "Follow-up actions"
 
     Following the response, you’ll be prompted by the assistant to run the proposed automation on your behalf. 
