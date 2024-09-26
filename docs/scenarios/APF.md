@@ -11,7 +11,7 @@ None.
 
 ## Prompts and sample outputs
 
-###### Prompt 1
+###### <ins>Prompt 1<ins>
 ```
 What is the APF list in z/OS? Provide a detailed explanation.
 ```
@@ -29,7 +29,7 @@ What is the APF list in z/OS? Provide a detailed explanation.
     
         ![](_attachments/apf-001b.png)
 
-###### Prompt 2
+###### <ins>Prompt 2<ins>
 
 ```
 How do you update the APF list in z/OS?
@@ -48,7 +48,8 @@ How do you update the APF list in z/OS?
 
     ![](_attachments/apf-003.png)
 
-``````
+
+
 === "Prompt 4"
     
     ```
