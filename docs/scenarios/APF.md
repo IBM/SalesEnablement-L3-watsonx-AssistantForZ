@@ -11,6 +11,22 @@ None.
 
 ## Prompts and sample outputs
 
+#### Prompt
+```
+What is the APF list in z/OS? Provide a detailed explanation.
+```
+
+<details>
+
+<summary>Sample output</summary>
+
+![](_attachments/apf-001.png)
+</details>
+
+!!! Abstract "Speaker's script"
+
+    Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. If I expand the section we see the referenced sources that were used to build the answer. This illustrates just part of the explainable AI of watsonx.
+
 
 
 - A brief overview of the scenario.

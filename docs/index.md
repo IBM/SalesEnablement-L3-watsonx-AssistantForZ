@@ -3,9 +3,15 @@ Welcome to the **{{learningplan.name}}** course and demonstration guide! The goa
 This course is not intended to serve as an in-depth study of {{offering.name}}, watsonx, or IBM Z; rather the focus is on learning how to perform a client demonstration of {{offering.name}}.
 
 ## Obtaining the {{badge.name}} badge
-**Business Partner technical sellers** must pass a short quiz upon completing the course. The quiz consists of multiple-choice questions, with four possible responses (and only one correct answer) for each question. The questions do not test your understanding of {{offering.name}}, rather the questions validate your use of the provided demonstration environment. **Hint: When taking the quiz, keep the demonstration guide open and the associated IBM Technology Zone (ITZ) environment active.**
+**Business Partner technical sellers** must pass a short quiz upon completing the course. The quiz consists of multiple-choice questions, with four possible responses (and only one correct answer) for each question. The questions do not test your understanding of {{offering.name}}, rather the questions validate your use of the provided demonstration environment. 
 
-**IBM technical sellers** must develop and record a Stand and Deliver presentation. This video is intended to simulate your delivery of a “live” demo in front of a client. IBMers have the flexibility to define a hypothetical client, the challenges the client has, and the goals they aspire to achieve. The recording must be a demonstration that pitches the value of the solution by using the environments and techniques that are described in the demonstration guide. Specific criteria that must be demonstrated as part of the Stand and Deliver recordings are provided within the documentation that accompanies the Level 3 course in Your Learning. **Hint: When creating your Stand and Deliver, keep the demonstration guide and the associated ITZ environment active.**
+**IBM technical sellers** must develop and record a Stand and Deliver presentation. This video is intended to simulate your delivery of a “live” demo in front of a client. IBMers have the flexibility to define a hypothetical client, the challenges the client has, and the goals they aspire to achieve. The recording must be a demonstration that pitches the value of the solution by using the environments and techniques that are described in the demonstration guide. Specific criteria that must be demonstrated as part of the Stand and Deliver recordings are provided within the documentation that accompanies the Level 3 course in Your Learning. 
+
+??? Hint "Keep the demonstration guide and ITZ environment active"
+    
+    Business Partners, keep the demonstration guide and ITZ environment active while you take the quiz. 
+
+    IBM technical sellers, keep the demonstration guide and ITZ environment active until you complete your Stand and Deliver.
 
 ## Support
 Think something is down? Check the applicable status pages for any known issues like a site or service not available:
