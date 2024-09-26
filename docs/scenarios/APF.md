@@ -21,20 +21,13 @@ None.
     ![](_attachments/apf-001.png)
 <!--- end-tab-group --->
 
-!!! Quote "Speaker's script"
-
-    Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. If I expand the section we see the referenced sources that were used to build the answer. This illustrates just part of the explainable AI capabilities of watsonx.
-
-    ??? Example "Sample output"
-    
-        ![](_attachments/apf-001b.png)
-
-!!! Quote 
+!!! Quote ""
 
     <!--- begin-tab-group --->
     === "Speaker's script"
-    Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. If I expand the section we see the referenced sources that were used to build the answer. This illustrates just part of the explainable AI capabilities of watsonx.
-
+    
+        Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. If I expand the section **[expand]** we see the referenced sources that were used to build the answer. This illustrates just part of the explainable AI capabilities of watsonx.
+    
     === "Sample output"
     
         ![](_attachments/apf-001b.png)        
@@ -73,20 +66,23 @@ None.
 
     ![](_attachments/apf-005a.png)
 <!--- end-tab-group --->
-!!! Abstract "Follow-up actions"
+!!! Abstract "Follow-up"
 
-    Following the response, you’ll be prompted by the assistant to run the proposed automation on your behalf. 
+    <!--- begin-tab-group --->
+    === ""Actions"
+
+        Following the response, you’ll be prompted by the assistant to run the proposed automation on your behalf. 
     
-    1. Click **Yes**.
-    2. Click **Apply** to run the skill. 
+        1. Click **Yes**.
+        2. Click **Apply** to run the skill. 
         
-        Note, there are no additional parameters to fill in the form, hence the *“Form is empty”* message. It will take about 30 seconds for the command to run.
+            Note, there are no additional parameters to fill in the form, hence the *“Form is empty”* message. It will take about 30 seconds for the command to run.
 
-    3. View the *"cmd-response"* field to verify the command was successful.
+        3. View the *"cmd-response"* field to verify the command was successful.
 
-    ??? Example "Sample output"
+    === "Sample output"
     
         ![](_attachments/apf-005b.png)
-
+    <!--- end-tab-group --->
 ## Cleanup steps
 None.
