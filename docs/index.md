@@ -64,4 +64,9 @@ The Level 3 demonstration guide is organized into multiple chapters, some which 
     - **Copy to the clipboard**: The text is copied to the clipboard. Click the copy icon (highlighted) and then use the operating system paste function. For example, ++ctrl+v++, or right-click and select ```Paste```.
     ![](_attachments/welcome-3.png)
 
-Acronyms that are not initially spelled out on a page may contain additional information accessible by hovering over the acronym. A question mark will first appear and after a second the acronym meaning is displayed. Try it here: LPAR. 
+??? tip "Acronyms"
+
+    IBM employees, and the tech industry in general, enjoy using acronyms. In the demonstration guide, most acronyms will appear with a dashed underline. Hover over the acronym to learn its meaning. A question mark (![](_attachments/questionIcon.png)) icon will first appear and after a second the tool tip with the acronym's meaning is displayed. Try it here: LPAR. 
+
+    ![](_attachments/acronymHelp.png)
+
