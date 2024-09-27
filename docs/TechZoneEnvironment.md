@@ -96,14 +96,15 @@ The second user interface available for the virtual assistant is a full browser 
 11. Scroll to the bottom of the page and click **Techbot FS** under **Technology**.
 
     ![](_attachments/techBotFS.png)
-The full page virtual assistant interface opens in a new browser window or tab.
+
+    The full page virtual assistant interface opens in a new browser window or tab.
 
     ![](_attachments/fullpageTechBotFS.png)
 
     The full page virtual assistant interface is used for all screen captures in later chapters.
 
 ### Using the virtual assistant
-Using the virtual assistant powered by IBM watsonx is easy. Enter a query into the text field and press return on your keyboard or click the send icon (![](_attachments/sendIcon.png)).
+Using the virtual assistant powered by IBM watsonx is easy. Enter a query into the text field and press ++return++ or click the send icon (![](_attachments/sendIcon.png)).
     ![](_attachments/enterQuery.png)
 
-Proceed to the next chapters to being using {{offering.name}}.
+Proceed to the next chapters to begin using {{offering.name}}.

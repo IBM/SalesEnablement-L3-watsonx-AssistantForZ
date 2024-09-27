@@ -49,7 +49,7 @@ These steps should be performed before demonstrating the prompts to the client. 
 === "Sample output"
     ![](_attachments/cert-001a.png)
 <!--- end-tab-group --->
-!!! Abstract "Follow-up"
+!!! Abstract "Follow-up steps"
 
     <!--- begin-tab-group --->
     === "Actions"
@@ -86,7 +86,7 @@ These steps should be performed before demonstrating the prompts to the client. 
 === "Sample output"
     ![](_attachments/cert-002a.png)
 <!--- end-tab-group --->
-!!! Abstract "Follow-up"
+!!! Abstract "Follow-up steps"
 
     <!--- begin-tab-group --->
     === "Actions"
@@ -126,7 +126,7 @@ These steps should be performed before demonstrating the prompts to the client. 
 === "Sample output"
     ![](_attachments/cert-003a.png)
 <!--- end-tab-group --->
-!!! Abstract "Follow-up"
+!!! Abstract "Follow-up steps"
 
     <!--- begin-tab-group --->
     === "Actions"

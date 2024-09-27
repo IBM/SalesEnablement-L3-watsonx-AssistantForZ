@@ -62,7 +62,7 @@ None.
 === "Sample output"
     ![](_attachments/ipl-005a.png)
 <!--- end-tab-group --->
-!!! Abstract "Follow-up"
+!!! Abstract "Follow-up steps"
 
     <!--- begin-tab-group --->
     === "Actions"

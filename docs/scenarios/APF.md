@@ -70,7 +70,7 @@ None.
 
     ![](_attachments/apf-005a.png)
 <!--- end-tab-group --->
-!!! Abstract "Follow-up"
+!!! Abstract "Follow-up steps"
 
     <!--- begin-tab-group --->
     === "Actions"

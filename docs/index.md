@@ -34,28 +34,34 @@ Business Partners, use the IBM Training live Chat Support service or other suppo
 ## Using the demonstration guide
 The Level 3 demonstration guide is organized into multiple chapters, some which contain modules.
 
-This **Demonstration Guide** uses a reactive browser-based interface. The Demonstration Guide table of contents may be displayed as highlighted in the green dashed box in this image:
+??? tip "The **Demonstration Guide** user interface"
 
-![](_attachments/demoGuide1.png)
+    This **Demonstration Guide** uses a reactive browser-based interface. The Demonstration Guide table of contents may be displayed as highlighted in the green dashed box in this image:
 
-However, if the browser window is sized smaller, the table of contents is accessible by clicking the main menu icon (![](_attachments/MainMenuIcon.png)) (highlighted by solid green box):
+    ![](_attachments/demoGuide1.png)
 
-![](_attachments/demoGuide2.png)
+    However, if the browser window is sized smaller, the table of contents is accessible by clicking the main menu icon (![](_attachments/MainMenuIcon.png)) (highlighted by solid green box):
 
+    ![](_attachments/demoGuide2.png)
 
-Click the main menu icon (![](_attachments/MainMenuIcon.png)) to expand the table of contents.
+    Click the main menu icon (![](_attachments/MainMenuIcon.png)) to expand the table of contents.
 
-![](_attachments/demoGuide3.png)
+    ![](_attachments/demoGuide3.png)
+
+??? tip "Embedded images"
+
+    In some images, the following styles of highlighting are used:
+
+    - **Solid highlight box**: This style of box highlights where to click, enter, or select an item.
+    ![](_attachments/welcome-1.png)
+
+    - **Dash highlight box**: This style of box highlights one of two things: the path to follow to get to a specific location in the user interface, or areas to explore on your own.
+    ![](_attachments/welcome-2.png)
+
+    <!-- - **Copy to the clipboard**: The text is copied to the clipboard. Click the copy icon (highlighted) and then use the operating system paste function. For example, entering ```Ctrl+v```, ```Cmd+v```, or right-click and select ```Paste```.
+    ![](_attachments/welcome-3.png) -->
+
+    - **Copy to the clipboard**: The text is copied to the clipboard. Click the copy icon (highlighted) and then use the operating system paste function. For example, ++ctrl+v++, or right-click and select ```Paste```.
+    ![](_attachments/welcome-3.png)
 
 Acronyms that are not initially spelled out on a page may contain additional information accessible by hovering over the acronym. A question mark will first appear and after a second the acronym meaning is displayed. Try it here: LPAR. 
-
-In some images, the following styles of highlighting are used:
-
-- **Solid highlight box**: This style of box highlights where to click, enter, or select an item.
-![](_attachments/welcome-1.png)
-
-- **Dash highlight box**: This style of box highlights one of two things: the path to follow to get to a specific location in the user interface, or areas to explore on your own.
-![](_attachments/welcome-2.png)
-
-- **Copy to the clipboard**: The text is copied to the clipboard. Click the copy icon (highlighted) and then use the operating system paste function. For example, entering ```Ctrl+v```, ```Cmd+v```, or right-click and select ```Paste```.
-![](_attachments/welcome-3.png)
