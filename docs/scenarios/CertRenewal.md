@@ -59,8 +59,8 @@ These steps should be performed before demonstrating the prompts to the client. 
         1. Click **Yes**.
         2. Complete the form using these values: 
         
-            - **Certificate Label**: <*Enter the unique label of the certificate created in the setup steps.*>
             - **CERT TYPE**: SITE
+            - **Certificate Label**: <*Enter the unique label of the certificate created in the setup steps.*>
 
         3. Click **Apply**.
 
