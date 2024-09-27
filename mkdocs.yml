@@ -2,7 +2,7 @@
 site_name: IBM watsonx Assistant for Z
 site_description: IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide 
 site_author: Andrew R. Jones (andrewj@us.ibm.com)
-copyright: Copyright &copy; 2024 IBM
+copyright: Copyright &copy; 2024 IBM - V 2.0.1
 
 # Repository
 repo_name:  IBM/SalesEnablement-L3-watsonx-AssistantForZ
@@ -26,7 +26,8 @@ nav:
     - 'Conclusion': 'scenarios/Conclusion.md'
   - 'Next steps': 'NextSteps.md'
 
-
+not_in_nav: |
+  /terminology
 
 theme:
   name: material
@@ -49,6 +50,7 @@ theme:
     - navigation.tracking
     - content.code.annotate
     - content.code.copy
+    - navigation.footer
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -79,7 +81,9 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append: ["terminology"]
+      base_path: ["docs"]
   - pymdownx.superfences
   - pymdownx.keys
   - attr_list
@@ -109,7 +113,6 @@ extra:
     name: "IBM watsonx Assistant for Z"
   guide:
     name: "IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide"
-    version: "2.1"
     lastUpdate: "26 September 2024"
     url: "https://ibm.github.io/SalesEnablement-L3-watsonx-AssistantForZ/"
   # clickthru:

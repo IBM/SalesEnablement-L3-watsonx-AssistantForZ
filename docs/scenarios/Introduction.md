@@ -9,7 +9,7 @@ In this chapter, find several modules that provide step-by-step guidance for usi
 
     Responses are subject to change as updates are made to {{offering.name}} and the LLM and RAG used in the demonstration environment. The responses you see when you run the queries may differ from the screen images captured in the {{guide.name}}.
 
-Each scenario overview is written as if being presented to the client versus the typical prose of the demonstration guide. Additional *"Speaker's scripts"* may be included with some prompts. To illustrate, here is a introduction that may be used to start a client demonstration.
+Each scenario overview is written as if being presented to the client versus the typical prose of the demonstration guide. To illustrate, here is a introduction that may be used to start a client demonstration.
 
 !!! Quote "Speaker's script"
 
@@ -28,6 +28,6 @@ Each scenario overview is written as if being presented to the client versus the
 
     Let's get started.
 
-When performing a client demonstration, choose the scenarios that best fit the client's requirements.
+Additional *"Speaker's scripts"* may be included with some prompts.
 
---8<-- "../terminology.md"
+When performing a client demonstration, choose the scenarios that best fit the client's requirements.

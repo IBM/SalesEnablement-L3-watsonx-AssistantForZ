@@ -105,10 +105,3 @@ None.
 <!--- end-tab-group --->
 ## Cleanup steps
 None.
-
-<!-- Terminology -->
-*[LPAR]: Logical Partition
-*[OS]: Operating System
-*[RAG]: Retrieval-Augmented Generation
-*[IPL]: Initial Program Load
-*[AI]: Artificial Intelligence

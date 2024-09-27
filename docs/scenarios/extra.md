@@ -139,19 +139,3 @@ None.
 <!--- end-tab-group --->
 ## Cleanup steps
 None.
-
-<!-- Terminology -->
-*[SMF]: System Management Facility
-*[CICS]: Custom Information Control System
-*[APAR]: Authorized Program Analysis Report
-*[APARs]: Authorized Program Analysis Report
-*[PTF]: Program Temporary Fix
-*[PTFs]:Program Temporary Fixes
-*[ISPF]: Interactive System Productivity Facility
-*[SDSF]: System Display and Search Facility
-*[JCL]: Job Control Language
-*[HIPER]: HIghly PERvasive
-*[HIPERs]: HIghly PERvasive
-*[PE]: Pause element
-*[PEs]: Pause elements
-*[PSI]: Problem Source Identification

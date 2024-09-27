@@ -90,12 +90,3 @@ None.
     <!--- end-tab-group --->
 ## Cleanup steps
 None.
-
-<!-- Terminology -->
-*[LPAR]: Logical Partition
-*[OS]: Operating System
-*[RAG]: Retrieval-Augmented Generation
-*[zparm]: Subsystem parameter
-*[zparms]: Subsystem parameters
-*[APF]: Authorized Program Facility
-*[sysprog]: Systems programmer

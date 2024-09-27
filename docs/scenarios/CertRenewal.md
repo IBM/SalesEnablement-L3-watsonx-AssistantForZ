@@ -164,12 +164,3 @@ Following the demo, cleanup the system by deleting the original certificate crea
     - **CERT TYPE**: SITE
 
 3. Click **Apply**.
-
-<!-- Terminology -->
-*[LPAR]: Logical Partition
-*[OS]: Operating System
-*[RAG]: Retrieval-Augmented Generation
-*[zparm]: Subsystem parameter
-*[zparms]: Subsystem parameters
-*[RACF]: Resource Access Control Facility
-*[SSL]: Secure Sockets Layer 

@@ -30,11 +30,3 @@ Following the scripts provided in the {{guide.name}} will help guarantee a succe
 If you know your client and the client's environment well, customer specific questions will add value to the demonstration. However, it is critical to validate the accuracy of the responses before doing so in front of the client.
 
 Next, explore the scripted demonstrations that have been created by the {{offering.name}} experts.
-
-<!-- Terminology -->
-*[LPAR]: Logical Partition
-*[OS]: Operating System
-*[RAG]: Retrieval-Augmented Generation
-*[zparm]: Subsystem parameter
-*[zparms]: Subsystem parameters
-*[GMTRAN]: System initialization parameter specifying the ID of a transaction
