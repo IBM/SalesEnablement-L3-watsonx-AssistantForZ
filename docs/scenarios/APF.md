@@ -66,7 +66,7 @@ None.
     
 === "Sample output"
 
-    ![](_attachments/apf-005a.png)
+    ![](_attachments/apf-004a.png)
 <!--- end-tab-group --->
 !!! Abstract "Follow-up steps"
 
@@ -84,7 +84,7 @@ None.
 
     === "Sample output"
     
-        ![](_attachments/apf-005b.png)
+        ![](_attachments/apf-004b.png)
     <!--- end-tab-group --->
 ## Cleanup steps
 None.

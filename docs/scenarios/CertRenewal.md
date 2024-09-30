@@ -74,7 +74,6 @@ These steps should be performed before demonstrating the prompts to the client. 
     
         ![](_attachments/cert-001b.png)
         ![](_attachments/cert-001c.png)
-        ![](_attachments/cert-001d.png)
     <!--- end-tab-group --->
 <!--- begin-tab-group --->
 === "Prompt 2"
@@ -120,7 +119,7 @@ These steps should be performed before demonstrating the prompts to the client. 
 === "Prompt 3"
 
     ```
-    Get my cert details.
+    Get my certificate details.
     ```
 
 === "Sample output"
@@ -137,6 +136,8 @@ These steps should be performed before demonstrating the prompts to the client. 
         
             - **CERT LABEL**: <*Enter the unique label of the certificate created in the setup steps.*>  
             - **CERT TYPE**: SITE
+            - **SIGN WITH**: CERTAUTH
+            - **SIGN LABEL**: TESTCA
 
         2. Click **Apply**.
 
@@ -149,6 +150,7 @@ These steps should be performed before demonstrating the prompts to the client. 
     === "Sample output"
     
         ![](_attachments/cert-003b.png)
+        ![](_attachments/cert-003c.png)
     <!--- end-tab-group --->
 <!--- end-tab-group --->
 ## Cleanup steps
