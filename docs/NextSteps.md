@@ -9,5 +9,5 @@ Finally, remember to complete the {{learningplan.name}} learning plan to earn th
 
 **IBM technical sellers** must complete a Stand and Deliver exercise to validate their ability to demonstrate {{offering.name}} to potential clients. Refer to the evaluation checklist in the learning plan for the Stand and Deliver.
 
-**Business Partners** must pass the {{learningplan.name}} quiz that is located in the learn.ibm.com learning plan. The Business Partner quiz verifies use of the demonstration environment and click-through demonstrations, and not one's general knowledge of the offerings.
+**Business Partners** must pass the {{learningplan.name}} quiz that is located in the learn.ibm.com learning plan. The Business Partner quiz verifies use of the demonstration environment and click-through demonstrations, and not one's general knowledge of the offering.
 

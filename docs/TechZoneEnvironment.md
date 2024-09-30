@@ -22,7 +22,7 @@ Follow these steps to create a reservation in ITZ.
 
 3. Complete the form and click **Submit**.
 
-    **a**. Optionally, change the **Name** field for the reservation.
+    **a**. Optionally, change the **Name** field for the reservation. Note, changing the name doesn't appear to actually change the name of the reservation. This has been reported to ITZ support.
 
     **b**. Select the **Education** purpose tile.
 
@@ -32,10 +32,6 @@ Follow these steps to create a reservation in ITZ.
 
     **e**. The **End date and time** will be set to 2 days after the current date and time.
 
-    !!! tip "Extending a reservation"
-
-        The initial reservation duration is set by ITZ at 2 days and cannot be extended at the time the reservation is created. You can, and are encouraged to, extend the reservation once it is in the **Ready** state. Two extensions of 2 day increments are allowed. Steps to extend the reservation are shown below.
-
     **f**. Accept the IBM Technology Zone's terms and conditions and security policies.
 
     **g**. When satisfied with the parameters, click **Submit**.
@@ -43,7 +39,7 @@ Follow these steps to create a reservation in ITZ.
     ![](_attachments/itzRSVPReservationPage.png)
 
 ## Extend the reservation
-The ITZ provisioning process takes approximately 150 minutes. Multiple emails are sent from ITZ as the provisioning process runs. One email states the reservation is provisioning and the other email states that the environment is **Ready**. 
+The ITZ provisioning process takes approximately 15 minutes. Multiple emails are sent from ITZ as the provisioning process runs. One email states the reservation is provisioning and the other email states that the environment is **Ready**. 
 
 In rare cases, the provisioning process may fail. If you receive and email stating the reservation failed, try again by repeating steps 1-3.
 
@@ -93,7 +89,7 @@ This will open the virtual assistant on the current browser page as a pop-up dia
 ### The full page virtual assistant
 The second user interface available for the virtual assistant is a full browser page experience.
 
-11. Scroll to the bottom of the page and click **Techbot FS** under **Technology**.
+11. Scroll to the bottom of the page and click **Techbot (in a new tab)** under **Technology**.
 
     ![](_attachments/techBotFS.png)
 
@@ -107,4 +103,4 @@ The second user interface available for the virtual assistant is a full browser 
 Using the virtual assistant powered by IBM watsonx is easy. Enter a query into the text field and press ++return++ or click the send icon (![](_attachments/sendIcon.png)).
     ![](_attachments/enterQuery.png)
 
-Proceed to the next chapters to begin using {{offering.name}}.
+Proceed to the next chapter to start using {{offering.name}}.

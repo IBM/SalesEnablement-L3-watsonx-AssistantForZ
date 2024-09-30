@@ -1,4 +1,4 @@
-In this chapter, find several modules that provide step-by-step guidance for using {{offering.name}} in specific scenarios based upon typical client interactions and workflows with IBM Z. Each scenario provides:
+In this chapter, several modules provide step-by-step guidance for using {{offering.name}} in specific scenarios based upon typical client interactions and workflows with IBM Z. Each scenario provides:
 
 - A brief overview of the scenario.
 - Any pre-requisite or setup steps necessary for the scenario to work in the demonstration environment.
@@ -13,7 +13,7 @@ Each scenario overview is written as if being presented to the client versus the
 
 !!! Quote "Speaker's script"
 
-    Hello *[insert customer name]*, Welcome to this demonstration of {{offering.name}}. Today, many early tenure IBM Z users spend hours looking for current information, accurate information, and performing time-consuming manual tasks. And they are very dependent on the Subject Matter Experts to complete their tasks.
+    Hello *[insert customer name]*. Welcome to this demonstration of {{offering.name}}. Today, many early tenure IBM Z users spend hours looking for current information, accurate information, and performing time-consuming manual tasks. And they are very dependent on the Subject Matter Experts to complete their tasks.
 
     {{offering.name}} is a new generative AI assistant that infuses automation into conversational AI to help transform how system programmers, operators, and developers of all experience levels engage with and manage the mainframe.
     {{offering.name}} is designed to enable clients to:

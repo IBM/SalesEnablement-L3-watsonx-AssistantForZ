@@ -3,7 +3,7 @@
 
     Imagine you are an early-tenure systems programmer (sysprog) that is tasked with updating the Authorized Program Facility (APF) authorized list on an logical partition (LPAR) and would like to quickly find guidance on doing this without having to read a bunch of manuals. In z/OS, the APF list includes information about libraries that contain APF-authorized programs. You would also like to take advantage of some simple automation to complete this task if possible. 
     
-    As you will see, in the last prompt, the virtual assistant powered by IBM watsonx will respond with the command you will need to run to add the library to the APF authorized list, followed by prompting you to run a skill (issuing a z/OS console command) on your behalf which will perform the task.
+    As you will see, in the last prompt, {{offering.name}} will respond with the command you will need to run to add the library to the APF authorized list, followed by prompting you to run a skill (issuing a z/OS console command) on your behalf which will perform the task.
 
 ??? warning "Responses from the virtual assistant may change"
 

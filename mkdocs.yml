@@ -2,7 +2,7 @@
 site_name: IBM watsonx Assistant for Z
 site_description: IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide 
 site_author: Andrew R. Jones (andrewj@us.ibm.com)
-copyright: Copyright &copy; 2024 IBM - V 2.0.4
+copyright: Copyright &copy; 2024 IBM - V 2.0.7
 
 # Repository
 repo_name:  IBM/SalesEnablement-L3-watsonx-AssistantForZ
@@ -14,8 +14,8 @@ docs_dir: docs
 
 nav:
   - 'Welcome': 'index.md'
-  - 'Reserve the IBM Technology Zone environment': 'TechZoneEnvironment.md'
   - 'Guidance for delivering a demonstration': 'DemoGuidance.md'
+  - 'Reserve the IBM Technology Zone environment': 'TechZoneEnvironment.md'
   - 'Demonstration scenarios':
     - 'Introduction': 'scenarios/Introduction.md'
     - 'Scenario 1: Authorized Program Facility': 'scenarios/APF.md'
@@ -71,6 +71,8 @@ plugins:
     - search
 
 markdown_extensions:
+  - toc:
+      toc_depth : "1-1"
   - sane_lists
   - pymdownx.critic
   - pymdownx.caret
