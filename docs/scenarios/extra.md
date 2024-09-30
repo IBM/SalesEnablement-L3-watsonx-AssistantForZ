@@ -1,7 +1,8 @@
 ## Scenario overview
 
-In addition to the previous scenarios, here are other common queries that would be expected from early tenure IBM Z system programmers. Sample output for these prompts are not provided.
+In addition to the previous scenarios, here are other common queries that would be expected from early tenure IBM Z system programmers. 
 
+**Sample output for these prompts are not provided.**
 
 ## Prerequisites steps
 None.

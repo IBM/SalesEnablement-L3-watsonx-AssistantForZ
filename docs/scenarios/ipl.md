@@ -86,11 +86,10 @@ None.
     === "Sample input"
     
         ![](_attachments/ipl-005b.png)
-        ![](_attachments/ipl-005c.png)
     
     === "Sample output"
     
-        ![](_attachments/ipl-005d.png)
+        ![](_attachments/ipl-005c.png)
     <!--- end-tab-group --->
 <!--- end-tab-group --->
 <!--- begin-tab-group --->
