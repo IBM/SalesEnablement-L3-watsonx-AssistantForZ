@@ -1,6 +1,6 @@
 Welcome to the **{{learningplan.name}}** course and demonstration guide! The goal is to provide IBM and Business Partner technical sellers the knowledge and tools to demonstrate **{{offering.name}}**.
 
-This course is not intended to serve as an in-depth study of {{offering.name}}, watsonx, or IBM Z; rather the focus is on learning how to perform a client demonstration of {{offering.name}}.
+This course is not intended to serve as an in-depth study of {{offering.name}}, watsonx, or IBM Z; rather the focus is on learning how to perform a client demonstration of {{offering.name}}. More specifically, the focus is on the *end-user* usage of querying and leveraging trusted automation through skills based upon those queries. Other aspects of {{offering.name}}, including ingestion of client documentation, creating new skills, and configuring the assistant are not covered.
 
 ## Obtaining the {{badge.name}} badge
 **Business Partner technical sellers** must pass a short quiz upon completing the course. The quiz consists of multiple-choice questions, with four possible responses (and only one correct answer) for each question. The questions do not test your understanding of {{offering.name}}, rather the questions validate your use of the provided demonstration environment. 

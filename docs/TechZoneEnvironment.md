@@ -1,5 +1,5 @@
 To demonstrate {{offering.name}}, an environment in IBM Technology Zone (ITZ) has been created. This environment mimics  a typical client deployment of {{offering.name}}, similar to this deployment architecture.
-    ![](_attachments/architecture.png)
+    ![](_attachments/architectureV2.png)
 
 Follow the instructions to create a new reservation request, extend the reservation, and access the ITZ demonstration environment.
 

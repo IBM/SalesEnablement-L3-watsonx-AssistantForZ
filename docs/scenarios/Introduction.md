@@ -22,9 +22,9 @@ Each scenario overview is written as if being presented to the client versus the
     
     - Improve productivity, autonomy, and confidence across all skill levels, by offering a central place to find answers and running automation to perform common and complex tasks.
   
-    - And you can also leverage the platform to ingest your own documentation further benefiting from the solution.
+    - And you can also leverage the platform to ingest your own documentation further benefiting from the solution. I won't be covering this capability today, but as we move forward we can show how easy this is done along with adding additional skills using your own automation through Ansible, REXX, and JCL.
 
-    In this demo, we will run through a couple of scenarios that highlight the value {{offering.name}} can provide to various roles in your organization regardless of skill level. The scenarios also leverage skills using Ansible Automation to provide great flexibility when it comes to automating Z-specific tasks as part of your enterprise automation strategy.
+    In this demo, we will run through a couple of scenarios that highlight the value {{offering.name}} can provide to various roles in your organization regardless of skill level. The scenarios also leverage skills using Ansible Automation to provide great flexibility when it comes to automating Z-specific tasks as part of your enterprise automation strategy. 
 
     Let's get started.
 
