@@ -1,4 +1,4 @@
-# Scenario: Additional queries
+# Scenario: Additional prompts
 ## Scenario overview
 
 In addition to the previous scenarios, here are other common queries that would be expected from early tenure IBM Z system programmers. 

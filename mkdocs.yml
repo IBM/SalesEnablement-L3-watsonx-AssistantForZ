@@ -2,7 +2,7 @@
 site_name: IBM watsonx Assistant for Z
 site_description: IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide 
 site_author: Andrew R. Jones (andrewj@us.ibm.com)
-copyright: Copyright &copy; 2024 IBM - V 2.0.9
+copyright: Copyright &copy; 2024 IBM - V 2.0.10
 
 # Repository
 repo_name:  IBM/SalesEnablement-L3-watsonx-AssistantForZ
@@ -79,8 +79,8 @@ plugins:
         toc_depth: 6
         # Content-related
         add_full_urls: false
-        enumerate_headings: true
-        enumerate_figures: true
+        enumerate_headings: false
+        enumerate_figures: false
         add_cover_page: true
         cover_page_template: ""
         path_to_pdf: ""
