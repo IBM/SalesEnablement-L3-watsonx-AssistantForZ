@@ -2,7 +2,7 @@
 site_name: IBM watsonx Assistant for Z
 site_description: IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide 
 site_author: Andrew R. Jones (andrewj@us.ibm.com)
-copyright: Copyright &copy; 2024 IBM - V 2.0.11
+copyright: Copyright &copy; 2024 IBM - V 2.0.13
 
 # Repository
 repo_name:  IBM/SalesEnablement-L3-watsonx-AssistantForZ
@@ -50,6 +50,7 @@ theme:
     - navigation.tracking
     - content.code.annotate
     - content.code.copy
+    - content.code.select
     - navigation.footer
     # - content.tabs.link
     - hide:
@@ -103,6 +104,7 @@ markdown_extensions:
   - admonition
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       auto_append: ["terminology"]
@@ -115,6 +117,9 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+# add custom style sheet to make the prompt code blocks display nicer without a vertical scroll bar.
+extra_css:
+  - style.css
 extra:
   generator: false
   supportEmail: "andrewj@us.ibm.com"
