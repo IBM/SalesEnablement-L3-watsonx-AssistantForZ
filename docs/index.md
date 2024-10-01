@@ -47,6 +47,8 @@ Business Partners, use the IBM Training live Chat Support service or other suppo
 
     ![](_attachments/demoGuide3.png)
 
+    The **Print Site** link in the table of contents opens a new page with the entire {{guide.name}} seen as a single page. This page can be used to print the demonstration guide or save it as a PDF using the browser's print capability.
+
 ??? tip "Embedded images"
 
     In some images, the following styles of highlighting are used:
