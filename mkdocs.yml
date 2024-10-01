@@ -71,7 +71,7 @@ plugins:
     - search
     - print-site:
         add_to_navigation: true
-        print_page_title: 'Print Site'
+        print_page_title: 'Print Demonstration Guide'
         add_print_site_banner: false
         # Table of contents
         add_table_of_contents: true
