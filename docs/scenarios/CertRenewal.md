@@ -137,8 +137,6 @@ These steps should be performed before demonstrating the prompts to the client. 
         
             - **CERT LABEL**: <*Enter the unique label of the certificate created in the setup steps.*>  
             - **CERT TYPE**: SITE
-            <!-- - **SIGN WITH**: CERTAUTH
-            - **SIGN LABEL**: TESTCA -->
 
         2. Click **Apply**.
 
