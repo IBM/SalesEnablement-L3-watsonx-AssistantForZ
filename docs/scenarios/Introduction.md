@@ -1,3 +1,4 @@
+# Scenarios
 In this chapter, several modules provide step-by-step guidance for using {{offering.name}} in specific scenarios based upon typical client interactions and workflows with IBM Z. Each scenario provides:
 
 - A brief overview of the scenario.

@@ -1,3 +1,4 @@
+# IBM Technology Zone environment
 To demonstrate {{offering.name}}, an environment in IBM Technology Zone (ITZ) has been created. This environment mimics  a typical client deployment of {{offering.name}}, similar to this deployment architecture.
     ![](_attachments/architectureV2.png)
 

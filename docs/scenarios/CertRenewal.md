@@ -1,3 +1,4 @@
+# Scenario: Certificate renewal
 !!! Bug "This scenario not working as documented!"
 
     As of 09/26/2024, when performing this scenario all submitted jobs seem to be stuck in a *pending* state.

@@ -1,3 +1,4 @@
+# Demonstration guidance
 Whether for a client, a session at a conference, or, if you are an IBM technical seller, your Stand and Deliver, preparation for a demonstration is critical. Included below are both general demonstration guidance and helpful tips for using {{offering.name}} and the IBM Technology Zone (ITZ) environment associated with the {{learningplan.name}} learning plan.
 
 ## General demonstration guidance
