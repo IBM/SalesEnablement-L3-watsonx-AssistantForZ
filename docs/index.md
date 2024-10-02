@@ -1,12 +1,12 @@
 # Welcome
 Welcome to the **{{learningplan.name}}** course and demonstration guide! The goal is to provide IBM and Business Partner technical sellers the knowledge and tools to demonstrate **{{offering.name}}**.
 
-This course is not intended to serve as an in-depth study of {{offering.name}}, watsonx, or IBM Z; rather the focus is on learning how to perform a client demonstration of {{offering.name}}. More specifically, the focus is on the *end-user* usage of querying and leveraging trusted automations through skills based upon those queries. 
+This course is not intended to serve as an in-depth study of {{offering.name}}, watsonx, or IBM Z; rather the focus is on learning how to deliver a client demonstration of {{offering.name}}. More specifically, the focus is on the *end-user* creating queries and by using trusted automations through skills that are suggested by {{offering.name}}. 
 
-Other aspects of {{offering.name}} including creating and configuring assistants, importing and creating new skills, and ingestion of client documentation are **not** covered in this demonstration guide. To learn more and get hands on with these additional capabilities, check out the Velocity Pilot information in IBM Technology Zone (ITZ) <a href="https://techzone.ibm.com/collection/ibm-watsonx-assistant-z/journey-step-3-pilots" target="_blank">here</a>.
+Other aspects of {{offering.name}} including creating and configuring assistants, importing and creating new skills, and ingestion of client documentation are **not** covered in this demonstration guide. To learn more and get hands-on with these additional capabilities, check out the Velocity Pilot information in IBM Technology Zone (ITZ) <a href="https://techzone.ibm.com/collection/ibm-watsonx-assistant-z/journey-step-3-pilots" target="_blank">here</a>.
 
 ## Obtaining the {{badge.name}} badge
-**Business Partner technical sellers** must pass a short quiz upon completing the course. The quiz consists of multiple-choice questions, with four possible responses (and only one correct answer) for each question. The questions do not test your understanding of {{offering.name}}, rather the questions validate your use of the provided demonstration environment. 
+**Business Partner technical sellers** must pass a short quiz upon completing the course. The quiz consists of multiple-choice questions, with four possible responses (and only one correct answer) for each question. The questions do not test your understanding of {{offering.name}}. Rather, the questions validate your use of the provided demonstration environment. 
 
 **IBM technical sellers** must develop and record a Stand and Deliver presentation. This video is intended to simulate your delivery of a “live” demo in front of a client. IBMers have the flexibility to define a hypothetical client, the challenges the client has, and the goals they aspire to achieve. The recording must be a demonstration that pitches the value of the solution by using the environments and techniques that are described in the demonstration guide. Specific criteria that must be demonstrated as part of the Stand and Deliver recordings are provided within the documentation that accompanies the Level 3 course in Your Learning. 
 
@@ -67,7 +67,7 @@ Business Partners, use the IBM Training live Chat Support service or other suppo
     - **Copy to the clipboard**: The text is copied to the clipboard. Click the copy icon (highlighted) and then use the operating system paste function. For example, ++ctrl+v++, or right-click and select ```Paste```.
     ![](_attachments/welcome-3.png)
 
-??? tip "Acronyms"
+??? tip "Acronyms and terminology"
 
     IBM employees, and the tech industry in general, enjoy using acronyms. In the demonstration guide, most acronyms will appear with a dashed underline. Hover over the acronym to learn its meaning. A question mark (![](_attachments/questionIcon.png)) icon will first appear and after a second the tool tip with the acronym's meaning is displayed. Try it here: LPAR. 
 

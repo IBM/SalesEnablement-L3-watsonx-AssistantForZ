@@ -4,9 +4,9 @@
 
     Let us now switch roles to be a Systems Programmer (sysprog) that is preparing for an upcoming IPL scheduled for one of our IBM Z systems. It’s been a while since we helped prepare for an IPL and we want to refamiliarize themselves with this process. Rather than spending time reading through the wide array of documentation available online, we leverage the conversational AI capabilities provided by IBM watsonx Assistant for Z to get accurate responses to our questions quickly, along with step-by-step guidance and links to documentation to learn more. When asking the assistant “How to perform an IPL on IBM Z?”, we realize there’s some information that we must know about our system, for example the IPL volume and the IPL LOAD PARM. The conversational skills capabilities provided by the assistant allows us to issue operator commands on our system directly within the assistant itself, serving as a one-stop shop for retrieving any details required for the IPL process to go smoothly and increasing efficiency.
 
-??? warning "Responses from the virtual assistant may change"
+!!! Warning "Responses from the virtual assistant are likely to change"
 
-    Responses are subject to change as updates are made to {{offering.name}} and the LLM and RAG used in the demonstration environment. The responses you see when you run the queries may differ from the screen images captured in the {{guide.name}}.
+    Responses are likely to change as updates are made to {{offering.name}} and the LLM and RAG used in the demonstration environment. The responses you see when you run the queries may differ from the screen images captured in the {{guide.name}}.
 
 ## Prerequisites steps
 None.

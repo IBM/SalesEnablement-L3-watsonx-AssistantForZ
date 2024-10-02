@@ -1,16 +1,16 @@
 # Scenarios
-In this chapter, several modules provide step-by-step guidance for using {{offering.name}} in specific scenarios based upon typical client interactions and workflows with IBM Z. Each scenario provides:
+Experts created a set of scenarios that illustrate the domain-specific knowledge of {{offering.name}}. Each scenario includes step-by-step guidance based on typical client interactions and workflows with IBM Z. Each scenario provides:
 
 - A brief overview of the scenario.
-- Any pre-requisite or setup steps necessary for the scenario to work in the demonstration environment.
-- A list of queries and sample output that illustrate the scenario using {{offering.name}}.
-- Any cleanup steps that should be performed for the scenario.
+- Any prerequisite or setup steps necessary for the scenario to work in the demonstration environment.
+- A list of queries and sample output that illustrate the scenario.
+- Any cleanup steps that must be run after the scenario.
 
-!!! warning "Responses from the virtual assistant may change"
+!!! Warning "Responses from the virtual assistant are likely to change"
 
-    Responses are subject to change as updates are made to {{offering.name}} and the LLM and RAG used in the demonstration environment. The responses you see when you run the queries may differ from the screen images captured in the {{guide.name}}.
+    Responses are likely to change as updates are made to {{offering.name}} and the LLM and RAG used in the demonstration environment. The responses you see when you run the queries may differ from the screen images captured in the {{guide.name}}.
 
-Each scenario overview is written as if being presented to the client versus the typical prose of the demonstration guide. To illustrate, here is a introduction that may be used to start a client demonstration.
+Each scenario overview is written as if they are being presented to the client versus the typical prose of the demonstration guide. This **Speaker's script** illustrates the style and how to start a client demonstration.
 
 !!! Quote "Speaker's script"
 
@@ -22,12 +22,12 @@ Each scenario overview is written as if being presented to the client versus the
     
     - Improve productivity, autonomy, and confidence across all skill levels, by offering a central place to find answers and running automation to perform common and complex tasks.
   
-    - And you can also leverage the platform to ingest your own documentation further benefiting from the solution. I won't be covering this capability today, but as we move forward we can show how easy this is done along with adding additional skills using your own automation through Ansible, REXX, and JCL.
+    - And you can also leverage the platform to ingest your own documentation further benefiting from the solution. I won't be covering this capability today, but as we move forward we can show how easy this is done, along with adding other skills using your own automation through Ansible, REXX, and JCL.
 
     In this demo, we will run through a couple of scenarios that highlight the value {{offering.name}} can provide to various roles in your organization regardless of skill level. The scenarios also leverage skills using Ansible Automation to provide great flexibility when it comes to automating Z-specific tasks as part of your enterprise automation strategy. 
 
     Let's get started.
 
-Additional *"Speaker's scripts"* may be included with some prompts.
+Other **Speaker's scripts" are included with some prompts.
 
-When performing a client demonstration, choose the scenarios that best fit the client's requirements.
+When you plan your demonstration, choose the scenarios that best fit the client's requirements.
