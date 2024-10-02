@@ -626,21 +626,21 @@ Waiting for guidance.</p>
 <p class="admonition-title">Speaker's script</p>
 <p>Let us change our role to that of a security administrator. We have just been informed that one of our <abbr title="Secure Sockets Layer">SSL</abbr> certificates signed by an existing Certificate Authority is expiring soon. Secure Sockets Layer (<abbr title="Secure Sockets Layer">SSL</abbr>) certificates, sometimes called digital certificates, are used to establish an encrypted connection between communicating parties over a network. Certificate management is crucial for maintaining the security of our z/<abbr title="Operating System">OS</abbr> environment, but it has been a while since we have performed this action. We recall there are many steps required on z/<abbr title="Operating System">OS</abbr> and various <abbr title="Resource Access Control Facility">RACF</abbr> commands that need to be run to renew the certificate. Rather than going to our senior security administrator for assistance, let us leverage our virtual assistant powered by watsonx to help automate the certificate renewal process. By automating these processes with Ansible, we can ensure the certificates are always up to date and reduce the risk of expired certificates disrupting our services.</p>
 </div>
-<details class="warning">
-<summary>Responses from the virtual assistant may change</summary>
-<p>Responses are subject to change as updates are made to  IBM watsonx Assistant for Z and the <abbr title="Large language model">LLM</abbr> and <abbr title="Retrieval augmented generation">RAG</abbr> used in the demonstration environment. The responses you see when you run the queries may differ from the screen images captured in the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide.</p>
-</details>
+<div class="admonition warning">
+<p class="admonition-title">Responses from the virtual assistant are likely to change</p>
+<p>Responses are likely to change as updates are made to IBM watsonx Assistant for Z and the <abbr title="Large language model">LLM</abbr> and <abbr title="Retrieval augmented generation">RAG</abbr> used in the demonstration environment. The responses you see when you run the queries may differ from the screen images captured in the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide.</p>
+</div>
 <h2 id="prerequisites-steps">Prerequisites steps</h2>
-<p>These steps should be performed before demonstrating the prompts to the client. To run this scenario, a certificate must first be created. Using the virtual assistant, perform the following actions.</p>
+<p>To run this scenario, a certificate must first be created. Using the virtual assistant:</p>
 <ol>
 <li>
 <p>Enter <strong>create cert</strong>.</p>
-<p>The <strong>create cert</strong> skill will return a form that needs to be completed.</p>
+<p>The <strong>create cert</strong> skill returns a form that needs to be completed.</p>
 </li>
 <li>
-<p>Complete the form using these values:</p>
+<p>Complete the form by using these values:</p>
 <ul>
-<li><strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "<your name>Cert". Be sure to remember the name as it will be needed later.</your></em>&gt;</li>
+<li><strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "<your name>Cert". Record the name as it is needed later.</your></em>&gt;</li>
 <li><strong>CERT TYPE</strong>: SITE</li>
 <li><strong>Expiration date</strong>: &lt;<em>Enter an expiration date within the next 30 days.</em>&gt;</li>
 <li><strong>Common name</strong>: test.com</li>
@@ -651,9 +651,9 @@ Waiting for guidance.</p>
 <summary>Sample input</summary>
 <p><img alt="" src="../_attachments/cert-Setup001.png"></p>
 </details>
-<p>The virtual assistant will return a job number and a status.</p>
+<p>The virtual assistant returns a job number and a status.</p>
 <details class="example">
-<summary>Sample ouptut</summary>
+<summary>Sample output</summary>
 <p><img alt="" src="../_attachments/cert-Setup002.png"></p>
 </details>
 </li>
@@ -805,16 +805,16 @@ Waiting for guidance.</p>
 </div>
 <!--- end-tab-group --->
 <h2 id="cleanup-steps">Cleanup steps</h2>
-<p>Following the demo, cleanup the system by deleting the original certificate created. Using the virtual assistant, perform the following actions.</p>
+<p>Following the demo, cleanup the system by deleting the original certificate created. Using the virtual assistant:</p>
 <ol>
 <li>
 <p>Enter <strong>delete cert</strong>.</p>
-<p>This will return a form to fill out. </p>
+<p>This returns a form to complete. </p>
 </li>
 <li>
 <p>Enter in the following values into the fields</p>
 <ul>
-<li><strong>CERT LABEL</strong>: &lt;<em>Enter the original certificate label you created.</em>&gt;</li>
+<li><strong>CERT LABEL</strong>: &lt;<em>Enter the original certificate label that you created.</em>&gt;</li>
 <li><strong>CERT TYPE</strong>: SITE</li>
 </ul>
 </li>
