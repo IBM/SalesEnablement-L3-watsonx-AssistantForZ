@@ -2,7 +2,7 @@
 site_name: IBM watsonx Assistant for Z
 site_description: IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide 
 site_author: Andrew R. Jones (andrewj@us.ibm.com)
-copyright: Copyright &copy; 2024 IBM - V 2.0.13
+copyright: Copyright &copy; 2024 IBM - V 2.0.17
 
 # Repository
 repo_name:  IBM/SalesEnablement-L3-watsonx-AssistantForZ
@@ -12,19 +12,19 @@ repo_name:  IBM/SalesEnablement-L3-watsonx-AssistantForZ
 docs_dir: docs
 
 
-nav:
-  - 'Welcome': 'index.md'
-  - 'Guidance for delivering a demonstration': 'DemoGuidance.md'
-  - 'Reserve the IBM Technology Zone environment': 'TechZoneEnvironment.md'
-  - 'Demonstration scenarios':
-    - 'Introduction': 'scenarios/Introduction.md'
-    - 'Scenario 1: Authorized Program Facility': 'scenarios/APF.md'
-    - 'Scenario 2: Certificate renewal': 'scenarios/CertRenewal.md'
-    - 'Scenario 3: Db2 versioning': 'scenarios/db2Versioning.md'
-    - 'Scenario 4: Initial Program Load on Z': 'scenarios/ipl.md'
-    - 'Additional IBM Z related prompts': 'scenarios/extra.md'
-    - 'Conclusion': 'scenarios/Conclusion.md'
-  - 'Next steps': 'NextSteps.md'
+# nav:
+#   - 'Welcome': 'index.md'
+#   - 'Guidance for delivering a demonstration': 'DemoGuidance.md'
+#   - 'Reserve the IBM Technology Zone environment': 'TechZoneEnvironment.md'
+#   - 'Demonstration scenarios':
+#     - 'Introduction': 'scenarios/Introduction.md'
+#     - 'Scenario 1: Authorized Program Facility': 'scenarios/APF.md'
+#     - 'Scenario 2: Certificate renewal': 'scenarios/CertRenewal.md'
+#     - 'Scenario 3: Db2 versioning': 'scenarios/db2Versioning.md'
+#     - 'Scenario 4: Initial Program Load on Z': 'scenarios/ipl.md'
+#     - 'Additional IBM Z related prompts': 'scenarios/extra.md'
+#     - 'Conclusion': 'scenarios/Conclusion.md'
+#   - 'Next steps': 'NextSteps.md'
 
 not_in_nav: |
   /terminology
@@ -71,6 +71,8 @@ plugins:
     - mkdocs-video
     - macros
     - search
+    - literate-nav:
+        nav_file: nav.md
     - print-site:
         add_to_navigation: true
         print_page_title: 'Print Demonstration Guide'

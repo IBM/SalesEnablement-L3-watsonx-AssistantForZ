@@ -1,7 +1,9 @@
 # Welcome
 Welcome to the **{{learningplan.name}}** course and demonstration guide! The goal is to provide IBM and Business Partner technical sellers the knowledge and tools to demonstrate **{{offering.name}}**.
 
-This course is not intended to serve as an in-depth study of {{offering.name}}, watsonx, or IBM Z; rather the focus is on learning how to perform a client demonstration of {{offering.name}}. More specifically, the focus is on the *end-user* usage of querying and leveraging trusted automations through skills based upon those queries. Other aspects of {{offering.name}} including creating and configuring assistants,  importing and creating new skills, and ingestion of client documentation are **not** covered in this demonstration guide.
+This course is not intended to serve as an in-depth study of {{offering.name}}, watsonx, or IBM Z; rather the focus is on learning how to perform a client demonstration of {{offering.name}}. More specifically, the focus is on the *end-user* usage of querying and leveraging trusted automations through skills based upon those queries. 
+
+Other aspects of {{offering.name}} including creating and configuring assistants, importing and creating new skills, and ingestion of client documentation are **not** covered in this demonstration guide. To learn more and get hands on with these additional capabilities, check out the Velocity Pilot information in IBM Technology Zone (ITZ) <a href="https://techzone.ibm.com/collection/ibm-watsonx-assistant-z/journey-step-3-pilots" target="_blank">here</a>.
 
 ## Obtaining the {{badge.name}} badge
 **Business Partner technical sellers** must pass a short quiz upon completing the course. The quiz consists of multiple-choice questions, with four possible responses (and only one correct answer) for each question. The questions do not test your understanding of {{offering.name}}, rather the questions validate your use of the provided demonstration environment. 
