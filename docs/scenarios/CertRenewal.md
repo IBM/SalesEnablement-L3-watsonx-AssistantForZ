@@ -23,10 +23,10 @@ To run this scenario, a certificate must first be created. Using the virtual ass
 
 2. Complete the form by using these values:
 
-    - **Certificate Label**: <*Enter a unique label of your choice, for example "<your name>Cert". Record the name as it is needed later.*>
+    - **Certificate Label**: <*Enter a unique label of your choice, for example "yourNameCert". Record the name as it is needed later.*>
     - **CERT TYPE**: SITE
     - **Expiration date**: <*Enter an expiration date within the next 30 days.*>
-    - **Common name**: test.com
+    - **Common name**: <*Enter a unique label of your choice, for example "company.com". Record the name as it is needed later. **Do NOT use test.com***>
     - **SIGN WITH**: CERTAUTH
     - **SIGN LABEL**: TESTCA
   
@@ -45,7 +45,7 @@ To run this scenario, a certificate must first be created. Using the virtual ass
 === "Prompt 1"
 
     ```
-    I have an SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
+    I have a SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
     ```
 
 === "Sample output"
@@ -71,10 +71,11 @@ To run this scenario, a certificate must first be created. Using the virtual ass
         4. Click **Apply**.
    
             Highlight the current expiration date (displayed as **End Date**) of the certificate.
+    === "Sample input"
 
+        ![](_attachments/cert-001b.png)
     === "Sample output"
     
-        ![](_attachments/cert-001b.png)
         ![](_attachments/cert-001c.png)
     <!--- end-tab-group --->
 <!--- begin-tab-group --->
