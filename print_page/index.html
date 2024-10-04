@@ -1292,10 +1292,10 @@ Waiting for guidance.</p>
 <li>
 <p>Complete the form by using these values:</p>
 <ul>
-<li><strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "<your name>Cert". Record the name as it is needed later.</your></em>&gt;</li>
+<li><strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "yourNameCert". Record the name as it is needed later.</em>&gt;</li>
 <li><strong>CERT TYPE</strong>: SITE</li>
 <li><strong>Expiration date</strong>: &lt;<em>Enter an expiration date within the next 30 days.</em>&gt;</li>
-<li><strong>Common name</strong>: test.com</li>
+<li><strong>Common name</strong>: &lt;<em>Enter a unique label of your choice, for example "company.com". Record the name as it is needed later. </em><em>Do NOT use test.com</em>**&gt;</li>
 <li><strong>SIGN WITH</strong>: CERTAUTH</li>
 <li><strong>SIGN LABEL</strong>: TESTCA</li>
 </ul>
@@ -1315,7 +1315,7 @@ Waiting for guidance.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="scenarios-certrenewal-prompt-1" name="scenarios-certrenewal-__tabbed_1" type="radio"><input id="scenarios-certrenewal-sample-output" name="scenarios-certrenewal-__tabbed_1" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-prompt-1">Prompt 1</label><label for="scenarios-certrenewal-sample-output">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#scenarios-certrenewal-__codelineno-0-1"></a>I have an SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#scenarios-certrenewal-__codelineno-0-1"></a>I have a SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -1327,7 +1327,7 @@ Waiting for guidance.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Follow-up steps</p>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="scenarios-certrenewal-actions" name="scenarios-certrenewal-__tabbed_2" type="radio"><input id="scenarios-certrenewal-sample-output_1" name="scenarios-certrenewal-__tabbed_2" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-actions">Actions</label><label for="scenarios-certrenewal-sample-output_1">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked id="scenarios-certrenewal-actions" name="scenarios-certrenewal-__tabbed_2" type="radio"><input id="scenarios-certrenewal-sample-input" name="scenarios-certrenewal-__tabbed_2" type="radio"><input id="scenarios-certrenewal-sample-output_1" name="scenarios-certrenewal-__tabbed_2" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-actions">Actions</label><label for="scenarios-certrenewal-sample-input">Sample input</label><label for="scenarios-certrenewal-sample-output_1">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Following the response, the assistant will prompt if you want to retrieve the certificate details. </p>
@@ -1351,8 +1351,10 @@ Waiting for guidance.</p>
 </ol>
 </div>
 <div class="tabbed-block">
-<p><img alt="" src="../scenarios/_attachments/cert-001b.png">
-<img alt="" src="../scenarios/_attachments/cert-001c.png"></p>
+<p><img alt="" src="../scenarios/_attachments/cert-001b.png"></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../scenarios/_attachments/cert-001c.png"></p>
 </div>
 </div>
 </div>
