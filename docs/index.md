@@ -35,6 +35,8 @@ For issues related to specific steps found in the demonstration guide after the 
 Business Partners, use the IBM Training live Chat Support service or other support methods that are found on the IBM Training portal <a href="https://ibmcpsprod.service-now.com/its?id=sc_category&sys_id=6568bfafdb2f13008ea7d6fa4b961990" target="_blank">here</a>.
 
 ## Using the demonstration guide
+Use these helpful tips to take full advantage of the {{guide.name}}.
+
 ??? tip "The **Demonstration Guide** user interface"
 
     This **Demonstration Guide** uses a reactive browser-based interface. The Demonstration Guide table of contents may be displayed as highlighted in the green dashed box in this image:
