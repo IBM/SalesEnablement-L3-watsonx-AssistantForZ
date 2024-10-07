@@ -1,5 +1,5 @@
 * [Welcome](index.md)
-* [Guidance for delivering a demosntration](DemoGuidance.md)
+* [Guidance for delivering a demonstration](DemoGuidance.md)
 * [Reserve the IBM Technology Zone environment](TechZoneEnvironment.md)
 * Demonstration scenarios
     * [Introduction to scenarios](scenarios/Introduction.md)
