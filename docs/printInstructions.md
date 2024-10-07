@@ -2,7 +2,7 @@ The **[Print page]{:target="_blank"}** can be used to either print the {{guide.n
 
 [Print page]: ../print_page/index.html
 
-In both instances, use your browser's **print** capability to send the page to a printer or save as a PDF file.
+For either a printed copy or to save as a PDF, click the **[Print page]{:target="_blank"}** link and use your browser's **print** capability to send the page to a printer or save as a PDF file.
 
 !!! Warning "Printed or saved copies can be out of date"
 
