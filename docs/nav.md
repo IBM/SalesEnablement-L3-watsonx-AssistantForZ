@@ -10,4 +10,5 @@
     * [Additional IBM Z related prompts](scenarios/extra.md)
     * [Summary](scenarios/Conclusion.md)
 * [Next steps](NextSteps.md)
------
+* Printing the guide
+    * [Instructions](printInstructions.md)

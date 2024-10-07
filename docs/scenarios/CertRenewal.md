@@ -110,9 +110,9 @@ To run this scenario, a certificate must first be created. Using the virtual ass
 
         4. Click **Apply**.
    
-            No response will be returned and you can assume the playbook executed successfully to renew the certificate.
+            **No response will be returned and you can assume the playbook executed successfully to renew the certificate.**
 
-    === "Sample output"
+    === "Sample input"
     
         ![](_attachments/cert-002b.png)
         ![](_attachments/cert-002c.png)
@@ -147,10 +147,11 @@ To run this scenario, a certificate must first be created. Using the virtual ass
         3. Click **Apply**.
    
             You will now be able to view the details of your certificate following the renewal execution. Notice the new expiration date of your certificate, indicating that the certificate was renewed and won’t expire for another year.
+    === "Sample input"
 
-    === "Sample output"
-    
         ![](_attachments/cert-003b.png)
+    === "Sample output"
+
         ![](_attachments/cert-003c.png)
     <!--- end-tab-group --->
 <!--- end-tab-group --->

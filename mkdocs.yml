@@ -2,7 +2,7 @@
 site_name: IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide
 site_description: IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide 
 site_author: Andrew R. Jones (andrewj@us.ibm.com)
-copyright: Copyright &copy; 2024 IBM - V 2.0.20
+copyright: Copyright &copy; 2024 IBM - V 2.0.28
 
 # Repository
 repo_name:  IBM/SalesEnablement-L3-watsonx-AssistantForZ
@@ -74,7 +74,7 @@ plugins:
     - literate-nav:
         nav_file: nav.md
     - print-site:
-        add_to_navigation: true
+        add_to_navigation: false
         print_page_title: 'Print Demonstration Guide'
         add_print_site_banner: false
         # Table of contents
