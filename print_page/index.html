@@ -825,7 +825,7 @@
     
     <tr>
         <td>Copyright</td>
-        <td>Copyright &copy; 2024 IBM - V 2.0.30</td>
+        <td>Copyright &copy; 2024 IBM - V 2.0.31</td>
     </tr>
     
 
@@ -845,7 +845,7 @@
             </div>
         </section>
         <section class="print-page" id="index"><div><h1 id="welcome">Welcome</h1>
-<p>Welcome to the <strong>IBM watsonx Assistant for Z for Technical Sales Level 3</strong> course and demonstration guide! The goal is to provide IBM and Business Partner technical sellers the knowledge and tools to demonstrate <strong>IBM watsonx Assistant for Z</strong>.</p>
+<p>Welcome to the <strong>IBM watsonx Assistant for Z for Technical Sales Level 3</strong> course and demonstration guide! The goal of this course is to provide IBM and Business Partner technical sellers the knowledge and tools to demonstrate <strong>IBM watsonx Assistant for Z</strong>.</p>
 <p>This course is not intended to serve as an in-depth study of IBM watsonx Assistant for Z, watsonx, or IBM Z; rather the focus is on learning how to deliver a client demonstration of IBM watsonx Assistant for Z. More specifically, the focus is on the <em>end-user</em> creating queries and by using trusted automations through skills that are suggested by IBM watsonx Assistant for Z. </p>
 <p>Other aspects of IBM watsonx Assistant for Z including creating and configuring assistants, importing and creating new skills, and ingestion of client documentation are <strong>not</strong> covered in this demonstration guide. To learn more and get hands-on with these additional capabilities, check out the Velocity Pilot information in IBM Technology Zone (<abbr title="IBM Technology Zone">ITZ</abbr>) <a href="https://techzone.ibm.com/collection/ibm-watsonx-assistant-z/journey-step-3-pilots" target="_blank">here</a>.</p>
 <h2 id="index-obtaining-the-ibm-watsonx-assistant-for-z-technical-sales-intermediate-badge">Obtaining the IBM watsonx Assistant for Z Technical Sales Intermediate badge</h2>
@@ -917,7 +917,7 @@
 <!-- Keep the list alphabetized for easy deduplication --></div></section><section class="print-page" id="demoguidance"><div><h1 id="demonstration-guidance">Demonstration guidance</h1>
 <p>Whether for a client, a session at a conference, or performing your Stand and Deliver, preparation for a demonstration is critical. Included are both general demonstration guidance and helpful tips for using IBM watsonx Assistant for Z and the IBM Technology Zone (<abbr title="IBM Technology Zone">ITZ</abbr>) environment that is associated with the IBM watsonx Assistant for Z for Technical Sales Level 3 learning plan.</p>
 <h2 id="demoguidance-general-demonstration-guidance">General demonstration guidance</h2>
-<p>Knowing the audience that you are presenting to is critical. Having a basic understanding of a client's business and their challenges enables you to customize your conversation so it resonates with the audience. In addition, it is important to understand the roles of the individuals in the audience to know at what level of technical detail to present.</p>
+<p>Knowing the audience that you are presenting to is critical. Having a basic understanding of a client's business and their challenges enables you to customize the conversation so it resonates with the audience. It is also important to understand the roles of the individuals in the audience to know the at what level of technical detail to present.</p>
 <p>In addition, it is always a good idea to:</p>
 <ul>
 <li>Know how much time is allotted for the demonstration.</li>
@@ -933,9 +933,11 @@
 <h2 id="demoguidance-specific-guidance-for-ibm-watsonx-assistant-for-z-and-the-itz-environment">Specific guidance for IBM watsonx Assistant for Z and the <abbr title="IBM Technology Zone">ITZ</abbr> environment</h2>
 <p>Following the scripts that are provided in the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide helps assure a successful demonstration. Use these tips to help assure success with IBM watsonx Assistant for Z and the <abbr title="IBM Technology Zone">ITZ</abbr> environment:</p>
 <ul>
-<li>Follow the scripts in the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide for the automations and skills to run as expected.</li>
-<li>Run all prerequisites steps before the presentation. The prerequisite steps are described with each demonstration scenario.</li>
+<li>Google Chrome is the recommended browser for this environment. Some users have experienced intermittent errors with running some of the skills when using other browsers.</li>
+<li>Run all prerequisites steps before the presentation. Prerequisite steps are described with each demonstration scenario.</li>
 <li>Anticipate different responses from the scripted queries. The <abbr title="IBM Technology Zone">ITZ</abbr> environment is a live and changing demonstration environment. Responses are subject to change as updates are made to the large language model (<abbr title="Large language model">LLM</abbr>) and retrieval augmented generation (<abbr title="Retrieval augmented generation">RAG</abbr>) used by IBM watsonx Assistant for Z.</li>
+<li>Follow the scripts in the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide for the automations and skills to run as expected. </li>
+<li>When issuing other prompts:</li>
 <li>Procedural questions provide better structure to responses. For example, in a query it is better to use "Explain how to estimate space requirements for Db2 table spaces without using Db2 admin tool. Provide a step-by-step answer.” versus "how to estimate space requirements for table spaces."</li>
 <li>When asking a generic question, responses are more accurate when possessive adjectives are avoided. For instance, "How do I check the Db2 for z/<abbr title="Operating System">OS</abbr> version on a logical partition (<abbr title="Logical Partition">LPAR</abbr>)?” versus "How do I check <em>my</em> Db2 for z/<abbr title="Operating System">OS</abbr> version on <em>my</em> <abbr title="Logical Partition">LPAR</abbr>?”</li>
 <li>Compound questions perform better. As an example, “Categorize the various <abbr title="Subsystem parameters">zparms</abbr> available.” versus “What is <abbr title="Subsystem parameter">zparm</abbr>?”</li>
@@ -1005,6 +1007,10 @@
 <li>
 <p>Click <strong>Open your IBM Cloud environment</strong>.</p>
 <p><img alt="" src="../_attachments/itzRSVPOpenEnvironment.png"></p>
+<div class="admonition warning">
+<p class="admonition-title">You may be prompted to authenticate</p>
+<p>In some instances, you may be prompted to authenticate when attempting to access the <strong>Open our IBM Cloud environment</strong> link. Use the same IBM ID and password used to reserve the <abbr title="IBM Technology Zone">ITZ</abbr> environment.</p>
+</div>
 </li>
 </ol>
 <h2 id="techzoneenvironment-the-demonstration-portal-page">The demonstration portal page</h2>
@@ -1092,6 +1098,10 @@
 <h2 id="scenarios-apf-prerequisites-steps">Prerequisites steps</h2>
 <p>None.</p>
 <h2 id="scenarios-apf-prompts-and-sample-outputs">Prompts and sample outputs</h2>
+<div class="admonition tip">
+<p class="admonition-title">Copy and paste the prompt</p>
+<p>Use the copy icon <img alt="" src="../scenarios/attachments/copyIcon.png"> to copy prompts from the demonstration guide and then paste the prompt into the Assistant using <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-v">V</kbd></span> or right click and select <code>Paste</code>.</p>
+</div>
 <!--- begin-tab-group --->
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="scenarios-apf-prompt-1" name="scenarios-apf-__tabbed_1" type="radio"><input id="scenarios-apf-sample-output" name="scenarios-apf-__tabbed_1" type="radio"><div class="tabbed-labels"><label for="scenarios-apf-prompt-1">Prompt 1</label><label for="scenarios-apf-sample-output">Sample output</label></div>
 <div class="tabbed-content">
@@ -1196,7 +1206,7 @@ Waiting for guidance.</p>
 <h2 id="scenarios-certrenewal-scenario-overview">Scenario overview</h2>
 <div class="admonition quote">
 <p class="admonition-title">Speaker's script</p>
-<p>Let us change our role to that of a security administrator. We have just been informed that one of our <abbr title="Secure Sockets Layer">SSL</abbr> certificates signed by an existing Certificate Authority is expiring soon. Secure Sockets Layer (<abbr title="Secure Sockets Layer">SSL</abbr>) certificates, sometimes called digital certificates, are used to establish an encrypted connection between communicating parties over a network. Certificate management is crucial for maintaining the security of our z/<abbr title="Operating System">OS</abbr> environment, but it has been a while since we have performed this action. We recall there are many steps required on z/<abbr title="Operating System">OS</abbr> and various <abbr title="Resource Access Control Facility">RACF</abbr> commands that need to be run to renew the certificate. Rather than going to our senior security administrator for assistance, let us leverage our virtual assistant powered by watsonx to help automate the certificate renewal process. By automating these processes with Ansible, we can ensure the certificates are always up to date and reduce the risk of expired certificates disrupting our services.</p>
+<p>Now, change your role to that of a security administrator. You have just been informed that one of your <abbr title="Secure Sockets Layer">SSL</abbr> certificates signed by a Certificate Authority is expiring soon. Secure Sockets Layer (<abbr title="Secure Sockets Layer">SSL</abbr>) certificates, sometimes called digital certificates, are used to establish an encrypted connection between communicating parties over a network. Certificate management is crucial for maintaining the security of our z/<abbr title="Operating System">OS</abbr> environment, but it has been a while since you have performed this action. You recall there are many steps required on z/<abbr title="Operating System">OS</abbr> and various <abbr title="Resource Access Control Facility">RACF</abbr> commands that need to be run to renew the certificate. Rather than going to your senior security administrator for assistance, you leverage the virtual assistant powered by watsonx to help automate the certificate renewal process. By automating these processes with Ansible, you ensure the certificates are always up to date and reduce the risk of expired certificates disrupting your services.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Responses from the virtual assistant are likely to change</p>
@@ -1210,7 +1220,7 @@ Waiting for guidance.</p>
 <p>The <strong>create cert</strong> skill returns a form that needs to be completed.</p>
 </li>
 <li>
-<p>Complete the form by using these values:</p>
+<p>Complete the form by using these values and click <strong>Apply</strong>:</p>
 <ul>
 <li><strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "yourNameCert". Record the name as it is needed later.</em>&gt;</li>
 <li><strong>CERT TYPE</strong>: SITE</li>
@@ -1403,7 +1413,7 @@ Waiting for guidance.</p>
 <h2 id="scenarios-db2versioning-scenario-overview">Scenario overview</h2>
 <div class="admonition quote">
 <p class="admonition-title">Speaker's script</p>
-<p>We are now a new database administrator and need to quickly familiarize ourselves with the Db2 subsystem in our company's mainframe environment. We would like to understand more about Db2 on z/<abbr title="Operating System">OS</abbr> versus other platforms, the latest  supported version of Db2, and the process for migrating to a newer version. Most early-tenure DBAs don't have this experience. We leverage an our virtual assistant that is customized with pre-existing automation the team has in place. And by leveraging the <abbr title="Retrieval augmented generation">RAG</abbr> grounded on Z-specific knowledge, we have confidence that the responses generated from our questions are accurate. We like the fact that they can go to one place to get answers to any question, on-demand, and can help automate some of our tasks, which in turn reduces our learning curve and increases our efficiency.</p>
+<p>You are now a new database administrator and need to quickly familiarize yourself with the Db2 subsystem in the company's mainframe environment. You would like to understand more about Db2 on z/<abbr title="Operating System">OS</abbr> versus other platforms, the latest  supported version of Db2, and the process for migrating to a newer version. Most early-tenure DBAs don't have this experience. You leverage the virtual assistant that is customized with pre-existing automation your team has in place. And by leveraging the <abbr title="Retrieval augmented generation">RAG</abbr> grounded on Z-specific knowledge, you have confidence that the responses generated from the questions are accurate. You like the fact that you can go to one place to get answers to any question, on-demand, and can help automate some of the tasks, which in turn reduces your learning curve and increases your efficiency.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Responses from the virtual assistant are likely to change</p>
@@ -1532,7 +1542,7 @@ Waiting for guidance.</p>
 <h2 id="scenarios-ipl-scenario-overview">Scenario overview</h2>
 <div class="admonition quote">
 <p class="admonition-title">Speaker's script</p>
-<p>Let us now switch roles to be a Systems Programmer (<abbr title="Systems programmer">sysprog</abbr>) that is preparing for an upcoming <abbr title="Initial Program Load">IPL</abbr> scheduled for one of our IBM Z systems. It’s been a while since we helped prepare for an <abbr title="Initial Program Load">IPL</abbr> and we want to refamiliarize themselves with this process. Rather than spending time reading through the wide array of documentation available online, we leverage the conversational <abbr title="Artificial intelligence">AI</abbr> capabilities provided by IBM watsonx Assistant for Z to get accurate responses to our questions quickly, along with step-by-step guidance and links to documentation to learn more. When asking the assistant “How to perform an <abbr title="Initial Program Load">IPL</abbr> on IBM Z?”, we realize there’s some information that we must know about our system, for example the <abbr title="Initial Program Load">IPL</abbr> volume and the <abbr title="Initial Program Load">IPL</abbr> LOAD PARM. The conversational skills capabilities provided by the assistant allows us to issue operator commands on our system directly within the assistant itself, serving as a one-stop shop for retrieving any details required for the <abbr title="Initial Program Load">IPL</abbr> process to go smoothly and increasing efficiency.</p>
+<p>You are now a Systems Programmer (<abbr title="Systems programmer">sysprog</abbr>) that is preparing for an upcoming <abbr title="Initial Program Load">IPL</abbr> scheduled for one of your IBM Z systems. It’s been a while since you helped prepare for an <abbr title="Initial Program Load">IPL</abbr> and we want to refamiliarize yourself with this process. Rather than spending time reading through the wide array of documentation available online, you leverage the conversational <abbr title="Artificial intelligence">AI</abbr> capabilities provided by IBM watsonx Assistant for Z to get accurate responses to your questions quickly, along with step-by-step guidance and links to documentation to learn more. When asking the assistant “How to perform an <abbr title="Initial Program Load">IPL</abbr> on IBM Z?”, we realize there’s some information needed about our system, for example the <abbr title="Initial Program Load">IPL</abbr> volume and the <abbr title="Initial Program Load">IPL</abbr> LOAD PARM. The conversational skills capabilities provided by the assistant allows you to issue operator commands on the system directly within the assistant itself, serving as a one-stop shop for retrieving details required for the <abbr title="Initial Program Load">IPL</abbr> process to go smoothly and increasing efficiency.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Responses from the virtual assistant are likely to change</p>
@@ -1661,7 +1671,7 @@ Waiting for guidance.</p>
 <!-- Terminology -->
 <!-- Keep the list alphabetized for easy deduplication --></div></section><section class="print-page" id="scenarios-extra"><div><h1 id="scenario-additional-prompts">Scenario: Additional prompts</h1>
 <h2 id="scenarios-extra-scenario-overview">Scenario overview</h2>
-<p>There are many other queries that an early tenure IBM Z system programmer may ask. The IBM watsonx Assistant for Z experts created a few more.</p>
+<p>There are many other queries that an early tenure IBM Z systems programmer may ask. The IBM watsonx Assistant for Z experts created a few more.</p>
 <p><strong>Sample outputs for these prompts are not provided.</strong></p>
 <h2 id="scenarios-extra-prerequisites-steps">Prerequisites steps</h2>
 <p>None.</p>
@@ -1857,14 +1867,14 @@ Waiting for guidance.</p>
 <p>As mentioned in the demonstration guidance chapter, it is important to conclude your demonstration with a call to action.</p>
 <div class="admonition quote">
 <p class="admonition-title">Speaker's script</p>
-<p>So that wraps up the demonstration of IBM watsonx Assistant for Z. As you can see in the case of an early-tenure mainframer or more experienced system programmers, rather than spending hours searching through documentation to find answers, they can leverage the domain specific Retrieval-Augmented Generation (<abbr title="Retrieval augmented generation">RAG</abbr>) grounded on Z specific knowledge to get trusted answers in seconds. And it also allows them to free up time by automating some of their more manual tasks that they can otherwise spend on building expertise. </p>
+<p>So that wraps up the demonstration of IBM watsonx Assistant for Z. As you can see, in the case of an early-tenure mainframe system programmer or even a more experienced system programmer, rather than spending hours searching through documentation to find answers, they can leverage the domain specific Retrieval-Augmented Generation (<abbr title="Retrieval augmented generation">RAG</abbr>) grounded on Z specific knowledge to get trusted answers in seconds. And it also allows them to free up time by automating some of their more manual tasks that they can otherwise spend on building expertise. </p>
 <p>Thank you for your time today, would you agree to meeting again for a more comprehensive workshop?</p>
 </div>
 <!-- Terminology -->
 <!-- Keep the list alphabetized for easy deduplication --></div></section><h1 class='nav-section-title-end'>Ended: Demonstration scenarios</h1><section class="print-page" id="nextsteps"><div><h1 id="next-steps">Next steps</h1>
 <div class="admonition important">
 <p class="admonition-title">About the IBM Technology Zone (<abbr title="IBM Technology Zone">ITZ</abbr>) environment</p>
-<p>Before your <abbr title="IBM Technology Zone">ITZ</abbr> reservation expires, be sure to remove any resources you created in the <abbr title="IBM Technology Zone">ITZ</abbr> environment!</p>
+<p>Before your <abbr title="IBM Technology Zone">ITZ</abbr> reservation expires, be sure to remove any resources created in the <abbr title="IBM Technology Zone">ITZ</abbr> environment as described in each scenario's cleanup steps!</p>
 </div>
 <p>This IBM watsonx Assistant for Z for Technical Sales Level 3 demonstrated several of the IBM watsonx Assistant for Z capabilities. However, there is still more to learn about IBM watsonx Assistant for Z. Be sure to check out the <a href="https://www.ibm.com/products/watsonx-assistant-for-z?mhsrc=ibmsearch_a&amp;mhq=Watsonx%20assistant%20for%20z" target="_blank">offering landing page</a> and the <a href="https://www.ibm.com/docs/en/watsonx/waz/2.0" target="_blank">product documentation</a>. </p>
 <p>Also, the focus of the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide was the <em>end-user</em> use of IBM watsonx Assistant for Z. To learn more about deploying, configuring, and customizing IBM watsonx Assistant for Z explore the other capabilities that are included in the <abbr title="IBM Technology Zone">ITZ</abbr> collection <a href="https://techzone.ibm.com/collection/6633e75d979046001eea2b77" target="_blank">here</a>. Included are guidance for running client pilots and the ability to manage an IBM watsonx Assistant for Z deployment. In the Velocity Pilot environment, you can explore all the capabilities of the offering like creating an assistant, importing documents, and adding automation skills.</p>
@@ -1916,7 +1926,7 @@ Waiting for guidance.</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2024 IBM - V 2.0.30
+      Copyright &copy; 2024 IBM - V 2.0.31
     </div>
   
   
