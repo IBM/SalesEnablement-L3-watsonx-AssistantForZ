@@ -67,9 +67,9 @@ Using the virtual assistant:
         1. Click **Yes**.
         2. Complete the form using these values: 
         
+            - **CERT LABEL**: <*Enter the unique label of the certificate created in the setup steps.*>
             - **CERT TYPE**: SITE
-            - **Certificate Label**: <*Enter the unique label of the certificate created in the setup steps.*>
-
+  
         3. Click **Apply**.
 
             Another form will return showing the corresponding **ID** for the previous job.
