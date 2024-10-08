@@ -9,6 +9,10 @@ There are many other queries that an early tenure IBM Z systems programmer may a
 None.
 
 ## Prompts
+??? Tip "Copy and paste the prompt"
+
+    Use the copy icon (![](_attachments/copyIcon.png)) to copy prompts from the demonstration guide and then paste the prompt into the Assistant using ++ctrl+v++ or right click and select ```Paste```.
+    
 #### ^^SMF data^^
 <!--- begin-tab-group --->
 === "Prompt 1"

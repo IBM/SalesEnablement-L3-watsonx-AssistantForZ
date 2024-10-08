@@ -15,7 +15,7 @@ None.
 ## Prompts and sample outputs
 !!! Tip "Copy and paste the prompt"
 
-    Use the copy icon ![](../attachments/copyIcon.png) to copy prompts from the demonstration guide and then paste the prompt into the Assistant using ++ctrl+v++ or right click and select ```Paste```.
+    Use the copy icon (![](_attachments/copyIcon.png)) to copy prompts from the demonstration guide and then paste the prompt into the Assistant using ++ctrl+v++ or right click and select ```Paste```.
 
 <!--- begin-tab-group --->
 === "Prompt 1"
