@@ -8,7 +8,7 @@
 
 !!! Quote "Speaker's script"
 
-    Let us change our role to that of a security administrator. We have just been informed that one of our SSL certificates signed by an existing Certificate Authority is expiring soon. Secure Sockets Layer (SSL) certificates, sometimes called digital certificates, are used to establish an encrypted connection between communicating parties over a network. Certificate management is crucial for maintaining the security of our z/OS environment, but it has been a while since we have performed this action. We recall there are many steps required on z/OS and various RACF commands that need to be run to renew the certificate. Rather than going to our senior security administrator for assistance, let us leverage our virtual assistant powered by watsonx to help automate the certificate renewal process. By automating these processes with Ansible, we can ensure the certificates are always up to date and reduce the risk of expired certificates disrupting our services.
+    Now, change your role to that of a security administrator. You have just been informed that one of your SSL certificates signed by a Certificate Authority is expiring soon. Secure Sockets Layer (SSL) certificates, sometimes called digital certificates, are used to establish an encrypted connection between communicating parties over a network. Certificate management is crucial for maintaining the security of our z/OS environment, but it has been a while since you have performed this action. You recall there are many steps required on z/OS and various RACF commands that need to be run to renew the certificate. Rather than going to your senior security administrator for assistance, you leverage the virtual assistant powered by watsonx to help automate the certificate renewal process. By automating these processes with Ansible, you ensure the certificates are always up to date and reduce the risk of expired certificates disrupting your services.
 
 !!! Warning "Responses from the virtual assistant are likely to change"
 
@@ -21,7 +21,7 @@ To run this scenario, a certificate must first be created. Using the virtual ass
 
     The **create cert** skill returns a form that needs to be completed.
 
-2. Complete the form by using these values:
+2. Complete the form by using these values and click **Apply**:
 
     - **Certificate Label**: <*Enter a unique label of your choice, for example "yourNameCert". Record the name as it is needed later.*>
     - **CERT TYPE**: SITE

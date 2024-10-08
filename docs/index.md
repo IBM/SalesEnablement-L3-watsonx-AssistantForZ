@@ -1,5 +1,5 @@
 # Welcome
-Welcome to the **{{learningplan.name}}** course and demonstration guide! The goal is to provide IBM and Business Partner technical sellers the knowledge and tools to demonstrate **{{offering.name}}**.
+Welcome to the **{{learningplan.name}}** course and demonstration guide! The goal of this course is to provide IBM and Business Partner technical sellers the knowledge and tools to demonstrate **{{offering.name}}**.
 
 This course is not intended to serve as an in-depth study of {{offering.name}}, watsonx, or IBM Z; rather the focus is on learning how to deliver a client demonstration of {{offering.name}}. More specifically, the focus is on the *end-user* creating queries and by using trusted automations through skills that are suggested by {{offering.name}}. 
 

@@ -1,7 +1,7 @@
 # Next steps
 !!! Important "About the IBM Technology Zone (ITZ) environment"
 
-    Before your ITZ reservation expires, be sure to remove any resources you created in the ITZ environment!
+    Before your ITZ reservation expires, be sure to remove any resources created in the ITZ environment as described in each scenario's cleanup steps!
 
 This {{learningplan.name}} demonstrated several of the {{offering.name}} capabilities. However, there is still more to learn about {{offering.name}}. Be sure to check out the <a href="https://www.ibm.com/products/watsonx-assistant-for-z?mhsrc=ibmsearch_a&mhq=Watsonx%20assistant%20for%20z" target="_blank">offering landing page</a> and the <a href="https://www.ibm.com/docs/en/watsonx/waz/2.0" target="_blank">product documentation</a>. 
 

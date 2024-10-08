@@ -1,7 +1,7 @@
 # Scenario: Additional prompts
 ## Scenario overview
 
-There are many other queries that an early tenure IBM Z system programmer may ask. The {{offering.name}} experts created a few more.
+There are many other queries that an early tenure IBM Z systems programmer may ask. The {{offering.name}} experts created a few more.
 
 **Sample outputs for these prompts are not provided.**
 
