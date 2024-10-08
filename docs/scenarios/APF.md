@@ -87,9 +87,13 @@ None.
 
         3. View the **cmd-response** field to verify the command was successful.
 
-    === "Sample output"
+    === "Sample input"
     
         ![](_attachments/apf-004b.png)
+
+    === "Sample output"
+    
+        ![](_attachments/apf-004c.png)
     <!--- end-tab-group --->
 ## Cleanup steps
 None.
