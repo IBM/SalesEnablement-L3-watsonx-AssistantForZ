@@ -825,7 +825,7 @@
     
     <tr>
         <td>Copyright</td>
-        <td>Copyright &copy; 2024 IBM - V 2.0.32</td>
+        <td>Copyright &copy; 2024 IBM - V 2.0.33</td>
     </tr>
     
 
@@ -1246,7 +1246,7 @@ Waiting for guidance.</p>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
-<li><strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "yourNameCert". Record the name as it is needed later.</em>&gt;</li>
+<li><strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "yourNameCert". Record the label as it is needed later.</em>&gt;</li>
 <li><strong>CERT TYPE</strong>: <code>SITE</code></li>
 <li><strong>Expiration date</strong>: &lt;<em>Enter an expiration date within the next 30 days.</em>&gt;</li>
 <li><strong>Common name</strong>: &lt;<em>Enter a unique label of your choice, for example "company.com". Record the name as it is needed later. </em><em>Do NOT use test.com</em>**&gt;</li>
@@ -1262,13 +1262,16 @@ Waiting for guidance.</p>
 </div>
 </div>
 </div>
-<p><!--- end-tab-group --->
-The new certificate is created (despite the last message status of <em>pending</em>).</p>
-<h2 id="scenarios-certrenewal-prompts-and-sample-outputs">Prompts and sample outputs</h2>
+<!--- end-tab-group --->
 </li>
 </ol>
+<p>The new certificate is created (despite the last message status of <em>pending</em>).</p>
+<h2 id="scenarios-certrenewal-prompts-and-sample-outputs">Prompts and sample outputs</h2>
+<ol>
+<li>
+<p>Ask the assistant how to check on an expiring certificate.</p>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="scenarios-certrenewal-prompt-1" name="scenarios-certrenewal-__tabbed_3" type="radio"><input id="scenarios-certrenewal-sample-output_2" name="scenarios-certrenewal-__tabbed_3" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-prompt-1">Prompt 1</label><label for="scenarios-certrenewal-sample-output_2">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="scenarios-certrenewal-prompt_1" name="scenarios-certrenewal-__tabbed_3" type="radio"><input id="scenarios-certrenewal-sample-output_2" name="scenarios-certrenewal-__tabbed_3" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-prompt_1">Prompt</label><label for="scenarios-certrenewal-sample-output_2">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#scenarios-certrenewal-__codelineno-1-1"></a>I have a SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
@@ -1280,6 +1283,12 @@ The new certificate is created (despite the last message status of <em>pending</
 </div>
 </div>
 <!--- end-tab-group --->
+</li>
+<li>
+<p>Click <strong>Yes</strong> to retrieve the certificate details.</p>
+</li>
+<li>Complete the form with the certificate label and type.</li>
+</ol>
 <div class="admonition abstract">
 <p class="admonition-title">Follow-up steps</p>
 <!--- begin-tab-group --->
@@ -1964,7 +1973,7 @@ The new certificate is created (despite the last message status of <em>pending</
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2024 IBM - V 2.0.32
+      Copyright &copy; 2024 IBM - V 2.0.33
     </div>
   
   
