@@ -5,7 +5,7 @@ There are many other queries that an early tenure IBM Z systems programmer may a
 
 **Sample outputs for these prompts are not provided.**
 
-## Prerequisites steps
+## Prerequisite steps
 None.
 
 ## Prompts
