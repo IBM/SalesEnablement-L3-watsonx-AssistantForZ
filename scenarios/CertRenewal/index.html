@@ -680,13 +680,28 @@ Waiting for guidance.</p>
 <p>Use the copy icon (<img alt="" src="../_attachments/copyIcon.png">) to copy prompts from the demonstration guide and then paste the prompt into the Assistant using <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-v">V</kbd></span> or right click and select <code>Paste</code>.</p>
 </details>
 <p>Using the virtual assistant:</p>
+<!--- begin-tab-group --->
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="setup-prompt" name="__tabbed_1" type="radio"><input id="sample-output" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="setup-prompt">Setup prompt</label><label for="sample-output">Sample output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>create cert
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../_attachments/cert-Setup001a.png"></p>
+</div>
+</div>
+</div>
+<!--- end-tab-group --->
+<div class="admonition abstract">
+<p class="admonition-title">Follow-up steps</p>
+<!--- begin-tab-group --->
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked id="actions" name="__tabbed_2" type="radio"><input id="sample-input" name="__tabbed_2" type="radio"><input id="sample-output_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="actions">Actions</label><label for="sample-input">Sample input</label><label for="sample-output_1">Sample output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ol>
-<li>
-<p>Enter <strong>create cert</strong>.</p>
-<p>The <strong>create cert</strong> skill returns a form that needs to be completed.</p>
-</li>
-<li>
-<p>Complete the form by using these values and click <strong>Apply</strong>:</p>
+<li>Complete the form for the <strong>z/<abbr title="Operating System">OS</abbr> Certs - Create Cert</strong> skill.</li>
+</ol>
 <ul>
 <li><strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "yourNameCert". Record the name as it is needed later.</em>&gt;</li>
 <li><strong>CERT TYPE</strong>: SITE</li>
@@ -695,23 +710,28 @@ Waiting for guidance.</p>
 <li><strong>SIGN WITH</strong>: CERTAUTH</li>
 <li><strong>SIGN LABEL</strong>: TESTCA</li>
 </ul>
-<details class="example">
-<summary>Sample input</summary>
-<p><img alt="" src="../_attachments/cert-Setup001.png"></p>
-</details>
-<p>The virtual assistant returns a job number and a status.</p>
-<details class="example">
-<summary>Sample output</summary>
-<p><img alt="" src="../_attachments/cert-Setup002.png"></p>
-</details>
-</li>
+<ol start="2">
+<li>Click <strong>Apply</strong>.</li>
 </ol>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../_attachments/cert-Setup001b.png"></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../_attachments/cert-Setup001c.png"></p>
+</div>
+</div>
+</div>
+<!--- end-tab-group --->
+</div>
+<!--- begin-tab-group --->
+<p>The new certificate should be create at this point (despite the last message status of <em>pending</em>).</p>
 <h2 id="prompts-and-sample-outputs">Prompts and sample outputs</h2>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="prompt-1" name="__tabbed_1" type="radio"><input id="sample-output" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="prompt-1">Prompt 1</label><label for="sample-output">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="prompt-1" name="__tabbed_3" type="radio"><input id="sample-output_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="prompt-1">Prompt 1</label><label for="sample-output_2">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>I have a SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>I have a SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -723,7 +743,7 @@ Waiting for guidance.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Follow-up steps</p>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked id="actions" name="__tabbed_2" type="radio"><input id="sample-input" name="__tabbed_2" type="radio"><input id="sample-output_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="actions">Actions</label><label for="sample-input">Sample input</label><label for="sample-output_1">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked id="actions_1" name="__tabbed_4" type="radio"><input id="sample-input_1" name="__tabbed_4" type="radio"><input id="sample-output_3" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="actions_1">Actions</label><label for="sample-input_1">Sample input</label><label for="sample-output_3">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Following the response, the assistant will prompt if you want to retrieve the certificate details. </p>
@@ -757,10 +777,10 @@ Waiting for guidance.</p>
 <!--- end-tab-group --->
 </div>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="prompt-2" name="__tabbed_3" type="radio"><input id="sample-output_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="prompt-2">Prompt 2</label><label for="sample-output_2">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked id="prompt-2" name="__tabbed_5" type="radio"><input id="sample-output_4" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="prompt-2">Prompt 2</label><label for="sample-output_4">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>What are the steps to renew a certificate on z/OS?
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>What are the steps to renew a certificate on z/OS?
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -772,7 +792,7 @@ Waiting for guidance.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Follow-up steps</p>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked id="actions_1" name="__tabbed_4" type="radio"><input id="sample-input_1" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="actions_1">Actions</label><label for="sample-input_1">Sample input</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="actions_2" name="__tabbed_6" type="radio"><input id="sample-input_2" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="actions_2">Actions</label><label for="sample-input_2">Sample input</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Following the response, the assistant will prompt if you want to run the certificate renewal skill. </p>
@@ -808,10 +828,10 @@ Waiting for guidance.</p>
 </div>
 <!--- end-tab-group --->
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked id="prompt-3" name="__tabbed_5" type="radio"><input id="sample-output_3" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="prompt-3">Prompt 3</label><label for="sample-output_3">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked id="prompt-3" name="__tabbed_7" type="radio"><input id="sample-output_5" name="__tabbed_7" type="radio"><div class="tabbed-labels"><label for="prompt-3">Prompt 3</label><label for="sample-output_5">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Get my certificate details.
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Get my certificate details.
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -823,7 +843,7 @@ Waiting for guidance.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Follow-up steps</p>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked id="actions_2" name="__tabbed_6" type="radio"><input id="sample-input_2" name="__tabbed_6" type="radio"><input id="sample-output_4" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="actions_2">Actions</label><label for="sample-input_2">Sample input</label><label for="sample-output_4">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:3"><input checked id="actions_3" name="__tabbed_8" type="radio"><input id="sample-input_3" name="__tabbed_8" type="radio"><input id="sample-output_6" name="__tabbed_8" type="radio"><div class="tabbed-labels"><label for="actions_3">Actions</label><label for="sample-input_3">Sample input</label><label for="sample-output_6">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Again, a skill is run to retrieve your certificate details following the renewal. </p>
