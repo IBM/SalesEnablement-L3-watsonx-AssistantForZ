@@ -15,92 +15,123 @@ None.
 ??? Tip "Copy and paste the prompt"
 
     Use the copy icon (![](_attachments/copyIcon.png)) to copy prompts from the demonstration guide and then paste the prompt into the Assistant using ++ctrl+v++ or right click and select ```Paste```.
-    
-<!--- begin-tab-group --->
-=== "Prompt 1"
 
-    ```
-    Why is Db2 different than other database systems?
-    ```
-
-=== "Sample output"
-    ![](_attachments/db2-001a.png)
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 2"
-
-    ```
-    What is the difference between Db2 for z/OS and Db2 on distributed?
-    ```
-
-=== "Sample output"
-    ![](_attachments/db2-002a.png)
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 3"
-
-    ```
-    What is the latest release of Db2 for z/OS?
-    ```
-
-=== "Sample output"
-    ![](_attachments/db2-003a.png)
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 4"
-
-    ```
-    What version of z/OS does Db2 v13 run on?
-    ```
-
-=== "Sample output"
-    ![](_attachments/db2-004a.png)
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 5"
-
-    ```
-    How do I check the Db2 for z/OS version on an LPAR using an operator command?
-    ```
-
-=== "Sample output"
-    ![](_attachments/db2-005a.png)
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 6"
-
-    ```
-    Can you run this command for me to check my version level?
-    ```
-
-=== "Sample output"
-    ![](_attachments/db2-006a.png)
-<!--- end-tab-group --->
-!!! Abstract "Follow-up steps"
+1. Ask the assistant what is different about Db2.   
 
     <!--- begin-tab-group --->
-    === "Actions"
+    === "Prompt"
 
-        A skill is triggered to use an Ansible playbook that runs the referenced operator command to return the Db2 details. 
-    
-        1. Click **Apply**.
+        ```
+        Why is Db2 different than other database systems?
+        ```
 
-            Point out the Db2 version levels on the LPAR.
+    === "Sample output"
+
+        !!! Quote "Speaker's script"
+
+        Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response.
+
+        ![](_attachments/db2-001a.png)
+    <!--- end-tab-group --->
+
+2. Ask the assistant how Db2 differs on the z/OS platform and distributed platforms.
+
+    <!--- begin-tab-group --->
+    === "Prompt"
+
+        ```
+        What is the difference between Db2 for z/OS and Db2 on distributed?
+        ```
+
+    === "Sample output"
+        ![](_attachments/db2-002a.png)
+    <!--- end-tab-group --->
+
+3. Ask the assistant what is the latest release of Db2 for z/OS.
+   
+    <!--- begin-tab-group --->
+    === "Prompt"
+
+        ```
+        What is the latest release of Db2 for z/OS?
+        ```
+
+    === "Sample output"
+        ![](_attachments/db2-003a.png)
+    <!--- end-tab-group --->
+
+4. Ask the assistant what version of z/OS is required for Db2 v13.
+
+    <!--- begin-tab-group --->
+    === "Prompt"
+
+        ```
+        What version of z/OS does Db2 v13 run on?
+        ```
+
+    === "Sample output"
+        ![](_attachments/db2-004a.png)
+    <!--- end-tab-group --->
+
+5. Ask the assistant how to check the version of Db2 on an LPAR.
+   
+    <!--- begin-tab-group --->
+    === "Prompt"
+
+        ```
+        How do I check the Db2 for z/OS version on an LPAR using an operator command?
+        ```
+
+    === "Sample output"
+        ![](_attachments/db2-005a.png)
+    <!--- end-tab-group --->
+
+6. Ask the assistant if it can run the version check?
+   
+    <!--- begin-tab-group --->
+    === "Prompt"
+
+        ```
+        Can you run this command for me to check my version level?
+        ```
+
+    === "Sample output"
+        
+        !!! Quote "Speaker's script"
+
+            A skill is triggered to use an Ansible playbook that runs the referenced operator command to return the Db2 details. 
+
+        ![](_attachments/db2-006a.png)
+    <!--- end-tab-group --->
+
+7. Click **Apply**.
+
+    <!--- begin-tab-group --->
+    === "Sample input"
+
+        ![](_attachments/db2-006a2.png)
 
     === "Sample output"
     
+        !!! Quote "Speaker's script"
+
+            Here we see the skill has returned the version of Db2 running on the LPAR. 
+
         ![](_attachments/db2-006b.png)
     <!--- end-tab-group --->
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 7"
 
-    ```
-    How do I migrate from Db2 v12 to Db2 v13 on z/OS?
-    ```
+8. Ask the assistant how to migrate from one version of Db2 to another.
+   
+    <!--- begin-tab-group --->
+    === "Prompt"
 
-=== "Sample output"
-    ![](_attachments/db2-007a.png)
-<!--- end-tab-group --->
+        ```
+        How do I migrate from Db2 v12 to Db2 v13 on z/OS?
+        ```
+
+    === "Sample output"
+        ![](_attachments/db2-007a.png)
+    <!--- end-tab-group --->
+
 ## Cleanup steps
 None.

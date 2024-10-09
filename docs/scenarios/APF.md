@@ -17,83 +17,103 @@ None.
 
     Use the copy icon (![](_attachments/copyIcon.png)) to copy prompts from the demonstration guide and then paste the prompt into the Assistant using ++ctrl+v++ or right click and select ```Paste```.
 
-<!--- begin-tab-group --->
-=== "Prompt 1"
-
-    ```
-    What is the APF list in z/OS? Provide a detailed explanation.
-    ```
-
-=== "Sample output"
-    ![](_attachments/apf-001.png)
-<!--- end-tab-group --->
-
-!!! Quote ""
+1. Ask the assistant what the APF list is.
 
     <!--- begin-tab-group --->
-    === "Speaker's script"
-    
-        Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. If I expand the section **[expand]** we see the referenced sources that were used to build the answer. This illustrates just part of the explainable AI capabilities of watsonx.
-    
+    === "Prompt"
+
+        ```
+        What is the APF list in z/OS? Provide a detailed explanation?
+        ```
+
+    === "Sample output"
+        ![](_attachments/apf-001.png)
+    <!--- end-tab-group --->
+
+    !!! Quote "Speaker's script"
+
+        Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. 
+
+2. Expand the results.
+
+    !!! Quote "Speaker's script"
+
+        If I expand the section, we see the referenced sources that were used to build the answer. This illustrates just part of the explainable AI capabilities of watsonx. Click on any of the document tiles to illustrate the a source document.
+
+    <!--- begin-tab-group --->
+    === "Sample input"
+
+        ![](_attachments/apf-001a.png)
+
     === "Sample output"
     
         ![](_attachments/apf-001b.png)        
     <!--- end-tab-group --->
 
-<!--- begin-tab-group --->
-=== "Prompt 2"
-
-    ```
-    How do you update the APF list in z/OS?
-    ```
-=== "Sample output"
-
-    ![](_attachments/apf-002.png)
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 3"
-
-    ```
-    What is the parmlib member to update the APF list in z/OS?
-    ```
-
-=== "Sample output"
-
-    ![](_attachments/apf-003.png)
-
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 4"
+3. Ask the assistant how to update the APF list.
     
-    ```
-    What is the command to add PROD1.LOADLIB on volume PRD001 to the APF list?
-    ```
-    
-=== "Sample output"
+    <!--- begin-tab-group --->
+    === "Prompt"
 
-    ![](_attachments/apf-004a.png)
+        ```
+        How do you update the APF list in z/OS?
+        ```
+    === "Sample output"
+
+        ![](_attachments/apf-002.png)
 <!--- end-tab-group --->
-!!! Abstract "Follow-up steps"
+
+4. Ask the assistant what the parmlib membe to update the APF list. 
 
     <!--- begin-tab-group --->
-    === "Actions"
+    === "Prompt"
 
-        Following the response, you’ll be prompted by the assistant to run the proposed automation on your behalf. 
+        ```
+        What is the parmlib member to update the APF list in z/OS?
+        ```
+
+    === "Sample output"
+
+        ![](_attachments/apf-003.png)
+
+    <!--- end-tab-group --->
+
+5. Ask the assistant what is the command to add loadlib for a volume in the APF list.
+
+    <!--- begin-tab-group --->
+    === "Prompt"
     
-        1. Click **Yes**.
-        2. Click **Apply** to run the skill. 
-        
-            Note, there are no additional parameters to fill in the form, hence the *“Form is empty”* message. It will take about 30 seconds for the command to run.
+        ```
+        What is the command to add PROD1.LOADLIB on volume PRD001 to the APF list?
+        ```
+    
+    === "Sample output"
 
-        3. View the **cmd-response** field to verify the command was successful.
+        ![](_attachments/apf-004a.png)
 
+    <!--- end-tab-group --->
+
+6. Click **Yes** to run the command.
+   
+    ![](_attachments/apf-004a1.png)
+
+7. Click **Apply**
+
+    <!--- begin-tab-group --->
     === "Sample input"
-    
+
+        Note, there are no additional parameters to fill in the form, hence the *“Form is empty”* message.
+        
         ![](_attachments/apf-004b.png)
 
     === "Sample output"
-    
-        ![](_attachments/apf-004c.png)
+
+        !!! Quote "Speaker's script"
+
+            Notice the response for the command stating LOADLIB was added to the APF list.
+
+        ![](_attachments/apf-004c.png)           
     <!--- end-tab-group --->
+
 ## Cleanup steps
 None.

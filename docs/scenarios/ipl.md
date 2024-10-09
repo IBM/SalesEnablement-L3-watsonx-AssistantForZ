@@ -15,96 +15,120 @@ None.
 ??? Tip "Copy and paste the prompt"
 
     Use the copy icon (![](_attachments/copyIcon.png)) to copy prompts from the demonstration guide and then paste the prompt into the Assistant using ++ctrl+v++ or right click and select ```Paste```.
+
+1. Ask the assistant what happens during an IPL.
     
-<!--- begin-tab-group --->
-=== "Prompt 1"
+    <!--- begin-tab-group --->
+    === "Prompt"
 
-    ```
-    What happens during an IPL on IBM Z?
-    ```
+        ```
+        What happens during an IPL on IBM Z?
+        ```
 
-=== "Sample output"
-    ![](_attachments/ipl-001a.png)
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 2"
+    === "Sample output"
+        ![](_attachments/ipl-001a.png)
+    <!--- end-tab-group --->
 
-    ```
-    How to perform an IPL on IBM Z? Provide a step by step guidance.
-    ```
-
-=== "Sample output"
-    ![](_attachments/ipl-002a.png)
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 3"
-
-    ```
-    What is the IPL LOAD PARM for my running system and database?
-    ```
-
-=== "Sample output"
-    ![](_attachments/ipl-003a.png)
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 4"
-
-    ```
-    What is the operator command to find the IPL INFO for my system?
-    ```
-
-=== "Sample output"
-    ![](_attachments/ipl-004a.png)
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 5"
-
-    ```
-    Run command from operator console.
-    ```
-
-=== "Sample output"
-    ![](_attachments/ipl-005a.png)
-<!--- end-tab-group --->
-!!! Abstract "Follow-up steps"
+2. Ask the assistance how to perform an IPL.
 
     <!--- begin-tab-group --->
-    === "Actions"
+    === "Prompt 2"
 
-        A skill is triggered to execute an operator command on the LPAR.
-    
-        1. Complete the form using these values: 
-        
-            - **Field 1**: <*Leave the default value.*>
-            - **Field 2**: <*Leave the default value.*>
-            - **extra-vars.zos_operator_command_survey**: D IPLINFO
+        ```
+        How to perform an IPL on IBM Z? Provide a step by step guidance.
+        ```
 
-        2. Click **Apply**.
+    === "Sample output"
+        ![](_attachments/ipl-002a.png)
+    <!--- end-tab-group --->
 
-            Another form will return showing the corresponding **ID** for the previous job.
+3. Ask the assistant about the IPL LOAD PARM.
 
-        3. Click **Apply**.
+    <!--- begin-tab-group --->
+    === "Prompt"
+
+        ```
+        What is the IPL LOAD PARM for my running system and database?
+        ```
+
+    === "Sample output"
+        ![](_attachments/ipl-003a.png)
+    <!--- end-tab-group --->
+
+4. Ask the assistant what the command is to find information about the IPL for the system.
    
-            Review the output of the command, including **(a)** the last time the system was IPLed, the z/OS version, **(b)** the IPL LOAD PARM (LOADK2 member in SYS0.IPLPARM), and **(c)** the IPL boot volume (D25VS1).
-    
+    <!--- begin-tab-group --->
+    === "Prompt"
+
+        ```
+        What is the operator command to find the IPL INFO for my system?
+        ```
+
+    === "Sample output"
+        ![](_attachments/ipl-004a.png)
+    <!--- end-tab-group --->
+
+5. Ask the assistant to run the command.
+
+    <!--- begin-tab-group --->
+    === "Prompt"
+
+        ```
+        Run command from operator console.
+        ```
+
+    === "Sample output"
+
+        !!! Quote "Speaker's script"
+
+            A skill is triggered to execute an operator command on the LPAR.
+            
+        ![](_attachments/ipl-005a.png)
+    <!--- end-tab-group --->
+
+6. Enter ```D IPLINFO``` in the **extra-vars** entry field and click **Apply**.
+
+    <!--- begin-tab-group --->
     === "Sample input"
-    
+
         ![](_attachments/ipl-005b.png)
     
     === "Sample output"
-    
-        ![](_attachments/ipl-005c.png)
+
+        ![](_attachments/ipl-005b2.png)
+
     <!--- end-tab-group --->
-<!--- end-tab-group --->
-<!--- begin-tab-group --->
-=== "Prompt 6"
 
-    ```
-    What needs to be done after an IPL completes successfully? Provide a detailed answer.
-    ```
+7. Click **Apply**.
 
-=== "Sample output"
-    ![](_attachments/ipl-006a.png)
-<!--- end-tab-group --->
+    <!--- begin-tab-group --->
+    === "Sample input"
+
+        ![](_attachments/ipl-005c1.png)
+
+    === "Sample output"
+    
+        !!! Quote "Speaker's script"
+
+            In the output we see the last time the system was IPLed, the z/OS version, the IPL LOAD PARM (LOADK2 member in SYS0.IPLPARM), and the IPL boot volume (D25VS1).
+    
+        ![](_attachments/ipl-005c2.png)
+
+    <!--- end-tab-group --->
+
+8. Ask the assistant what needs to be done after an IPL finishes.
+    
+    <!--- begin-tab-group --->
+    === "Prompt"
+
+        ```
+        What needs to be done after an IPL completes successfully? Provide a detailed answer.
+        ```
+
+    === "Sample output"   
+
+        ![](_attachments/ipl-006a.png)
+    <!--- end-tab-group --->
+
 ## Cleanup steps
 None.
