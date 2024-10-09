@@ -1222,17 +1222,15 @@ Waiting for guidance.</p>
 <p>Use the copy icon (<img alt="" src="../scenarios/_attachments/copyIcon.png">) to copy prompts from the demonstration guide and then paste the prompt into the Assistant using <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-v">V</kbd></span> or right click and select <code>Paste</code>.</p>
 </details>
 <p>Using the virtual assistant:</p>
+<ol>
+<li>Prompt to create a certificate.</li>
+</ol>
 <!--- begin-tab-group --->
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="scenarios-certrenewal-setup-prompt" name="scenarios-certrenewal-__tabbed_1" type="radio"><input id="scenarios-certrenewal-sample-output" name="scenarios-certrenewal-__tabbed_1" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-setup-prompt">Setup prompt</label><label for="scenarios-certrenewal-sample-output">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<ol>
-<li>
-<p>Prompt to create a certificate.</p>
 <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#scenarios-certrenewal-__codelineno-0-1"></a>create cert
 </span></code></pre></div>
-</li>
-</ol>
 </div>
 <div class="tabbed-block">
 <p><img alt="" src="../scenarios/_attachments/cert-Setup001a.png"></p>
@@ -1240,34 +1238,43 @@ Waiting for guidance.</p>
 </div>
 </div>
 <!--- end-tab-group --->
-<div class="highlight"><pre><span></span><code>!!! Abstract "Follow-up steps"
-
-    &lt;!--- begin-tab-group ---&gt;
-    === "Actions"
-
-        1. Complete the form for the **z/OS Certs - Create Cert** skill.
-
-             - **Certificate Label**: &lt;*Enter a unique label of your choice, for example "yourNameCert". Record the name as it is needed later.*&gt;
-             - **CERT TYPE**: SITE
-             - **Expiration date**: &lt;*Enter an expiration date within the next 30 days.*&gt;
-             - **Common name**: &lt;*Enter a unique label of your choice, for example "company.com". Record the name as it is needed later. **Do NOT use test.com***&gt;
-             - **SIGN WITH**: CERTAUTH
-             - **SIGN LABEL**: TESTCA
-
-        2. Click **Apply**.
-
-    === "Sample input"
-
-        ![](_attachments/cert-Setup001b.png)
-    === "Sample output"
-
-        ![](_attachments/cert-Setup001c.png)
-    &lt;!--- end-tab-group ---&gt;
-</code></pre></div>
-<p>The new certificate should be create at this point (despite the last message status of <em>pending</em>).</p>
+<div class="admonition abstract">
+<p class="admonition-title">Follow-up steps</p>
+<!--- begin-tab-group --->
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked id="scenarios-certrenewal-actions" name="scenarios-certrenewal-__tabbed_2" type="radio"><input id="scenarios-certrenewal-sample-input" name="scenarios-certrenewal-__tabbed_2" type="radio"><input id="scenarios-certrenewal-sample-output_1" name="scenarios-certrenewal-__tabbed_2" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-actions">Actions</label><label for="scenarios-certrenewal-sample-input">Sample input</label><label for="scenarios-certrenewal-sample-output_1">Sample output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol start="2">
+<li>
+<p>Complete the form for the <strong>z/<abbr title="Operating System">OS</abbr> Certs - Create Cert</strong> skill.</p>
+<ul>
+<li><strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "yourNameCert". Record the name as it is needed later.</em>&gt;</li>
+<li><strong>CERT TYPE</strong>: SITE</li>
+<li><strong>Expiration date</strong>: &lt;<em>Enter an expiration date within the next 30 days.</em>&gt;</li>
+<li><strong>Common name</strong>: &lt;<em>Enter a unique label of your choice, for example "company.com". Record the name as it is needed later. </em><em>Do NOT use test.com</em>**&gt;</li>
+<li><strong>SIGN WITH</strong>: CERTAUTH</li>
+<li><strong>SIGN LABEL</strong>: TESTCA</li>
+</ul>
+</li>
+<li>
+<p>Click <strong>Apply</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../scenarios/_attachments/cert-Setup001b.png"></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="" src="../scenarios/_attachments/cert-Setup001c.png"></p>
+</div>
+</div>
+</div>
+<!--- end-tab-group --->
+</div>
+<p>The new certificate is created (despite the last message status of <em>pending</em>).</p>
 <h2 id="scenarios-certrenewal-prompts-and-sample-outputs">Prompts and sample outputs</h2>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="scenarios-certrenewal-prompt-1" name="scenarios-certrenewal-__tabbed_2" type="radio"><input id="scenarios-certrenewal-sample-output_1" name="scenarios-certrenewal-__tabbed_2" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-prompt-1">Prompt 1</label><label for="scenarios-certrenewal-sample-output_1">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="scenarios-certrenewal-prompt-1" name="scenarios-certrenewal-__tabbed_3" type="radio"><input id="scenarios-certrenewal-sample-output_2" name="scenarios-certrenewal-__tabbed_3" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-prompt-1">Prompt 1</label><label for="scenarios-certrenewal-sample-output_2">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#scenarios-certrenewal-__codelineno-1-1"></a>I have a SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
@@ -1282,7 +1289,7 @@ Waiting for guidance.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Follow-up steps</p>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked id="scenarios-certrenewal-actions" name="scenarios-certrenewal-__tabbed_3" type="radio"><input id="scenarios-certrenewal-sample-input" name="scenarios-certrenewal-__tabbed_3" type="radio"><input id="scenarios-certrenewal-sample-output_2" name="scenarios-certrenewal-__tabbed_3" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-actions">Actions</label><label for="scenarios-certrenewal-sample-input">Sample input</label><label for="scenarios-certrenewal-sample-output_2">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked id="scenarios-certrenewal-actions_1" name="scenarios-certrenewal-__tabbed_4" type="radio"><input id="scenarios-certrenewal-sample-input_1" name="scenarios-certrenewal-__tabbed_4" type="radio"><input id="scenarios-certrenewal-sample-output_3" name="scenarios-certrenewal-__tabbed_4" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-actions_1">Actions</label><label for="scenarios-certrenewal-sample-input_1">Sample input</label><label for="scenarios-certrenewal-sample-output_3">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Following the response, the assistant will prompt if you want to retrieve the certificate details. </p>
@@ -1316,7 +1323,7 @@ Waiting for guidance.</p>
 <!--- end-tab-group --->
 </div>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked id="scenarios-certrenewal-prompt-2" name="scenarios-certrenewal-__tabbed_4" type="radio"><input id="scenarios-certrenewal-sample-output_3" name="scenarios-certrenewal-__tabbed_4" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-prompt-2">Prompt 2</label><label for="scenarios-certrenewal-sample-output_3">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked id="scenarios-certrenewal-prompt-2" name="scenarios-certrenewal-__tabbed_5" type="radio"><input id="scenarios-certrenewal-sample-output_4" name="scenarios-certrenewal-__tabbed_5" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-prompt-2">Prompt 2</label><label for="scenarios-certrenewal-sample-output_4">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#scenarios-certrenewal-__codelineno-2-1"></a>What are the steps to renew a certificate on z/OS?
@@ -1331,7 +1338,7 @@ Waiting for guidance.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Follow-up steps</p>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked id="scenarios-certrenewal-actions_1" name="scenarios-certrenewal-__tabbed_5" type="radio"><input id="scenarios-certrenewal-sample-input_1" name="scenarios-certrenewal-__tabbed_5" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-actions_1">Actions</label><label for="scenarios-certrenewal-sample-input_1">Sample input</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="scenarios-certrenewal-actions_2" name="scenarios-certrenewal-__tabbed_6" type="radio"><input id="scenarios-certrenewal-sample-input_2" name="scenarios-certrenewal-__tabbed_6" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-actions_2">Actions</label><label for="scenarios-certrenewal-sample-input_2">Sample input</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Following the response, the assistant will prompt if you want to run the certificate renewal skill. </p>
@@ -1367,7 +1374,7 @@ Waiting for guidance.</p>
 </div>
 <!--- end-tab-group --->
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="scenarios-certrenewal-prompt-3" name="scenarios-certrenewal-__tabbed_6" type="radio"><input id="scenarios-certrenewal-sample-output_4" name="scenarios-certrenewal-__tabbed_6" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-prompt-3">Prompt 3</label><label for="scenarios-certrenewal-sample-output_4">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked id="scenarios-certrenewal-prompt-3" name="scenarios-certrenewal-__tabbed_7" type="radio"><input id="scenarios-certrenewal-sample-output_5" name="scenarios-certrenewal-__tabbed_7" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-prompt-3">Prompt 3</label><label for="scenarios-certrenewal-sample-output_5">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#scenarios-certrenewal-__codelineno-3-1"></a>Get my certificate details.
@@ -1382,7 +1389,7 @@ Waiting for guidance.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Follow-up steps</p>
 <!--- begin-tab-group --->
-<div class="tabbed-set tabbed-alternate" data-tabs="7:3"><input checked id="scenarios-certrenewal-actions_2" name="scenarios-certrenewal-__tabbed_7" type="radio"><input id="scenarios-certrenewal-sample-input_2" name="scenarios-certrenewal-__tabbed_7" type="radio"><input id="scenarios-certrenewal-sample-output_5" name="scenarios-certrenewal-__tabbed_7" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-actions_2">Actions</label><label for="scenarios-certrenewal-sample-input_2">Sample input</label><label for="scenarios-certrenewal-sample-output_5">Sample output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:3"><input checked id="scenarios-certrenewal-actions_3" name="scenarios-certrenewal-__tabbed_8" type="radio"><input id="scenarios-certrenewal-sample-input_3" name="scenarios-certrenewal-__tabbed_8" type="radio"><input id="scenarios-certrenewal-sample-output_6" name="scenarios-certrenewal-__tabbed_8" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-actions_3">Actions</label><label for="scenarios-certrenewal-sample-input_3">Sample input</label><label for="scenarios-certrenewal-sample-output_6">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Again, a skill is run to retrieve your certificate details following the renewal. </p>
