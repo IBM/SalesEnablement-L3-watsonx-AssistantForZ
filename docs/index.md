@@ -53,7 +53,7 @@ Use these helpful tips to take full advantage of the {{guide.name}}.
 
     The **Print Demonstration Guide** link in the table of contents opens a new page with the entire {{guide.name}} seen as a single page. This page can be used to print the demonstration guide or save it as a PDF using the browser's print capability.
 
-??? tip "Embedded images"
+??? tip "Image highlighting"
 
     In some images, the following styles of highlighting are used:
 
@@ -63,10 +63,14 @@ Use these helpful tips to take full advantage of the {{guide.name}}.
     - **Dash highlight box**: This style of box highlights one of two things: the path to follow to get to a specific location in the user interface, or areas to explore on your own.
     ![](_attachments/welcome-2.png)
 
+??? tip "Copying commands and prompts"
+
     <!-- - **Copy to the clipboard**: The text is copied to the clipboard. Click the copy icon (highlighted) and then use the operating system paste function. For example, entering ```Ctrl+v```, ```Cmd+v```, or right-click and select ```Paste```.
     ![](_attachments/welcome-3.png) -->
 
-    - **Copy to the clipboard**: The text is copied to the clipboard. Click the copy icon (highlighted) and then use the operating system paste function. For example, ++ctrl+v++, or right-click and select ```Paste```.
+    Copying commands and prompts from the demonstration guide is easy and can eliminate typographical errors.
+
+    Click the copy icon (highlighted) and then use your operating system's paste function. For example, ++ctrl+v++, or right-click and select ```Paste```.
     ![](_attachments/welcome-3.png)
 
 ??? tip "Acronyms and terminology"
