@@ -682,13 +682,13 @@ Waiting for guidance.</p>
 <p>Using the virtual assistant:</p>
 <ol>
 <li>
-<p>Prompt to create a certificate.
-    <!--- begin-tab-group --->
-    === "Setup prompt"</p>
-<div class="highlight"><pre><span></span><code>create cert
-</code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked id="sample-output" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="sample-output">Sample output</label></div>
+<p>Create a certificate.</p>
+<!--- begin-tab-group --->
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="setup-prompt" name="__tabbed_1" type="radio"><input id="sample-output" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="setup-prompt">Setup prompt</label><label for="sample-output">Sample output</label></div>
 <div class="tabbed-content">
+<div class="tabbed-block">
+<p>create cert</p>
+</div>
 <div class="tabbed-block">
 <p><img alt="" src="../_attachments/cert-Setup001a.png"></p>
 </div>
@@ -697,18 +697,20 @@ Waiting for guidance.</p>
 <!--- end-tab-group --->
 </li>
 <li>
-<p>Complete the form for the <strong>z/<abbr title="Operating System">OS</abbr> Certs - Create Cert</strong> skill and click <strong>Apply</strong>.
-    <!--- begin-tab-group --->
-    === "Actions"</p>
-<div class="highlight"><pre><span></span><code>- **Certificate Label**: &lt;*Enter a unique label of your choice, for example "yourNameCert". Record the name as it is needed later.*&gt;
-- **CERT TYPE**: SITE
-- **Expiration date**: &lt;*Enter an expiration date within the next 30 days.*&gt;
-- **Common name**: &lt;*Enter a unique label of your choice, for example "company.com". Record the name as it is needed later. **Do NOT use test.com***&gt;
-- **SIGN WITH**: CERTAUTH
-- **SIGN LABEL**: TESTCA
-</code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="sample-input" name="__tabbed_2" type="radio"><input id="sample-output_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="sample-input">Sample input</label><label for="sample-output_1">Sample output</label></div>
+<p>Complete the form for the <strong>z/<abbr title="Operating System">OS</abbr> Certs - Create Cert</strong> skill and click <strong>Apply</strong>.</p>
+<!--- begin-tab-group --->
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked id="input-values" name="__tabbed_2" type="radio"><input id="sample-input" name="__tabbed_2" type="radio"><input id="sample-output_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="input-values">Input values</label><label for="sample-input">Sample input</label><label for="sample-output_1">Sample output</label></div>
 <div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "yourNameCert". Record the name as it is needed later.</em>&gt;</li>
+<li><strong>CERT TYPE</strong>: SITE</li>
+<li><strong>Expiration date</strong>: &lt;<em>Enter an expiration date within the next 30 days.</em>&gt;</li>
+<li><strong>Common name</strong>: &lt;<em>Enter a unique label of your choice, for example "company.com". Record the name as it is needed later. </em><em>Do NOT use test.com</em>**&gt;</li>
+<li><strong>SIGN WITH</strong>: CERTAUTH</li>
+<li><strong>SIGN LABEL</strong>: TESTCA   </li>
+</ul>
+</div>
 <div class="tabbed-block">
 <p><img alt="" src="../_attachments/cert-Setup001b.png"></p>
 </div>
