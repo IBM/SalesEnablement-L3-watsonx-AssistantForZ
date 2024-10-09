@@ -1,9 +1,4 @@
-# Scenario: Certificate renewal
-!!! Bug "This scenario not working as documented!"
-
-    As of 09/26/2024, when performing this scenario all submitted jobs seem to be stuck in a *pending* state.
-    Waiting for guidance.
-    
+# Scenario: Certificate renewal 
 ## Scenario overview
 
 !!! Quote "Speaker's script"
@@ -80,7 +75,7 @@ The new certificate is created (despite the last message status of *pending*).
     === "Input values"
    
         - **CERT LABEL**: <*Enter the unique label of the certificate created in the setup steps.*>
-        - **CERT TYPE**: SITE
+        - **CERT TYPE**: ```SITE```
     === "Sample input"
 
         ![](_attachments/cert-001b.png)
@@ -103,28 +98,26 @@ The new certificate is created (despite the last message status of *pending*).
     <!--- end-tab-group --->
 
 5. Click **Yes** to run the certificate renewal skill.
-6. Complete the form to renew the certificate and click **Apply** twice.
+6. Complete the form to renew the certificate and click **Apply**.
 
     <!--- begin-tab-group --->
     === "Input values"
 
         - **CERT LABEL**: <*Enter the unique label of the certificate created in the setup steps.*>           
-        - **CERT TYPE**: SITE
-        - **SIGN WITH**: CERTAUTH
-        - **SIGN LABEL**: TESTCA
+        - **CERT TYPE**: ```SITE```
+        - **SIGN WITH**: ```CERTAUTH```
+        - **SIGN LABEL**: ```TESTCA```
         - **extra_vars.new_expiry_date_survey**: <*Enter an expiration date on year from today.*>
 
     === "Sample input"
     
         ![](_attachments/cert-002b.png)
-        ![](_attachments/cert-002c.png)
-
     === "Sample output"
 
         No output is returned.
     <!--- end-tab-group --->
 
-7. Verify the renewal occurred.
+7. Retrieve the certificate and verify the date was changed.
     
     <!--- begin-tab-group --->
     === "Prompt"
@@ -143,7 +136,7 @@ The new certificate is created (despite the last message status of *pending*).
     === "Input values"
    
         - **CERT LABEL**: <*Enter the unique label of the certificate created in the setup steps.*>
-        - **CERT TYPE**: SITE
+        - **CERT TYPE**: ```SITE```
     === "Sample input"
 
         ![](_attachments/cert-003b.png)
@@ -177,7 +170,7 @@ Using the virtual assistant:
     === "Input values"
 
         - **CERT LABEL**: <*Enter the original certificate label that you created.*>
-        - **CERT TYPE**: SITE 
+        - **CERT TYPE**: ```SITE```
     === "Sample input"
 
         ![](_attachments/cert-Delete001b.png)
