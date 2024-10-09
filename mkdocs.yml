@@ -91,6 +91,7 @@ plugins:
         include_css: true
         enabled: true
         exclude:
+          - printInstructions.md
 
 markdown_extensions:
   - toc:
