@@ -1201,11 +1201,6 @@
 <p>None.</p>
 <!-- Terminology -->
 <!-- Keep the list alphabetized for easy deduplication --></div></section><section class="print-page" id="scenarios-certrenewal"><div><h1 id="scenario-certificate-renewal">Scenario: Certificate renewal</h1>
-<div class="admonition bug">
-<p class="admonition-title">This scenario not working as documented!</p>
-<p>As of 09/26/2024, when performing this scenario all submitted jobs seem to be stuck in a <em>pending</em> state.
-Waiting for guidance.</p>
-</div>
 <h2 id="scenarios-certrenewal-scenario-overview">Scenario overview</h2>
 <div class="admonition quote">
 <p class="admonition-title">Speaker's script</p>
@@ -1295,7 +1290,7 @@ Waiting for guidance.</p>
 <div class="tabbed-block">
 <ul>
 <li><strong>CERT LABEL</strong>: &lt;<em>Enter the unique label of the certificate created in the setup steps.</em>&gt;</li>
-<li><strong>CERT TYPE</strong>: SITE</li>
+<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
 </ul>
 </div>
 <div class="tabbed-block">
@@ -1328,22 +1323,21 @@ Waiting for guidance.</p>
 <p>Click <strong>Yes</strong> to run the certificate renewal skill.</p>
 </li>
 <li>
-<p>Complete the form to renew the certificate and click <strong>Apply</strong> twice.</p>
+<p>Complete the form to renew the certificate and click <strong>Apply</strong>.</p>
 <!--- begin-tab-group --->
 <div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked id="scenarios-certrenewal-input-values_2" name="scenarios-certrenewal-__tabbed_6" type="radio"><input id="scenarios-certrenewal-sample-input_2" name="scenarios-certrenewal-__tabbed_6" type="radio"><input id="scenarios-certrenewal-sample-output_5" name="scenarios-certrenewal-__tabbed_6" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-input-values_2">Input values</label><label for="scenarios-certrenewal-sample-input_2">Sample input</label><label for="scenarios-certrenewal-sample-output_5">Sample output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
 <li><strong>CERT LABEL</strong>: &lt;<em>Enter the unique label of the certificate created in the setup steps.</em>&gt;           </li>
-<li><strong>CERT TYPE</strong>: SITE</li>
-<li><strong>SIGN WITH</strong>: CERTAUTH</li>
-<li><strong>SIGN LABEL</strong>: TESTCA</li>
+<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
+<li><strong>SIGN WITH</strong>: <code>CERTAUTH</code></li>
+<li><strong>SIGN LABEL</strong>: <code>TESTCA</code></li>
 <li><strong>extra_vars.new_expiry_date_survey</strong>: &lt;<em>Enter an expiration date on year from today.</em>&gt;</li>
 </ul>
 </div>
 <div class="tabbed-block">
-<p><img alt="" src="../scenarios/_attachments/cert-002b.png">
-<img alt="" src="../scenarios/_attachments/cert-002c.png"></p>
+<p><img alt="" src="../scenarios/_attachments/cert-002b.png"></p>
 </div>
 <div class="tabbed-block">
 <p>No output is returned.</p>
@@ -1353,7 +1347,7 @@ Waiting for guidance.</p>
 <!--- end-tab-group --->
 </li>
 <li>
-<p>Verify the renewal occurred.</p>
+<p>Retrieve the certificate and verify the date was changed.</p>
 <!--- begin-tab-group --->
 <div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked id="scenarios-certrenewal-prompt_3" name="scenarios-certrenewal-__tabbed_7" type="radio"><input id="scenarios-certrenewal-sample-output_6" name="scenarios-certrenewal-__tabbed_7" type="radio"><div class="tabbed-labels"><label for="scenarios-certrenewal-prompt_3">Prompt</label><label for="scenarios-certrenewal-sample-output_6">Sample output</label></div>
 <div class="tabbed-content">
@@ -1376,7 +1370,7 @@ Waiting for guidance.</p>
 <div class="tabbed-block">
 <ul>
 <li><strong>CERT LABEL</strong>: &lt;<em>Enter the unique label of the certificate created in the setup steps.</em>&gt;</li>
-<li><strong>CERT TYPE</strong>: SITE</li>
+<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
 </ul>
 </div>
 <div class="tabbed-block">
@@ -1418,7 +1412,7 @@ Waiting for guidance.</p>
 <div class="tabbed-block">
 <ul>
 <li><strong>CERT LABEL</strong>: &lt;<em>Enter the original certificate label that you created.</em>&gt;</li>
-<li><strong>CERT TYPE</strong>: SITE </li>
+<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
 </ul>
 </div>
 <div class="tabbed-block">
