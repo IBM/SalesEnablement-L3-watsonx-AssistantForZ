@@ -75,7 +75,7 @@ None.
 === "Prompt 2"
 
     ```
-    How to Check prerequisite APARs or PTFs when applying maintenance to a z/OS system? Provide a detailed response.
+    How to check prerequisite APARs or PTFs when applying maintenance to a z/OS system? Provide a detailed response.
     ```
 <!--- end-tab-group --->
 <!--- begin-tab-group --->

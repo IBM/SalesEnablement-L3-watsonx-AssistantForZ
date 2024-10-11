@@ -2,7 +2,7 @@
 Whether for a client, a session at a conference, or performing your Stand and Deliver, preparation for a demonstration is critical. Included are both general demonstration guidance and helpful tips for using {{offering.name}} and the IBM Technology Zone (ITZ) environment that is associated with the {{learningplan.name}} learning plan.
 
 ## General demonstration guidance
-Knowing the audience that you are presenting to is critical. Having a basic understanding of a client's business and their challenges enables you to customize the conversation so it resonates with the audience. It is also important to understand the roles of the individuals in the audience to know the at what level of technical detail to present.
+Knowing the audience that you are presenting to is critical. Having a basic understanding of a client's business and their challenges enables you to customize the conversation, so it resonates with the audience. It is also important to understand the roles of the individuals in the audience to know at what level of technical detail to present.
 
 In addition, it is always a good idea to:
 

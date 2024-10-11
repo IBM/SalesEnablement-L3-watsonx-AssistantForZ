@@ -42,7 +42,7 @@ Follow these steps to create a reservation in ITZ.
 ## Extend the reservation
 The ITZ provisioning process takes approximately 15 minutes. Multiple emails are sent from ITZ as the provisioning process runs. One email states the reservation is provisioning and the other email states that the environment is **Ready**. 
 
-In rare cases, the provisioning process may fail. If you receive and email stating the reservation failed, try again by repeating steps 1-3.
+In rare cases, the provisioning process may fail. If you receive an email stating the reservation failed, try again by repeating steps 1-3.
 
 When the reservation is in the **Ready** state, you can extend the reservation to a total of 6 days. Remember, IBM sellers need the environment to record their Stand and Deliver, and Business Partners need the environment to answer quiz questions.
 
