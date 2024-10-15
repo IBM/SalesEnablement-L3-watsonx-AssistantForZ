@@ -28,6 +28,6 @@ Each scenario overview is written as if they are being presented to the client v
 
     Let's get started.
 
-Other **Speaker's scripts** are included in some scenarios for some prompts.
+Other **Speaker's scripts** are included in some scenarios for some prompts. The sample client demonstration video also provides additional talking points for the Db2 and certificate renewal scenarios.
 
 When you plan your demonstration, choose the scenarios that best fit the client's requirements.

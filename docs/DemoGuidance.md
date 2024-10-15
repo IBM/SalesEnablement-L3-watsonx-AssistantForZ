@@ -20,6 +20,7 @@ And, most importantly, practice, practice, and practice.
 ## Specific guidance for {{offering.name}} and the ITZ environment
 Following the scripts that are provided in the {{guide.name}} helps assure a successful demonstration. Use these tips to help assure success with {{offering.name}} and the ITZ environment:
 
+- While running many of the automated skills of {{offering.name}}, there will be times when the responses take 30 to 45 seconds to complete. You should be prepared to fill these wait times with some type of commentary. During these wait periods consider explaining in more detail what is being performed in the background, values of the automation, general values of the offering, or answering questions the client may have. 
 - Google Chrome is the recommended browser for this environment. Some users have experienced intermittent errors with running some of the skills when using other browsers.
 - Run all prerequisites steps before the presentation. Prerequisite steps are described with each demonstration scenario.
 - Anticipate different responses from the scripted queries. The ITZ environment is a live and changing demonstration environment. Responses are subject to change as updates are made to the large language model (LLM) and retrieval augmented generation (RAG) used by {{offering.name}}.
