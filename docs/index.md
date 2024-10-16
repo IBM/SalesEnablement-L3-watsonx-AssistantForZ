@@ -45,6 +45,11 @@ Use these helpful tips to take full advantage of the {{guide.name}}.
 
     A ready-to-print PDF version of the {{guide.name}} is <a href="_pdf/IBM%20watsonx%20Assistant%20for%20Z%20Demonstration%20Guide.pdf" target="_blank">here</a>. 
 
+??? tip "Viewing images"
+
+    Images in the demonstration guide can be enlarged by clicking on the image. Click the image below to enlarge. Press the ++esc++ key to dismiss the enlarged image.
+ 
+    ![](_attachments/testImage.png)
 
 ??? tip "Image highlighting"
 
