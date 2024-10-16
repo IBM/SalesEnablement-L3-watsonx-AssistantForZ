@@ -23,12 +23,13 @@ None.
 
     **Prompt:**
 
-        ```
-        What is the APF list in z/OS? Provide a detailed explanation?
-        ```
+    ```
+    What is the APF list in z/OS? Provide a detailed explanation?
+    ```
 
     **Example output:**
-        ![](_attachments/apf-001.png)
+
+    ![](_attachments/apf-001.png)
 
     !!! Quote "Speaker's script"
 
@@ -36,13 +37,11 @@ None.
 
 2. Expand the results.
 
-    **Prompt:**
-
-        ![](_attachments/apf-001a.png)
+    ![](_attachments/apf-001a.png)
 
     **Example output:**
     
-        ![](_attachments/apf-001b.png)        
+    ![](_attachments/apf-001b.png)        
 
     !!! Quote "Speaker's script"
 
@@ -52,36 +51,37 @@ None.
     
     **Prompt:**
 
-        ```
-        How do you update the APF list in z/OS?
-        ```
+    ```
+    How do you update the APF list in z/OS?
+    ```
+    
     **Example output:**
 
-        ![](_attachments/apf-002.png)
+    ![](_attachments/apf-002.png)
 
 4. Ask the assistant what the parmlib member to update the APF list. 
 
     **Prompt:**
 
-        ```
-        What is the parmlib member to update the APF list in z/OS?
-        ```
+    ```
+    What is the parmlib member to update the APF list in z/OS?
+    ```
 
     **Example output:**
 
-        ![](_attachments/apf-003.png)
+    ![](_attachments/apf-003.png)
 
 5. Ask the assistant what is the command to add loadlib for a volume in the APF list.
 
     **Prompt:**
     
-        ```
-        What is the command to add PROD1.LOADLIB on volume PRD001 to the APF list?
-        ```
+    ```
+    What is the command to add PROD1.LOADLIB on volume PRD001 to the APF list?
+    ```
     
     **Example output:**
 
-        ![](_attachments/apf-004a.png)
+    ![](_attachments/apf-004a.png)
 
 6. Click **Yes** to run the command.
    
@@ -89,19 +89,17 @@ None.
 
 7. Click **Apply**
 
-    **Prompt:**
+    Note, there are no additional parameters to fill in the form, hence the *“Form is empty”* message.
 
-        Note, there are no additional parameters to fill in the form, hence the *“Form is empty”* message.
-        
-        ![](_attachments/apf-004b.png)
+    ![](_attachments/apf-004b.png)
 
     **Example output:**
 
-        !!! Quote "Speaker's script"
+    ![](_attachments/apf-004c.png)           
 
-            Notice the response for the command stating LOADLIB was added to the APF list.
+    !!! Quote "Speaker's script"
 
-        ![](_attachments/apf-004c.png)           
+        Notice the response for the command stating LOADLIB was added to the APF list.
 
 ## Cleanup steps
 None.
