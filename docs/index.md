@@ -15,7 +15,7 @@ Other aspects of {{offering.name}} including creating and configuring assistants
     Business Partners, keep the demonstration guide and ITZ environment active while you take the quiz. 
 
     IBM technical sellers, keep the demonstration guide and ITZ environment active until you complete your Stand and Deliver.
-
+<div style="page-break-after: always;"></div>
 ## Support
 Think something is down? Check the applicable status pages for any known issues like a site or service not available:
 
@@ -33,25 +33,18 @@ For issues related to specific steps found in the demonstration guide after the 
 - Email: <a href="mailto:{{supportEmail}}" target="_blank">{{supportEmail}}</a>
 
 Business Partners, use the IBM Training live Chat Support service or other support methods that are found on the IBM Training portal <a href="https://ibmcpsprod.service-now.com/its?id=sc_category&sys_id=6568bfafdb2f13008ea7d6fa4b961990" target="_blank">here</a>.
-
+<div style="page-break-after: always;"></div>
 ## Using the demonstration guide
 Use these helpful tips to take full advantage of the {{guide.name}}.
 
-??? tip "The **Demonstration Guide** user interface"
+??? tip "Printing the demonstration guide"
 
-    This **Demonstration Guide** uses a reactive browser-based interface. The Demonstration Guide table of contents may be displayed as highlighted in the green dashed box in this image:
+    !!! Warning "Printed or saved copies can be out of date"
 
-    ![](_attachments/demoGuide1.png)
+        The {{guide.name}} changes regularly to match the {{offering.name}} offering and associated ITZ environment. Printed or saved copies of the demonstration guide can become out-of-date quickly and result in failed steps. 
 
-    However, if the browser window is sized smaller, the table of contents is accessible by clicking the main menu icon (![](_attachments/MainMenuIcon.png)) (highlighted by solid green box):
+    A ready-to-print PDF version of the {{guide.name}} is <a href="" target="_blank">here</a>. 
 
-    ![](_attachments/demoGuide2.png)
-
-    Click the main menu icon (![](_attachments/MainMenuIcon.png)) to expand the table of contents.
-
-    ![](_attachments/demoGuide3.png)
-
-    The **Print Demonstration Guide** link in the table of contents opens a new page with the entire {{guide.name}} seen as a single page. This page can be used to print the demonstration guide or save it as a PDF using the browser's print capability.
 
 ??? tip "Image highlighting"
 
@@ -78,4 +71,20 @@ Use these helpful tips to take full advantage of the {{guide.name}}.
     IBM employees, and the tech industry in general, enjoy using acronyms. In the demonstration guide, most acronyms will appear with a dashed underline. Hover over the acronym to learn its meaning. A question mark (![](_attachments/questionIcon.png)) icon will first appear and after a second the tool tip with the acronym's meaning is displayed. Try it here: LPAR. 
 
     ![](_attachments/acronymHelp.png)
+
+??? tip "The **Demonstration Guide** table of contents"
+
+    This **Demonstration Guide** uses a reactive browser-based interface. The Demonstration Guide table of contents may be displayed as highlighted in the green dashed box in this image:
+
+    ![](_attachments/demoGuide1a.png)
+
+    However, if the browser window is sized smaller, the table of contents is accessible by clicking the main menu icon (![](_attachments/MainMenuIcon.png)):
+
+    ![](_attachments/demoGuide2b.png)
+
+    Click the main menu icon (![](_attachments/MainMenuIcon.png)) to expand the table of contents.
+
+    <!-- ![](_attachments/demoGuide3.png) -->
+
+
 

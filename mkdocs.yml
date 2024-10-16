@@ -71,6 +71,7 @@ plugins:
     - mkdocs-video
     - macros
     - search
+    - glightbox
     - literate-nav:
         nav_file: nav.md
     - print-site:
@@ -82,7 +83,7 @@ plugins:
         toc_title: 'Table of Contents'
         toc_depth: 6
         # Content-related
-        add_full_urls: true
+        add_full_urls: false
         enumerate_headings: false
         enumerate_figures: false
         add_cover_page: true
@@ -91,7 +92,7 @@ plugins:
         include_css: true
         enabled: true
         exclude:
-          # - printInstructions.md
+          - printInstructions.md
 
 markdown_extensions:
   - toc:

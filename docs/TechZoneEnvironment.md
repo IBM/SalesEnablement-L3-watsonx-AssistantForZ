@@ -39,6 +39,8 @@ Follow these steps to create a reservation in ITZ.
 
     ![](_attachments/itzRSVPReservationPage.png)
 
+<div style="page-break-after: always;"></div>
+
 ## Extend the reservation
 The ITZ provisioning process takes approximately 15 minutes. Multiple emails are sent from ITZ as the provisioning process runs. One email states the reservation is provisioning and the other email states that the environment is **Ready**. 
 
@@ -60,6 +62,8 @@ When the reservation is in the **Ready** state, you can extend the reservation t
 
 If you anticipate needing more time, repeat steps 5 and 6 to extend the reservation to the maximum of 6 days.
 
+<div style="page-break-after: always;"></div>
+
 ## Access the environment
 Access to the {{offering.name}} demonstration environment is provided through a web interface to a fictitious company's intranet website.
 
@@ -74,6 +78,7 @@ Access to the {{offering.name}} demonstration environment is provided through a 
     !!! Warning "You may be prompted to authenticate"
 
         In some instances, you may be prompted to authenticate when attempting to access the **Open our IBM Cloud environment** link. Use the same IBM ID and password used to reserve the ITZ environment.
+<div style="page-break-after: always;"></div>
         
 ## The demonstration portal page
 The demonstration portal page provides two ways of accessing the {{offering.name}} virtual assistant. 
@@ -86,10 +91,13 @@ The first method is to use the assistant chat icon that appears at the lower rig
     ![](_attachments/chatIcon.png)
 
 This action opens the virtual assistant on the current browser page as a pop-up dialog. This provides an integrated view of the web page and the virtual assistant dialog; however, the dialog is small for giving a demonstration if the audience is expected to read the output.
+<div style="page-break-after: always;"></div>
 
 10.  Close the **Virtual Assistant** dialog.
 
     ![](_attachments/closeVA.png)
+
+<div style="page-break-after: always;"></div>
 
 ### The full page virtual assistant
 The second user interface available for the virtual assistant is a full browser page experience.
@@ -98,11 +106,8 @@ The second user interface available for the virtual assistant is a full browser 
 
     ![](_attachments/techBotFS.png)
 
-    The full-page virtual assistant interface opens in a new browser window or tab.
-
-    ![](_attachments/fullpageTechBotFS.png)
-
-    The full-page virtual assistant interface is used for all screen captures in later chapters.
+    The full-page virtual assistant interface opens in a new browser window or tab. The full-page virtual assistant interface is used for all screen captures in later chapters.
+<div style="page-break-after: always;"></div>
 
 ### Using the virtual assistant
 Enter a query into the field and press ++return++ or click the send icon (![](_attachments/sendIcon.png)).

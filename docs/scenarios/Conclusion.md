@@ -1,4 +1,4 @@
-# Scenario: Conclusion
+# Scenarios: Conclusion
 As mentioned in the demonstration guidance chapter, it is important to conclude your demonstration with a call to action.
 
 !!! Quote "Speaker's script"

@@ -12,6 +12,8 @@
 
 ## Prerequisite steps
 None.
+<div style="page-break-after: always;"></div>
+
 ## Prompts and sample outputs
 !!! Tip "Copy and paste the prompt"
 
