@@ -3,7 +3,7 @@
 
 There are many other queries that an early tenure IBM Z systems programmer may ask. The {{offering.name}} experts created a few more.
 
-**Sample outputs for these prompts are not provided.**
+**Example outputs for these prompts are not provided.**
 
 ## Prerequisite steps
 None.

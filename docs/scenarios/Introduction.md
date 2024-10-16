@@ -3,7 +3,7 @@ Experts created a set of scenarios that illustrate the domain-specific knowledge
 
 - A brief overview of the scenario.
 - Any prerequisite or setup steps necessary for the scenario to work in the demonstration environment.
-- A list of queries and sample output that illustrate the scenario.
+- A list of queries and Example output that illustrate the scenario.
 - Any cleanup steps that must be run after the scenario.
 
 !!! Warning "Responses from the virtual assistant are likely to change"

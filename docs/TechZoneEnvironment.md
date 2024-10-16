@@ -11,7 +11,7 @@ Follow these steps to create a reservation in ITZ.
 
     !!! Warning "You may be asked to authenticate to IBM Technology Zone"
 
-        These steps are not detailed here.
+        The steps to authenticate to ITZ are not detailed here as they may vary between users.
 
     <a href="{{itz.environment}}" target="_blank">{{itz.collectionName}} - reservation page</a>
 
