@@ -49,7 +49,7 @@ Use these helpful tips to take full advantage of the {{guide.name}}.
 
     Images in the demonstration guide can be enlarged by clicking on the image. Click the image below to enlarge. Press the ++esc++ key or click the **X** to dismiss the enlarged image.
  
-    ![](_attachments/testImage.png)
+    ![](_attachments/testImage2.png)
 
 ??? tip "Image highlighting"
 
