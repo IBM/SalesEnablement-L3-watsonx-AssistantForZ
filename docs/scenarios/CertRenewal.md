@@ -73,7 +73,7 @@ The new certificate is created (despite the last message status of *pending*).
     <!--- end-tab-group --->
 
 2. Click **Yes** to retrieve the certificate details.
-3. Complete the form with the certificate label and type (use the same values as specified in the prerequisite steps) and click **Apply** twice.
+3. Complete the form with the certificate label and type (use the same values as specified in the prerequisite steps) and click **Apply**.
     
     <!--- begin-tab-group --->
     === "Input values"
@@ -87,6 +87,8 @@ The new certificate is created (despite the last message status of *pending*).
     
         ![](_attachments/cert-001c.png)
     <!--- end-tab-group --->
+
+4. Wait approximately 10 seconds and then click **Apply**.
 
 4. Ask the assistant how to renew a certificate.
 
@@ -121,6 +123,10 @@ The new certificate is created (despite the last message status of *pending*).
         No output is returned.
     <!--- end-tab-group --->
 
+!!! Warning "Wait approximately 1 minute before continuing"
+
+    The search and renew skills just run can take up to a minute to complete. Wait a minute before proceeding.
+
 7. Retrieve the certificate and verify the date was changed.
     
     <!--- begin-tab-group --->
@@ -134,7 +140,7 @@ The new certificate is created (despite the last message status of *pending*).
         ![](_attachments/cert-003a.png)
     <!--- end-tab-group --->
 
-8. Complete the form with the certificate label and type (use the same values as specified in the prerequisite steps) and click **Apply** twice.
+8. Complete the form with the certificate label and type (use the same values as specified in the prerequisite steps) and click **Apply**.
     
     <!--- begin-tab-group --->
     === "Input values"
@@ -150,6 +156,8 @@ The new certificate is created (despite the last message status of *pending*).
     <!--- end-tab-group --->
 <div style="page-break-after: always;"></div>
 
+9. Wait approximately 10 seconds and then click **Apply**.
+    
 ## Cleanup steps
 Following the demo, cleanup the system by deleting the original certificate created.
 

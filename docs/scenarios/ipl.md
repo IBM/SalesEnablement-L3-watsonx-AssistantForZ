@@ -101,7 +101,7 @@ None.
 
     <!--- end-tab-group --->
 
-7. Click **Apply**.
+7. Wait approximately 10 seconds and then click **Apply**.
 
     <!--- begin-tab-group --->
     === "Sample input"

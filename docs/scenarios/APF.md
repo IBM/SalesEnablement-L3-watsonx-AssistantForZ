@@ -87,7 +87,7 @@ None.
    
     ![](_attachments/apf-004a1.png)
 
-7. Click **Apply**
+7. Wait approximately 10 seconds and then click **Apply**
 
     Note, there are no additional parameters to fill in the form, hence the *“Form is empty”* message.
 
