@@ -121,6 +121,11 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+  - pymdownx.pathconverter:
+      base_path: '' # default: ''
+      relative_path: '' # default ''
+      absolute: false # default: false
+      tags: 'a script img link object embed'
 # add custom style sheet to make the prompt code blocks display nicer without a vertical scroll bar.
 extra_css:
   - style.css
