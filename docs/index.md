@@ -43,7 +43,7 @@ Use these helpful tips to take full advantage of the {{guide.name}}.
 
         The {{guide.name}} changes regularly to match the {{offering.name}} offering and associated ITZ environment. Printed or saved copies of the demonstration guide can become out-of-date quickly and result in failed steps. 
 
-    A ready-to-print PDF version of the {{guide.name}} is <a href="../../_pdf/IBM%20watsonx%20Assistant%20for%20Z%20Demonstration%20Guide.pdf" target="_blank">here</a>. 
+    A ready-to-print PDF version of the {{guide.name}} is <a href="../_pdf/IBM%20watsonx%20Assistant%20for%20Z%20Demonstration%20Guide.pdf" target="_blank">here</a>. 
 
 
 ??? tip "Image highlighting"
