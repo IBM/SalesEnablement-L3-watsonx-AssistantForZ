@@ -47,7 +47,7 @@ Use these helpful tips to take full advantage of the {{guide.name}}.
 
 ??? tip "Viewing images"
 
-    Images in the demonstration guide can be enlarged by clicking on the image. Click the image below to enlarge. Press the ++esc++ key to dismiss the enlarged image.
+    Images in the demonstration guide can be enlarged by clicking on the image. Click the image below to enlarge. Press the ++esc++ key or click the **X** to dismiss the enlarged image.
  
     ![](_attachments/testImage.png)
 
