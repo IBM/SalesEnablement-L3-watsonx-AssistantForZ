@@ -39,8 +39,6 @@ None.
 
     ![](_attachments/apf-001a.png)
 
-<div style="page-break-after: always;"></div>
-
     **Example output:**
     
     ![](_attachments/apf-001b.png)        

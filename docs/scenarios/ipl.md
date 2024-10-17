@@ -63,6 +63,7 @@ None.
     ```
 
     **Example output:**
+
     ![](_attachments/ipl-004a.png)
 <div style="page-break-after: always;"></div>
 5. Ask the assistant to run the command.
@@ -96,8 +97,6 @@ None.
     **Input:**
 
     ![](_attachments/ipl-005c1.png)
-
-<div style="page-break-after: always;"></div>
 
     **Example output:**
     

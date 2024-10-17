@@ -44,8 +44,6 @@ Using the virtual assistant:
 
         ![](_attachments/cert-Setup001b.png)
 
-<div style="page-break-after: always;"></div>   
-
     **Example output:**
     
     ![](_attachments/cert-Setup001c.png)
@@ -64,10 +62,12 @@ The new certificate is created (despite the last message status of **pending**).
     ```
 
     **Example output:**
+
     ![](_attachments/cert-001a.png)
 
-2. Click **Yes** to retrieve the certificate details.
 <div style="page-break-after: always;"></div>
+2. Click **Yes** to retrieve the certificate details.
+
 3. Complete the form with the certificate label and type (use the same values as specified in the prerequisite steps) and click **Apply**.
  
     **Input values:**
@@ -76,8 +76,6 @@ The new certificate is created (despite the last message status of **pending**).
     - **CERT TYPE**: ```SITE```
 
     ![](_attachments/cert-001b.png)
-
-<div style="page-break-after: always;"></div>
 
     **Example output:**
     
@@ -136,8 +134,6 @@ The new certificate is created (despite the last message status of **pending**).
     - **CERT TYPE**: ```SITE```
 
     ![](_attachments/cert-003b.png)
-
-<div style="page-break-after: always;"></div>
 
     **Example output:**
     

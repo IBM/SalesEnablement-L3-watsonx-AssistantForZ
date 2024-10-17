@@ -62,7 +62,9 @@ None.
     ```
 
     **Example output:**
+
     ![](_attachments/db2-004a.png)
+
 <div style="page-break-after: always;"></div>
 5. Ask the assistant how to check the version of Db2 on an LPAR.
    
@@ -91,14 +93,12 @@ None.
         A skill is triggered to use an Ansible playbook that runs the referenced operator command to return the Db2 details. 
 
     ![](_attachments/db2-006a.png)
-<div style="page-break-after: always;"></div>
+
 7. Wait approximately 10 seconds and then click **Apply**.
 
     === "Sample input"
 
     ![](_attachments/db2-006a2.png)
-
-<div style="page-break-after: always;"></div>
 
     **Example output:**
     
@@ -107,6 +107,7 @@ None.
         See the skill returned the version of Db2 running on the LPAR. 
 
     ![](_attachments/db2-006b.png)
+
 <div style="page-break-after: always;"></div>
 8. Ask the assistant how to migrate from one version of Db2 to another.
    
@@ -117,6 +118,7 @@ None.
     ```
 
     **Example output:**
+
     ![](_attachments/db2-007a.png)
 ## Cleanup steps
 None.
