@@ -55,14 +55,12 @@ When the reservation is in the **Ready** state, you can extend your reservation 
 5. Click the **overflow icon** (![](_attachments/overflowIcon.png)) on the reservation tile and select **Extend**.
 
     ![](_attachments/itzExtendMenu.png)
-
+<div style="page-break-after: always;"></div>
 6. Click the **Select a date** option, specify the date to extend to, and then click **Extend**.
 
     ![](_attachments/itzExtendRsvp.png)
 
 If you anticipate needing more time, repeat Steps 5 and 6 to extend the reservation to the maximum of 6 days.
-
-<div style="page-break-after: always;"></div>
 
 ## Accessing the demonstration environment
 Access to the {{offering.name}} demonstration environment is provided through a web interface to a fictitious company's intranet website.

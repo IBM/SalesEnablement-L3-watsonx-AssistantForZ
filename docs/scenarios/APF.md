@@ -34,11 +34,11 @@ None.
     !!! Quote "Speaker's script"
 
         Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. 
-
+<div style="page-break-after: always;"></div>
 2. Expand the results.
 
     ![](_attachments/apf-001a.png)
-
+<div style="page-break-after: always;"></div>
     **Example output:**
     
     ![](_attachments/apf-001b.png)        
@@ -70,7 +70,7 @@ None.
     **Example output:**
 
     ![](_attachments/apf-003.png)
-
+<div style="page-break-after: always;"></div>
 5. Ask the assistant what is the command to add loadlib for a volume in the APF list.
 
     **Prompt:**

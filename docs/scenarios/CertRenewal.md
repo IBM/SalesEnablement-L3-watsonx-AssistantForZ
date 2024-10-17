@@ -30,10 +30,9 @@ Using the virtual assistant:
 
     ![](_attachments/cert-Setup001a.png)
 
-
+<div style="page-break-after: always;"></div>
 2. Complete the form for the **z/OS Certs - Create Cert** skill and click **Apply**.
-    
-
+  
     **Input values:**
 
     - **Certificate Label**: <*Enter a unique label of your choice, for example "yourNameCert". Record the label as it is needed later.*>
@@ -44,7 +43,7 @@ Using the virtual assistant:
         - **SIGN LABEL**: ```TESTCA```   
 
         ![](_attachments/cert-Setup001b.png)
-   
+<div style="page-break-after: always;"></div>   
     **Example output:**
     
     ![](_attachments/cert-Setup001c.png)
@@ -52,7 +51,6 @@ Using the virtual assistant:
 The new certificate is created (despite the last message status of **pending**).
 
 <div style="page-break-after: always;"></div>
-
 ## Prompts and Example outputs
 
 1. Ask the assistant how to check on an expiring certificate.
@@ -67,6 +65,7 @@ The new certificate is created (despite the last message status of **pending**).
     ![](_attachments/cert-001a.png)
 
 2. Click **Yes** to retrieve the certificate details.
+<div style="page-break-after: always;"></div>
 3. Complete the form with the certificate label and type (use the same values as specified in the prerequisite steps) and click **Apply**.
  
     **Input values:**
@@ -75,11 +74,11 @@ The new certificate is created (despite the last message status of **pending**).
     - **CERT TYPE**: ```SITE```
 
     ![](_attachments/cert-001b.png)
-
+<div style="page-break-after: always;"></div>
     **Example output:**
     
     ![](_attachments/cert-001c.png)
-
+<div style="page-break-after: always;"></div>
 4. Wait approximately 10 seconds and then click **Apply**.
 
 5. Ask the assistant how to renew a certificate.
@@ -92,7 +91,7 @@ The new certificate is created (despite the last message status of **pending**).
 
     **Example output:**
     ![](_attachments/cert-002a.png)
-
+<div style="page-break-after: always;"></div>
 6. Click **Yes** to run the certificate renewal skill.
 7. Complete the form to renew the certificate and click **Apply**.
 
@@ -113,7 +112,7 @@ The new certificate is created (despite the last message status of **pending**).
 !!! Warning "Wait approximately 1 minute before continuing"
 
     The search and renew skills just run can take up to a minute to complete. Wait a minute before proceeding.
-
+<div style="page-break-after: always;"></div>
 8. Retrieve this renewed certificate and verify the date was changed.
  
     **Prompt:**
@@ -124,7 +123,7 @@ The new certificate is created (despite the last message status of **pending**).
 
     **Example output:**
     ![](_attachments/cert-003a.png)
-
+<div style="page-break-after: always;"></div>
 9. Complete the form with the certificate label and type (use the **same** values as specified in the prerequisite steps) and click **Apply**.
     
     **Input values:**
@@ -133,7 +132,7 @@ The new certificate is created (despite the last message status of **pending**).
     - **CERT TYPE**: ```SITE```
 
     ![](_attachments/cert-003b.png)
-
+<div style="page-break-after: always;"></div>
     **Example output:**
     
     ![](_attachments/cert-003c.png)
@@ -156,7 +155,7 @@ Using the virtual assistant:
     **Example output:**
 
     ![](_attachments/cert-Delete001a.png)
-
+<div style="page-break-after: always;"></div>
 2. Complete the form and click **Apply**.
  
     **Input values:**

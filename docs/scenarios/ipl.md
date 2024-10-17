@@ -28,7 +28,7 @@ None.
 
     **Example output:**
     ![](_attachments/ipl-001a.png)
-
+<div style="page-break-after: always;"></div>
 2. Ask the assistance how to perform an IPL.
 
     **Prompt:**
@@ -38,6 +38,7 @@ None.
     ```
 
     **Example output:**
+
     ![](_attachments/ipl-002a.png)
 
 3. Ask the assistant about the IPL LOAD PARM.
@@ -62,7 +63,7 @@ None.
 
     **Example output:**
     ![](_attachments/ipl-004a.png)
-
+<div style="page-break-after: always;"></div>
 5. Ask the assistant to run the command.
 
     **Prompt:**
@@ -78,7 +79,7 @@ None.
         A skill is triggered to execute an operator command on the LPAR.
             
     ![](_attachments/ipl-005a.png)
-
+<div style="page-break-after: always;"></div>
 6. Enter ```D IPLINFO``` in the **extra-vars** entry field and click **Apply**.
 
     **Input:**
@@ -88,13 +89,13 @@ None.
     **Example output:**
 
     ![](_attachments/ipl-005b2.png)
-
+<div style="page-break-after: always;"></div>
 7. Wait approximately 10 seconds and then click **Apply**.
 
     **Input:**
 
     ![](_attachments/ipl-005c1.png)
-
+<div style="page-break-after: always;"></div>
     **Example output:**
     
     !!! Quote "Speaker's script"
@@ -102,7 +103,7 @@ None.
         In the output you can see the last time the system was IPLed, the z/OS version, the IPL LOAD PARM (LOADK2 member in SYS0.IPLPARM), and the IPL boot volume (D25VS1).
     
     ![](_attachments/ipl-005c2.png)
-
+<div style="page-break-after: always;"></div>
 8. Ask the assistant what needs to be done after an IPL finishes.
     
     **Prompt:**
