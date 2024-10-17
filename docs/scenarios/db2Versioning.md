@@ -51,6 +51,7 @@ None.
     ```
 
     **Example output:**
+
     ![](_attachments/db2-003a.png)
 
 4. Ask the assistant what version of z/OS is required for Db2 v13.
