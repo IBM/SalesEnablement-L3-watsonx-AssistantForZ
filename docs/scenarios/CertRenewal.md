@@ -45,9 +45,9 @@ Using the virtual assistant:
 
         ![](_attachments/cert-Setup001b.png)
    
-   **Example output:**
+    **Example output:**
     
-        ![](_attachments/cert-Setup001c.png)
+    ![](_attachments/cert-Setup001c.png)
 
 The new certificate is created (despite the last message status of **pending**).
 
@@ -59,24 +59,26 @@ The new certificate is created (despite the last message status of **pending**).
 
     **Prompt:**
 
-        ```
-        I have a SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
-        ```
+    ```
+    I have a SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
+    ```
+
     **Example output:**
-        ![](_attachments/cert-001a.png)
+    ![](_attachments/cert-001a.png)
 
 2. Click **Yes** to retrieve the certificate details.
 3. Complete the form with the certificate label and type (use the same values as specified in the prerequisite steps) and click **Apply**.
  
     **Input values:**
    
-        - **CERT LABEL**: <*Enter the unique label of the certificate created in the setup steps.*>
-        - **CERT TYPE**: ```SITE```
+    - **CERT LABEL**: <*Enter the unique label of the certificate created in the setup steps.*>
+    - **CERT TYPE**: ```SITE```
 
-        ![](_attachments/cert-001b.png)
+    ![](_attachments/cert-001b.png)
+
     **Example output:**
     
-        ![](_attachments/cert-001c.png)
+    ![](_attachments/cert-001c.png)
 
 4. Wait approximately 10 seconds and then click **Apply**.
 
@@ -84,29 +86,29 @@ The new certificate is created (despite the last message status of **pending**).
 
     **Prompt:**
 
-        ```
-        What are the steps to renew a certificate on z/OS?
-        ```
+    ```
+    What are the steps to renew a certificate on z/OS?
+    ```
+
     **Example output:**
-        ![](_attachments/cert-002a.png)
+    ![](_attachments/cert-002a.png)
 
 6. Click **Yes** to run the certificate renewal skill.
 7. Complete the form to renew the certificate and click **Apply**.
 
     **Input values:**
 
-        - **CERT LABEL**: <*Enter the same label of the certificate created in the setup steps.*>           
-        - **CERT TYPE**: ```SITE```
-        - **SIGN WITH**: ```CERTAUTH```
-        - **SIGN LABEL**: ```TESTCA```
-        - **extra_vars.new_expiry_date_survey**: <*Enter an expiration date on year from today.*>
+    - **CERT LABEL**: <*Enter the same label of the certificate created in the setup steps.*>           
+    - **CERT TYPE**: ```SITE```
+    - **SIGN WITH**: ```CERTAUTH```
+    - **SIGN LABEL**: ```TESTCA```
+    - **extra_vars.new_expiry_date_survey**: <*Enter an expiration date on year from today.*>
     
-        ![](_attachments/cert-002b.png)
+    ![](_attachments/cert-002b.png)
  
     **Example output:**
 
-        No output is returned.
-
+    No output is returned.
 
 !!! Warning "Wait approximately 1 minute before continuing"
 
@@ -116,26 +118,27 @@ The new certificate is created (despite the last message status of **pending**).
  
     **Prompt:**
 
-        ```
-        Get my certificate details.
-        ```
+    ```
+    Get my certificate details.
+    ```
+
     **Example output:**
-        ![](_attachments/cert-003a.png)
+    ![](_attachments/cert-003a.png)
 
 9. Complete the form with the certificate label and type (use the **same** values as specified in the prerequisite steps) and click **Apply**.
     
     **Input values:**
    
-        - **CERT LABEL**: <*Enter the unique label of the certificate created in the setup steps.*>
-        - **CERT TYPE**: ```SITE```
+    - **CERT LABEL**: <*Enter the unique label of the certificate created in the setup steps.*>
+    - **CERT TYPE**: ```SITE```
 
-        ![](_attachments/cert-003b.png)
+    ![](_attachments/cert-003b.png)
+
     **Example output:**
     
-        ![](_attachments/cert-003c.png)
+    ![](_attachments/cert-003c.png)
 
 <div style="page-break-after: always;"></div>
-
 10. Wait approximately 10 seconds and then click **Apply**.
     
 ## Cleanup steps
@@ -147,22 +150,23 @@ Using the virtual assistant:
   
     **Prompt:**
 
-        ```
-        delete cert
-        ```
+    ```
+    delete cert
+    ```
 
     **Example output:**
 
-        ![](_attachments/cert-Delete001a.png)
+    ![](_attachments/cert-Delete001a.png)
 
 2. Complete the form and click **Apply**.
  
     **Input values:**
 
-        - **CERT LABEL**: <*Enter the original certificate label that you created.*>
-        - **CERT TYPE**: ```SITE```
+    - **CERT LABEL**: <*Enter the original certificate label that you created.*>
+    - **CERT TYPE**: ```SITE```
 
         ![](_attachments/cert-Delete001b.png)
+
     **Example output:**
     
-        ![](_attachments/cert-Delete001c.png)
+    ![](_attachments/cert-Delete001c.png)
