@@ -2,7 +2,7 @@
 To enable sellers to demonstrate {{offering.name}}, an environment was created in IBM Technology Zone (ITZ). This environment mimics a typical client deployment of {{offering.name}}, similar to this deployment architecture.
     ![](_attachments/architectureV2.png)
 
-Follow the instructions to create a new reservation request, extend the reservation, and access the ITZ demonstration environment.
+Follow the instructions in this section to create a new reservation request, extend the reservation, and access the ITZ demonstration environment.
 
 ## Create a reservation request
 Follow these steps to create a reservation in ITZ.
@@ -17,13 +17,13 @@ Follow these steps to create a reservation in ITZ.
 
 2. Click **Reserve now**.
 
-    The **Reserve now** option creates the reservation for immediate use. Optionally, schedule the reservation for late.
+    The **Reserve now** option creates a reservation for immediate use. Optionally, schedule the reservation for a later date, like when you will be at your client's office.
 
     ![](_attachments/itzRSVPReserveNow.png)
 
-3. Complete the form and click **Submit**.
+3. Complete the reservation request and click **Submit**.
 
-    **a**. Optionally, change the **Name** field for the reservation. Note, changing the name doesn't appear to change the name of the reservation. The issue was reported to ITZ support.
+    **a**. Optionally, change the **Name** field for the reservation.
 
     **b**. Select the **Education** purpose tile.
 
@@ -42,13 +42,13 @@ Follow these steps to create a reservation in ITZ.
 <div style="page-break-after: always;"></div>
 
 ## Extend the reservation
-The ITZ provisioning process takes approximately 15 minutes. Multiple emails are sent from ITZ as the provisioning process runs. One email states the reservation is provisioning and the other email states that the environment is **Ready**. 
+The ITZ provisioning process takes approximately 15 minutes. Multiple emails are sent to you from ITZ as the provisioning process runs. One email states the reservation is provisioning and the other email states that the environment is **Ready**. 
 
-In rare cases, the provisioning process may fail. If you receive an email stating the reservation failed, try again by repeating steps 1-3.
+In rare cases, the provisioning process may fail. If you receive an email stating the reservation failed, try again by repeating Steps 1-3.
 
-When the reservation is in the **Ready** state, you can extend the reservation to a total of 6 days. Remember, IBM sellers need the environment to record their Stand and Deliver, and Business Partners need the environment to answer quiz questions.
+When the reservation is in the **Ready** state, you can extend your reservation to a total of 6 days. Remember, IBM sellers need the environment to record their Stand and Deliver and Business Partners need an environment to answer quiz questions.
 
-4. In the IBM Technology Zone portal, expand **My TechZone** and select **My Reservations**.
+4. In the IBM Technology Zone portal, expand **My TechZone** at the top and select **My Reservations**.
 
     ![](_attachments/itzMyReservations.png)
 
@@ -60,14 +60,14 @@ When the reservation is in the **Ready** state, you can extend the reservation t
 
     ![](_attachments/itzExtendRsvp.png)
 
-If you anticipate needing more time, repeat steps 5 and 6 to extend the reservation to the maximum of 6 days.
+If you anticipate needing more time, repeat Steps 5 and 6 to extend the reservation to the maximum of 6 days.
 
 <div style="page-break-after: always;"></div>
 
-## Access the environment
+## Accessing the demonstration environment
 Access to the {{offering.name}} demonstration environment is provided through a web interface to a fictitious company's intranet website.
 
-7. Click the reservation tile in the ITZ My reservations page.
+7. Click on reservation tile in the ITZ **My reservations** page.
 
     ![](_attachments/itzRSVPTile.png)
 
@@ -84,13 +84,13 @@ Access to the {{offering.name}} demonstration environment is provided through a 
 The demonstration portal page provides two ways of accessing the {{offering.name}} virtual assistant. 
 
 ### The chat icon
-The first method is to use the assistant chat icon that appears at the lower right of the page. The "Hi! I'm a virtual assistant. How can I help you today?" dialog appears after a few seconds of inactivity after the page loads.
+The first method is to use the assistant chat icon that appears at the lower right of the page. The **Hi! I'm a virtual assistant. How can I help you today?** dialog appears after a few seconds as the page loads.
 
 9. Click the **Virtual Assistant chat icon**.
 
     ![](_attachments/chatIcon.png)
 
-This action opens the virtual assistant on the current browser page as a pop-up dialog. This provides an integrated view of the web page and the virtual assistant dialog; however, the dialog is small for giving a demonstration if the audience is expected to read the output.
+This action opens the virtual assistant in the current browser page as a pop-up dialog. This approach provides an integrated view of the web page and the virtual assistant dialog; however, the dialog could be considered small for giving a live demonstration if the audience is expected to read the output.
 <div style="page-break-after: always;"></div>
 
 10.  Close the **Virtual Assistant** dialog.
@@ -106,11 +106,11 @@ The second user interface available for the virtual assistant is a full browser 
 
     ![](_attachments/techBotFS.png)
 
-    The full-page virtual assistant interface opens in a new browser window or tab. The full-page virtual assistant interface is used for all screen captures in later chapters.
+    The full-page virtual assistant interface opens in a new browser window or tab (this is dependant on your browser preferences). The full-page virtual assistant interface is used for all screen captures in later chapters.
 <div style="page-break-after: always;"></div>
 
 ### Using the virtual assistant
-Enter a query into the field and press ++return++ or click the send icon (![](_attachments/sendIcon.png)).
+Enter a query into the field and press ++return++ or click the **Send** icon (![](_attachments/sendIcon.png)).
     ![](_attachments/enterQuery.png)
 
-Proceed to the next chapter to run different {{offering.name}} client scenarios.
+Proceed to the next section to run through different {{offering.name}} client scenarios detailed in this demonstration guide.
