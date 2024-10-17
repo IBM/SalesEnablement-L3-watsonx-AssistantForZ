@@ -27,6 +27,7 @@ None.
     ```
 
     **Example output:**
+
     ![](_attachments/ipl-001a.png)
 <div style="page-break-after: always;"></div>
 2. Ask the assistance how to perform an IPL.
@@ -52,7 +53,7 @@ None.
     **Example output:**
 
     ![](_attachments/ipl-003a.png)
-
+<div style="page-break-after: always;"></div>
 4. Ask the assistant what the command is to find information about the IPL for the system.
    
     **Prompt:**
@@ -95,7 +96,9 @@ None.
     **Input:**
 
     ![](_attachments/ipl-005c1.png)
+
 <div style="page-break-after: always;"></div>
+
     **Example output:**
     
     !!! Quote "Speaker's script"

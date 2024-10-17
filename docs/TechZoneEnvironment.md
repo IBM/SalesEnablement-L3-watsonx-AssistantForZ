@@ -61,7 +61,7 @@ When the reservation is in the **Ready** state, you can extend your reservation 
     ![](_attachments/itzExtendRsvp.png)
 
 If you anticipate needing more time, repeat Steps 5 and 6 to extend the reservation to the maximum of 6 days.
-
+<div style="page-break-after: always;"></div>
 ## Accessing the demonstration environment
 Access to the {{offering.name}} demonstration environment is provided through a web interface to a fictitious company's intranet website.
 
@@ -77,7 +77,7 @@ Access to the {{offering.name}} demonstration environment is provided through a 
 
         In some instances, you may be prompted to authenticate when attempting to access the **Open our IBM Cloud environment** link. Use the same IBM ID and password used to reserve the ITZ environment.
 <div style="page-break-after: always;"></div>
-        
+      
 ## The demonstration portal page
 The demonstration portal page provides two ways of accessing the {{offering.name}} virtual assistant. 
 

@@ -38,7 +38,9 @@ None.
 2. Expand the results.
 
     ![](_attachments/apf-001a.png)
+
 <div style="page-break-after: always;"></div>
+
     **Example output:**
     
     ![](_attachments/apf-001b.png)        
@@ -86,7 +88,7 @@ None.
 6. Click **Yes** to run the command.
    
     ![](_attachments/apf-004a1.png)
-
+<div style="page-break-after: always;"></div>
 7. Wait approximately 10 seconds and then click **Apply**
 
     **Note**: there are no additional parameters required in this form, this is why you see the **“Form is empty”** message.

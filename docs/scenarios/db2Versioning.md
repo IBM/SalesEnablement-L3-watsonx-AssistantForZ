@@ -73,6 +73,7 @@ None.
     ```
 
     **Example output:**
+
     ![](_attachments/db2-005a.png)
 
 6. Ask the assistant if it can run the version check.
@@ -96,7 +97,9 @@ None.
     === "Sample input"
 
     ![](_attachments/db2-006a2.png)
+
 <div style="page-break-after: always;"></div>
+
     **Example output:**
     
     !!! Quote "Speaker's script"

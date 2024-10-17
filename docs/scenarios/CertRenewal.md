@@ -43,7 +43,9 @@ Using the virtual assistant:
         - **SIGN LABEL**: ```TESTCA```   
 
         ![](_attachments/cert-Setup001b.png)
+
 <div style="page-break-after: always;"></div>   
+
     **Example output:**
     
     ![](_attachments/cert-Setup001c.png)
@@ -74,7 +76,9 @@ The new certificate is created (despite the last message status of **pending**).
     - **CERT TYPE**: ```SITE```
 
     ![](_attachments/cert-001b.png)
+
 <div style="page-break-after: always;"></div>
+
     **Example output:**
     
     ![](_attachments/cert-001c.png)
@@ -132,7 +136,9 @@ The new certificate is created (despite the last message status of **pending**).
     - **CERT TYPE**: ```SITE```
 
     ![](_attachments/cert-003b.png)
+
 <div style="page-break-after: always;"></div>
+
     **Example output:**
     
     ![](_attachments/cert-003c.png)
