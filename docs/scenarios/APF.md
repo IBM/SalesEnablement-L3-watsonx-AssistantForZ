@@ -100,6 +100,5 @@ None.
     !!! Quote "Speaker's script"
 
         Notice the Assistant's response for this command informs you that LOADLIB was added to the APF list.
-
 ## Cleanup steps
 None.

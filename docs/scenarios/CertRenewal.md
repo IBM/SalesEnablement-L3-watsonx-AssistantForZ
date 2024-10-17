@@ -138,9 +138,8 @@ The new certificate is created (despite the last message status of **pending**).
     
     ![](_attachments/cert-003c.png)
 
-<div style="page-break-after: always;"></div>
 10. Wait approximately 10 seconds and then click **Apply**.
-    
+<div style="page-break-after: always;"></div>
 ## Cleanup steps
 Following the demo, cleanup the system by deleting the original certificate created.
 
@@ -165,7 +164,7 @@ Using the virtual assistant:
     - **CERT LABEL**: <*Enter the original certificate label that you created.*>
     - **CERT TYPE**: ```SITE```
 
-        ![](_attachments/cert-Delete001b.png)
+    ![](_attachments/cert-Delete001b.png)
 
     **Example output:**
     

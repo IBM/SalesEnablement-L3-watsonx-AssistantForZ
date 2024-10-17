@@ -4,10 +4,8 @@
 There are many other queries that an early tenure IBM Z systems programmer may ask. Here are some others you can experiment with.
 
 **Example outputs for these prompts are not provided.**
-
 ## Prerequisite steps
 None.
-
 ## Prompts
 ??? Tip "Copy and paste the prompt"
 
