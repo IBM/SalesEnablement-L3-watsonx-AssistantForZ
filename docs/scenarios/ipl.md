@@ -20,19 +20,18 @@ None.
 
 1. Ask the assistant what happens during an IPL.
     
-
     **Prompt:**
 
-        ```
-        What happens during an IPL on IBM Z?
-        ```
+    ```
+    What happens during an IPL on IBM Z?
+    ```
 
     **Example output:**
-        ![](_attachments/ipl-001a.png)
+    ![](_attachments/ipl-001a.png)
 
 2. Ask the assistance how to perform an IPL.
 
-    === "Prompt 2"
+    **Prompt:**
 
     ```
     How do I perform an IPL on IBM Z? Provide a step by step guidance.
@@ -91,7 +90,6 @@ None.
     ![](_attachments/ipl-005b2.png)
 
 7. Wait approximately 10 seconds and then click **Apply**.
-
 
     **Input:**
 
