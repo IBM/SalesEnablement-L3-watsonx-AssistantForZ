@@ -648,11 +648,10 @@
 <p><a class="glightbox" href="../_attachments/cert-Setup001b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-Setup001b.png"></a></p>
 </li>
 </ul>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../_attachments/cert-Setup001c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-Setup001c.png"></a></p>
 </li>
 </ol>
-<p><strong>Example output:</strong></p>
-<div class="highlight"><pre><span></span><code>    ![](_attachments/cert-Setup001c.png)
-</code></pre></div>
 <p>The new certificate is created (despite the last message status of <strong>pending</strong>).</p>
 <div style="page-break-after: always;"></div>
 
@@ -661,12 +660,10 @@
 <li>
 <p>Ask the assistant how to check on an expiring certificate.</p>
 <p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code>```
-I have a SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
-```
-</code></pre></div>
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>I have a SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
+</span></code></pre></div>
 <p><strong>Example output:</strong>
-    <a class="glightbox" href="../_attachments/cert-001a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-001a.png"></a></p>
+<a class="glightbox" href="../_attachments/cert-001a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-001a.png"></a></p>
 </li>
 <li>
 <p>Click <strong>Yes</strong> to retrieve the certificate details.</p>
@@ -674,14 +671,13 @@ I have a SSL certificate on z/OS expiring soon. How do I check when my certifica
 <li>
 <p>Complete the form with the certificate label and type (use the same values as specified in the prerequisite steps) and click <strong>Apply</strong>.</p>
 <p><strong>Input values:</strong></p>
-<div class="highlight"><pre><span></span><code>- **CERT LABEL**: &lt;*Enter the unique label of the certificate created in the setup steps.*&gt;
-- **CERT TYPE**: ```SITE```
-
-![](_attachments/cert-001b.png)
-</code></pre></div>
+<ul>
+<li><strong>CERT LABEL</strong>: &lt;<em>Enter the unique label of the certificate created in the setup steps.</em>&gt;</li>
+<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
+</ul>
+<p><a class="glightbox" href="../_attachments/cert-001b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-001b.png"></a></p>
 <p><strong>Example output:</strong></p>
-<div class="highlight"><pre><span></span><code>![](_attachments/cert-001c.png)
-</code></pre></div>
+<p><a class="glightbox" href="../_attachments/cert-001c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-001c.png"></a></p>
 </li>
 <li>
 <p>Wait approximately 10 seconds and then click <strong>Apply</strong>.</p>
@@ -689,12 +685,10 @@ I have a SSL certificate on z/OS expiring soon. How do I check when my certifica
 <li>
 <p>Ask the assistant how to renew a certificate.</p>
 <p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code>```
-What are the steps to renew a certificate on z/OS?
-```
-</code></pre></div>
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>What are the steps to renew a certificate on z/OS?
+</span></code></pre></div>
 <p><strong>Example output:</strong>
-    <a class="glightbox" href="../_attachments/cert-002a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-002a.png"></a></p>
+<a class="glightbox" href="../_attachments/cert-002a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-002a.png"></a></p>
 </li>
 <li>
 <p>Click <strong>Yes</strong> to run the certificate renewal skill.</p>
@@ -702,17 +696,16 @@ What are the steps to renew a certificate on z/OS?
 <li>
 <p>Complete the form to renew the certificate and click <strong>Apply</strong>.</p>
 <p><strong>Input values:</strong></p>
-<div class="highlight"><pre><span></span><code>- **CERT LABEL**: &lt;*Enter the same label of the certificate created in the setup steps.*&gt;           
-- **CERT TYPE**: ```SITE```
-- **SIGN WITH**: ```CERTAUTH```
-- **SIGN LABEL**: ```TESTCA```
-- **extra_vars.new_expiry_date_survey**: &lt;*Enter an expiration date on year from today.*&gt;
-
-![](_attachments/cert-002b.png)
-</code></pre></div>
+<ul>
+<li><strong>CERT LABEL</strong>: &lt;<em>Enter the same label of the certificate created in the setup steps.</em>&gt;           </li>
+<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
+<li><strong>SIGN WITH</strong>: <code>CERTAUTH</code></li>
+<li><strong>SIGN LABEL</strong>: <code>TESTCA</code></li>
+<li><strong>extra_vars.new_expiry_date_survey</strong>: &lt;<em>Enter an expiration date on year from today.</em>&gt;</li>
+</ul>
+<p><a class="glightbox" href="../_attachments/cert-002b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-002b.png"></a></p>
 <p><strong>Example output:</strong></p>
-<div class="highlight"><pre><span></span><code>No output is returned.
-</code></pre></div>
+<p>No output is returned.</p>
 </li>
 </ol>
 <div class="admonition warning">
@@ -723,28 +716,24 @@ What are the steps to renew a certificate on z/OS?
 <li>
 <p>Retrieve this renewed certificate and verify the date was changed.</p>
 <p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code>```
-Get my certificate details.
-```
-</code></pre></div>
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Get my certificate details.
+</span></code></pre></div>
 <p><strong>Example output:</strong>
-    <a class="glightbox" href="../_attachments/cert-003a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-003a.png"></a></p>
+<a class="glightbox" href="../_attachments/cert-003a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-003a.png"></a></p>
 </li>
 <li>
 <p>Complete the form with the certificate label and type (use the <strong>same</strong> values as specified in the prerequisite steps) and click <strong>Apply</strong>.</p>
 <p><strong>Input values:</strong></p>
-<div class="highlight"><pre><span></span><code>- **CERT LABEL**: &lt;*Enter the unique label of the certificate created in the setup steps.*&gt;
-- **CERT TYPE**: ```SITE```
-
-![](_attachments/cert-003b.png)
-</code></pre></div>
+<ul>
+<li><strong>CERT LABEL</strong>: &lt;<em>Enter the unique label of the certificate created in the setup steps.</em>&gt;</li>
+<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
+</ul>
+<p><a class="glightbox" href="../_attachments/cert-003b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-003b.png"></a></p>
 <p><strong>Example output:</strong></p>
-<div class="highlight"><pre><span></span><code>![](_attachments/cert-003c.png)
-</code></pre></div>
+<p><a class="glightbox" href="../_attachments/cert-003c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-003c.png"></a></p>
 </li>
 </ol>
 <div style="page-break-after: always;"></div>
-
 <ol start="10">
 <li>Wait approximately 10 seconds and then click <strong>Apply</strong>.</li>
 </ol>
@@ -755,25 +744,23 @@ Get my certificate details.
 <li>
 <p>Delete the certificate.</p>
 <p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code>```
-delete cert
-```
-</code></pre></div>
+<div class="highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>delete cert
+</span></code></pre></div>
 <p><strong>Example output:</strong></p>
-<div class="highlight"><pre><span></span><code>![](_attachments/cert-Delete001a.png)
-</code></pre></div>
+<p><a class="glightbox" href="../_attachments/cert-Delete001a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-Delete001a.png"></a></p>
 </li>
 <li>
 <p>Complete the form and click <strong>Apply</strong>.</p>
 <p><strong>Input values:</strong></p>
-<div class="highlight"><pre><span></span><code>- **CERT LABEL**: &lt;*Enter the original certificate label that you created.*&gt;
-- **CERT TYPE**: ```SITE```
-
-![](_attachments/cert-Delete001b.png)
-</code></pre></div>
+<ul>
+<li><strong>CERT LABEL</strong>: &lt;<em>Enter the original certificate label that you created.</em>&gt;</li>
+<li>
+<p><strong>CERT TYPE</strong>: <code>SITE</code></p>
+<p><a class="glightbox" href="../_attachments/cert-Delete001b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-Delete001b.png"></a></p>
+</li>
+</ul>
 <p><strong>Example output:</strong></p>
-<div class="highlight"><pre><span></span><code>![](_attachments/cert-Delete001c.png)
-</code></pre></div>
+<p><a class="glightbox" href="../_attachments/cert-Delete001c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/cert-Delete001c.png"></a></p>
 </li>
 </ol>
 <!-- Terminology -->
@@ -847,7 +834,7 @@ delete cert
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2024 IBM - V 2.0.45
+      Copyright &copy; 2024 IBM - V 2.0.46
     </div>
   
   
