@@ -2,7 +2,7 @@
 site_name: IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide
 site_description: IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide 
 site_author: Andrew R. Jones (andrewj@us.ibm.com)
-copyright: Copyright &copy; 2024 IBM - V 2.0.50
+copyright: Copyright &copy; 2024 IBM - V 2.0
 
 # Repository
 repo_name:  IBM/SalesEnablement-L3-watsonx-AssistantForZ
@@ -11,7 +11,7 @@ repo_name:  IBM/SalesEnablement-L3-watsonx-AssistantForZ
 #edit_uri: edit/master/docs
 docs_dir: docs
 
-
+# navigation menu moved to nav.md
 # nav:
 #   - 'Welcome': 'index.md'
 #   - 'Guidance for delivering a demonstration': 'DemoGuidance.md'
@@ -26,6 +26,7 @@ docs_dir: docs
 #     - 'Conclusion': 'scenarios/Conclusion.md'
 #   - 'Next steps': 'NextSteps.md'
 
+# don't add the terminology file to the navigation
 not_in_nav: |
   /terminology
 
@@ -53,7 +54,7 @@ theme:
     - content.code.select
     - navigation.footer
     # - content.tabs.link
-    - hide:
+    - hide:                 # hide right hand side document toc
         - toc
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -74,25 +75,25 @@ plugins:
     - glightbox
     - literate-nav:
         nav_file: nav.md
-    - print-site:
-        add_to_navigation: false
-        print_page_title: 'IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide'
-        add_print_site_banner: false
-        # Table of contents
-        add_table_of_contents: true
-        toc_title: 'Table of Contents'
-        toc_depth: 6
-        # Content-related
-        add_full_urls: false
-        enumerate_headings: false
-        enumerate_figures: false
-        add_cover_page: true
-        cover_page_template: ""
-        path_to_pdf: ""
-        include_css: true
-        enabled: true
-        exclude:
-          - printInstructions.md
+    # - print-site:
+    #     add_to_navigation: false
+    #     print_page_title: 'IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide'
+    #     add_print_site_banner: false
+    #     # Table of contents
+    #     add_table_of_contents: true
+    #     toc_title: 'Table of Contents'
+    #     toc_depth: 6
+    #     # Content-related
+    #     add_full_urls: false
+    #     enumerate_headings: false
+    #     enumerate_figures: false
+    #     add_cover_page: true
+    #     cover_page_template: ""
+    #     path_to_pdf: ""
+    #     include_css: true
+    #     enabled: true
+    #     exclude:
+    #       - printInstructions.md
 
 markdown_extensions:
   - toc:
