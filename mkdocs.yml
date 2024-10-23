@@ -139,8 +139,8 @@ extra:
   gitRepo: "https://github.com/IBM/SalesEnablement-L3-watsonx-AssistantForZ"
   learningplan:
     name: "IBM watsonx Assistant for Z for Technical Sales Level 3"
-    YLurl: ""
-    BPurl: ""
+    YLurl: "https://yourlearning.ibm.com/activity/PLAN-FEA26E32C03A"
+    BPurl: "https://learn.ibm.com/course/view.php?id=17043"
   level2learningplan:
     name: "IBM watsonx Assistant for Z Level 2"
     YLurl: "https://yourlearning.ibm.com/activity/PLAN-8281F4855A45"
