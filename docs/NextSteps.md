@@ -5,7 +5,7 @@ Also, the focus of the {{guide.name}} was the *end-user* use of {{offering.name}
 ## Earn the badge
 Finally, remember to complete the {{learningplan.name}} learning plan to earn the {{badge.name}} badge.
 
-**IBM technical sellers** must complete a Stand and Deliver exercise to validate their ability to demonstrate {{offering.name}} to potential clients. Refer to the evaluation checklist in the learning plan for the Stand and Deliver.
+**IBM technical sellers** must complete a Stand and Deliver exercise to validate their ability to demonstrate {{offering.name}} to potential clients. Refer to the evaluation checklist in the <a href="{{learningplan.YLurl}}" target="_blank">YourLearning learning plan</a> for the Stand and Deliver.
 
-**Business Partners** must pass the {{learningplan.name}} quiz that is located in the learn.ibm.com learning plan. The Business Partner quiz verifies use of the demonstration environment and click-through demonstrations, and not one's general knowledge of the offering.
+**Business Partners** must pass the {{learningplan.name}} quiz that is located in the <a href="{{learningplan.BPurl}}" target="_blank">IBM Training learning plan</a>. The Business Partner quiz verifies use of the demonstration environment and click-through demonstrations, and not one's general knowledge of the offering.
 
