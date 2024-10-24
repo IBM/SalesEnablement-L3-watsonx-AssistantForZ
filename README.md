@@ -24,16 +24,22 @@ Three step process for this one:
 
 1. Build all the html output from the markdown
 
-    ```mkdocs build```
+    ```
+    mkdocs build
+    ```
 
 2. Generate the PDF file.
 
-    ```node export_to_pdf.js http://localhost:8000/print_page/index.html docs/_pdf/'IBM watsonx Assistant for Z Demonstration Guide.pdf' 'IBM watsonx Assistant for Z Demonstration Guide'```
+    ```
+    node export_to_pdf.js http://localhost:8000/print_page/index.html docs/_pdf/'IBM watsonx Assistant for Z Demonstration Guide.pdf' 'IBM watsonx Assistant for Z Demonstration Guide'
+    ```
 
 Next, review PDF and make sure it is as clean as possible with regard to line breaks. If needed, modify the markdown files as necessary. Use ```<div style="page-break-after: always;"></div>``` to split output to a new page, but do not put the break within an indented section or the generated markdown will not format properly. If changes are made, repeat steps 1 and 2 above.
 
 3. Deploy the content.
 
-    ```mkdocs gh-deploy```
+    ```
+    mkdocs gh-deploy
+    ```
 
 4. Sync all the changes to the github repository.
