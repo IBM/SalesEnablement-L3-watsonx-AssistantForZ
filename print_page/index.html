@@ -1,0 +1,1674 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide">
+      
+      
+        <meta name="author" content="Andrew R. Jones (andrewj@us.ibm.com)">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide - IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775m1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13.274 9.537zl-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074M4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.5 4.5 0 0 1-.563-1.191 3.84 3.84 0 0 1-.05-2.063 4.65 4.65 0 0 1-2.025-.293.75.75 0 0 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.747.747 0 0 1 1.06 0 .75.75 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.4 2.4 0 0 1-.507-.441 3.1 3.1 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19.01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7 5.527c-.814-.68-1.75-1.462-2.692-2.619a3.7 3.7 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.76 2.76 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6 6 0 0 0-.26.16 1 1 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1 1 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.61.61 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1 1 0 0 0-.34.398M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343za8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746m1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275M6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L6.94 8 4.97 6.03a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005 0-.009.004"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.5 3.5 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327q0 .15-.025.292c.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5q-.002.615-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A5 5 0 0 1 8 16a5 5 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5 5 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.7 1.7 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06m.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.17.17 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5m4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5m0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5M2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings2.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings3.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings4.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings5.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings6.css">
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../style.css">
+    
+    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide" class="md-header__button md-logo" aria-label="IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide" class="md-nav__button md-logo" aria-label="IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DemoGuidance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guidance for delivering a demonstration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TechZoneEnvironment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reserve the IBM Technology Zone environment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Demonstration scenarios
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Demonstration scenarios
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenarios/Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to scenarios
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenarios/APF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scenario 1: Authorized Program Facility
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenarios/CertRenewal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scenario 2: Certificate renewal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenarios/db2Versioning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scenario 3: Db2 versioning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenarios/ipl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scenario 4: Initial Program Load on Z
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenarios/extra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional IBM Z related prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenarios/Conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NextSteps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Next steps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#" class="md-nav__link">
+    <span class="md-ellipsis">
+      Welcome
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demoguidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guidance for delivering a demonstration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#techzoneenvironment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reserve the IBM Technology Zone environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-demonstration-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demonstration scenarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Demonstration scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenarios-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to scenarios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenarios-apf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 1: Authorized Program Facility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenarios-certrenewal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 2: Certificate renewal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenarios-db2versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 3: Db2 versioning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenarios-ipl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 4: Initial Program Load on Z
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenarios-extra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional IBM Z related prompts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenarios-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nextsteps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next steps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div id="print-site-page" class="">
+        <section id="print-site-cover-page">
+            
+<div>
+
+    
+        <h1>IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide</h1>
+    
+
+</div>
+
+
+<table>
+
+    
+    <tr>
+        <td>Description</td>
+        <td>IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide</td>
+    </tr>
+    
+
+    
+    <tr>
+        <td>Author(s)</td>
+        <td>Andrew R. Jones (andrewj@us.ibm.com)</td>
+    </tr>
+    
+
+    
+
+    
+    <tr>
+        <td>Copyright</td>
+        <td>Copyright &copy; 2024 IBM - V 2.0</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+        </section>
+        
+        <section class="print-page">
+            <div id="print-page-toc" data-toc-depth="6">
+                <nav role='navigation' class='print-page-toc-nav'>
+                <h1 class='print-page-toc-title'>Table of Contents</h1>
+                </nav>
+            </div>
+        </section>
+        <section class="print-page" id="index"><div><h1 id="welcome">Welcome</h1>
+<p>Welcome to the <strong>IBM watsonx Assistant for Z for Technical Sales Level 3</strong> lab and demonstration guide! The goal of this lab is to provide you with the knowledge and tools to demonstrate <strong>IBM watsonx Assistant for Z</strong>.</p>
+<p>This lab is not intended to serve as an in-depth study of IBM watsonx Assistant for Z, watsonx, or IBM Z, rather the focus is on learning how to deliver a client demonstration of IBM watsonx Assistant for Z. More specifically, the focus is on the <em>end-user</em> creating queries and using trusted automations through skills that are suggested by IBM watsonx Assistant for Z. </p>
+<p>Other aspects of IBM watsonx Assistant for Z including creating and configuring assistants, importing and creating new skills, and ingestion of client documentation are <strong>not</strong> covered in this demonstration guide. To learn more and get hands-on with these additional capabilities, check out the Velocity Pilot information in IBM Technology Zone (<abbr title="IBM Technology Zone">ITZ</abbr>) <a href="https://techzone.ibm.com/collection/ibm-watsonx-assistant-z/journey-step-3-pilots" target="_blank">here</a>. Watch for a Level 4 course in the future.</p>
+<h2 id="index-obtaining-the-ibm-watsonx-assistant-for-z-technical-sales-intermediate-badge-level-3">Obtaining the IBM watsonx Assistant for Z Technical Sales Intermediate badge (Level 3)</h2>
+<p><strong>Business Partner technical sellers</strong> must pass a short quiz upon completing the course. This quiz consists of multiple-choice questions, with four possible responses (and only one correct answer) for each question. The questions do not test your understanding of IBM watsonx Assistant for Z, rather, they validate your use of the provided demonstration environment. </p>
+<p><strong>IBM technical sellers</strong> must develop and record a Stand and Deliver presentation. This video is intended to simulate your delivery of a “live” demo in front of a client. IBMers have the flexibility to define a hypothetical client, the challenges the client has, and the goals they aspire to achieve. Your recording must be a demonstration that pitches the value of this solution by using the environments and techniques that are described in the demonstration guide. Specific criteria that must be demonstrated as part of the Stand and Deliver recordings are provided within the documentation that accompanies the Level 3 course in Your Learning. </p>
+<details class="tip">
+<summary>Keep the demonstration guide and <abbr title="IBM Technology Zone">ITZ</abbr> environment active</summary>
+<p>Business Partners, keep the demonstration guide and <abbr title="IBM Technology Zone">ITZ</abbr> environment active while you take the quiz. </p>
+<p>IBM technical sellers, keep the demonstration guide and <abbr title="IBM Technology Zone">ITZ</abbr> environment active until you complete your Stand and Deliver.</p>
+</details>
+<div style="page-break-after: always;"></div>
+<h2 id="index-support">Support</h2>
+<p>Think something is down? Check the applicable status pages for any known issues like a site or service not available:</p>
+<ul>
+<li><a href="https://techzone.status.io/" target="_blank">IBM Technology Zone</a></li>
+</ul>
+<p>For issues with provisioning the <abbr title="IBM Technology Zone">ITZ</abbr> environment for this lab (for example, a failed reservation request due to insufficient quota capacity) open a ticket with <abbr title="IBM Technology Zone">ITZ</abbr> support:</p>
+<ul>
+<li>
+<p>Web:  <a href="https://ibmsf.force.com/ibminternalproducts/s/createrecord/NewCase?language=en_US" target="_blank">IBM Technology Zone</a></p>
+</li>
+<li>
+<p>Email: <a href="mailto:techzone.help@ibm.com" target="_blank">techzone.help.ibm.com</a></p>
+</li>
+</ul>
+<p>For issues related to specific steps found in the demonstration guide after the <abbr title="IBM Technology Zone">ITZ</abbr> environment is provisioned, contact the authors:</p>
+<ul>
+<li>Slack: <a href="mailto:https://ibm.enterprise.slack.com/archives/C07ARLXF2R1" target="_blank">#watsonx-assistant-z-technical</a> - IBM only</li>
+<li>Email: <a href="mailto:andrewj@us.ibm.com" target="_blank">andrewj@us.ibm.com</a></li>
+</ul>
+<p>Business Partners should use the IBM Training live Chat Support service or other support methods that are found on the IBM Training portal <a href="https://ibmcpsprod.service-now.com/its?id=sc_category&amp;sys_id=6568bfafdb2f13008ea7d6fa4b961990" target="_blank">here</a>.</p>
+<div style="page-break-after: always;"></div>
+<h2 id="index-using-the-demonstration-guide">Using the demonstration guide</h2>
+<p>Use these helpful tips to take full advantage of the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide.</p>
+<details class="tip">
+<summary>Printing the demonstration guide</summary>
+<div class="admonition warning">
+<p class="admonition-title">Printed or saved copies can be out of date</p>
+<p>The IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide changes regularly to match the IBM watsonx Assistant for Z offering and associated <abbr title="IBM Technology Zone">ITZ</abbr> environment. Printed or saved copies of the demonstration guide can become out-of-date quickly and result in failed steps. </p>
+</div>
+<p>A ready-to-print PDF version of the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide is <a href="../_pdf/IBM%20watsonx%20Assistant%20for%20Z%20Demonstration%20Guide.pdf" target="_blank">here</a>. </p>
+</details>
+<details class="tip">
+<summary>Viewing images</summary>
+<p>Images in the demonstration guide can be enlarged by clicking on the image. Press the <span class="keys"><kbd class="key-escape">Esc</kbd></span> key or click the <strong>X</strong> to dismiss the enlarged image.</p>
+<!-- <a class="glightbox" href="../_attachments/testImage2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/testImage2.png" /></a> -->
+</details>
+<details class="tip">
+<summary>Image highlighting</summary>
+<p>In some images, the following styles of highlighting are used:</p>
+<ul>
+<li>
+<p><strong>Solid highlight box</strong>: This style of box highlights where to click, enter, or select an item.
+<a class="glightbox" href="../_attachments/welcome-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/welcome-1.png"></a></p>
+</li>
+<li>
+<p><strong>Dash highlight box</strong>: This style of box highlights one of two things: the path to follow to get to a specific location in the user interface, or areas to explore on your own.
+<a class="glightbox" href="../_attachments/welcome-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/welcome-2.png"></a></p>
+</li>
+</ul>
+</details>
+<details class="tip">
+<summary>Copying commands and prompts</summary>
+<!-- - **Copy to the clipboard**: The text is copied to the clipboard. Click the copy icon (highlighted) and then use the operating system paste function. For example, entering <code>Ctrl+v</code>, <code>Cmd+v</code>, or right-click and select <code>Paste</code>.
+<a class="glightbox" href="../_attachments/welcome-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/welcome-3.png" /></a> -->
+<p>Copying and pasting commands and prompts from this demonstration guide is easy and can eliminate typographical errors.</p>
+<p>Click the highlighted copy icon and then use your operating system's paste function. For example, <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-v">V</kbd></span>, or right-click and select <code>Paste</code>.
+<a class="glightbox" href="../_attachments/welcome-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/welcome-3.png"></a></p>
+</details>
+<details class="tip">
+<summary>Acronyms and terminology</summary>
+<p>IBM employees, and the tech industry in general, enjoy using acronyms. In the demonstration guide, most acronyms will appear with a dashed underline. Hover over the acronym to learn its meaning. A question mark (<a class="glightbox" href="../_attachments/questionIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/questionIcon.png"></a>) icon will first appear and after a second the tool tip with the acronym's meaning is displayed. Try it here: <abbr title="Logical Partition">LPAR</abbr>. </p>
+<p><a class="glightbox" href="../_attachments/acronymHelp.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/acronymHelp.png"></a></p>
+</details>
+<details class="tip">
+<summary>The <strong>Demonstration Guide</strong> table of contents</summary>
+<p>This <strong>Demonstration Guide</strong> uses a responsive browser-based interface to ensure a pages are usable on various devices with different screen sizes. The Demonstration Guide table of contents may be displayed as highlighted in the green dashed box in this image:</p>
+<p><a class="glightbox" href="../_attachments/demoGuide1a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/demoGuide1a.png"></a></p>
+<p>However, if the browser window is sized smaller, the table of contents can be accessed by clicking the main menu icon (<a class="glightbox" href="../_attachments/MainMenuIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/MainMenuIcon.png"></a>):</p>
+<p><a class="glightbox" href="../_attachments/demoGuide2b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/demoGuide2b.png"></a></p>
+<p>Click the main menu icon (<a class="glightbox" href="../_attachments/MainMenuIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/MainMenuIcon.png"></a>) to expand the table of contents.</p>
+<!-- <a class="glightbox" href="../_attachments/demoGuide3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/demoGuide3.png" /></a> -->
+</details>
+<!-- Terminology -->
+<!-- Keep the list alphabetized for easy deduplication --></div></section><section class="print-page" id="demoguidance"><div><h1 id="demonstration-guidance">Demonstration guidance</h1>
+<p>Whether for a client, a session at a conference, or performing your Stand and Deliver, preparation for a demonstration is critical. Included are both general demonstration guidance and helpful tips for using IBM watsonx Assistant for Z and the IBM Technology Zone (<abbr title="IBM Technology Zone">ITZ</abbr>) environment that is associated with the IBM watsonx Assistant for Z for Technical Sales Level 3 learning plan.</p>
+<h2 id="demoguidance-general-demonstration-guidance">General demonstration guidance</h2>
+<p>Knowing the audience that you are presenting to is critical. Having a basic understanding of a client's business and their challenges enables you to customize the conversation, so it resonates with the audience. It is also important to understand the roles of the individuals in your audience to know at what level of technical detail to present.</p>
+<p>In addition, it is always a good idea to:</p>
+<ul>
+<li>Know how much time is allotted for your demonstration.</li>
+<li>Anticipate what questions your audience will ask.</li>
+<li>Anticipate what objections your audience may raise.</li>
+<li>Have a backup plan (like a video recording of the demonstration) in case of unforeseen events like network failures and unexpected errors.</li>
+<li>If your demonstration is to be delivered virtually, make sure everything works using the e-meeting technology.</li>
+<li>Do not deviate from this demonstration script. Straying from the planned script can lead to unexpected results and failure.</li>
+<li>If possible, and time permits, make your demonstration interactive with your audience. If that isn't possible, be sure to leave time for questions.</li>
+<li>Always conclude with a <strong>call to action</strong> (for example, next steps, follow-on activities, and so on).</li>
+</ul>
+<p>And, most importantly, practice, practice, and practice.</p>
+<div style="page-break-after: always;"></div>
+<h2 id="demoguidance-specific-guidance-for-ibm-watsonx-assistant-for-z-and-the-itz-environment">Specific guidance for IBM watsonx Assistant for Z and the <abbr title="IBM Technology Zone">ITZ</abbr> environment</h2>
+<p>Following the scripts that are provided in the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide helps assure a successful demonstration. Use these tips to help assure success with IBM watsonx Assistant for Z and the <abbr title="IBM Technology Zone">ITZ</abbr> environment:</p>
+<ul>
+<li>While running many of the automated skills of IBM watsonx Assistant for Z, there will be times when the responses take 30 to 45 seconds to complete. You should be prepared to fill these wait times with some type of commentary. During these wait periods consider explaining in more detail what is being performed in the background, values of the automation, general values of the offering, or answering questions the client may have. </li>
+<li><strong>Google Chrome is the recommended browser for this environment.</strong> Some users have experienced intermittent errors with running some of the skills when using other browsers.</li>
+<li>Run all prerequisites steps before starting the demonstration. Prerequisite steps are described with each scenario.</li>
+<li>Anticipate different responses from the scripted queries. The <abbr title="IBM Technology Zone">ITZ</abbr> environment is a live and changing demonstration environment. Responses are subject to change as updates are made to the large language model (<abbr title="Large language model">LLM</abbr>) and retrieval augmented generation (<abbr title="Retrieval augmented generation">RAG</abbr>) used by IBM watsonx Assistant for Z.</li>
+<li>Follow the scripts in the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide for the automations and skills to run as expected. </li>
+<li>
+<p>When issuing other prompts:</p>
+<ul>
+<li>Procedural questions provide better structure to responses. For example, in a query it is better to use "Explain how to estimate space requirements for Db2 table spaces without using Db2 admin tool. Provide a step-by-step answer.” versus "How to estimate space requirements for table spaces?"</li>
+</ul>
+</li>
+<li>
+<p>When asking a generic question, responses are more accurate when possessive adjectives are avoided. For instance, "How do I check the Db2 for z/<abbr title="Operating System">OS</abbr> version on a logical partition (<abbr title="Logical Partition">LPAR</abbr>)?” versus "How do I check <em>my</em> Db2 for z/<abbr title="Operating System">OS</abbr> version on <em>my</em> <abbr title="Logical Partition">LPAR</abbr>?”</p>
+</li>
+<li>
+<p>Compound questions perform better. As an example, “Categorize the various <abbr title="Subsystem parameters">zparms</abbr> available.” versus “What is <abbr title="Subsystem parameter">zparm</abbr>?”</p>
+</li>
+<li>
+<p>Question styles like pros and cons and <em>A</em> versus <em>B</em> work better. For instance, “What are the pros and cons for setting <abbr title="System initialization parameter specifying the ID of a transaction">GMTRAN</abbr> to EXIT? Provide a detailed answer.”</p>
+</li>
+</ul>
+<p>If you know your client and their environment well, client-specific questions will add value to your demonstration. However, it is critical to validate the accuracy of the responses before attempting in a live demonstration.</p>
+<p>Next, explore the scripted demonstrations that are created by IBM watsonx Assistant for Z experts.</p>
+<!-- Terminology -->
+<!-- Keep the list alphabetized for easy deduplication --></div></section><section class="print-page" id="techzoneenvironment"><div><h1 id="ibm-technology-zone-environment">IBM Technology Zone environment</h1>
+<p>To enable sellers to demonstrate IBM watsonx Assistant for Z, an environment was created in IBM Technology Zone (<abbr title="IBM Technology Zone">ITZ</abbr>). This environment mimics a typical client deployment of IBM watsonx Assistant for Z, similar to this deployment architecture.
+    <a class="glightbox" href="../_attachments/architectureV2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/architectureV2.png"></a></p>
+<p>Follow the instructions in this section to create a new reservation request, extend the reservation, and access the <abbr title="IBM Technology Zone">ITZ</abbr> demonstration environment.</p>
+<h2 id="techzoneenvironment-create-a-reservation-request">Create a reservation request</h2>
+<p>Follow these steps to create a reservation in <abbr title="IBM Technology Zone">ITZ</abbr>.</p>
+<ol>
+<li>
+<p>Click the following link to open a browser to the reservation page of the <strong>IBM watsonx Assistant for Z</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">You may be asked to authenticate to IBM Technology Zone</p>
+<p>The steps to authenticate to <abbr title="IBM Technology Zone">ITZ</abbr> are not detailed here as they may vary between users.</p>
+</div>
+<p><a href="https://techzone.ibm.com/my/reservations/create/66da252ae16da2001edc932d" target="_blank">IBM watsonx Assistant for Z - reservation page</a></p>
+</li>
+<li>
+<p>Click <strong>Reserve now</strong>.</p>
+<p>The <strong>Reserve now</strong> option creates a reservation for immediate use. Optionally, schedule the reservation for a later date, like when you will be at your client's office.</p>
+<p><a class="glightbox" href="../_attachments/itzRSVPReserveNow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/itzRSVPReserveNow.png"></a></p>
+</li>
+<li>
+<p>Complete the reservation request and click <strong>Submit</strong>.</p>
+<p><strong>a</strong>. Optionally, change the <strong>Name</strong> field for the reservation.</p>
+<p><strong>b</strong>. Select the <strong>Education</strong> purpose tile.</p>
+<p><strong>c</strong>. Enter a <strong>Purpose description</strong>.</p>
+<p><strong>d</strong>. Select any geography in the <strong>Preferred Geography</strong> drop-down.</p>
+<p><strong>e</strong>. The <strong>End date and time</strong> will be set to 2 days after the current date and time.</p>
+<p><strong>f</strong>. Accept the IBM Technology Zone's terms and conditions and security policies.</p>
+<p><strong>g</strong>. When satisfied with the parameters, click <strong>Submit</strong>.</p>
+<p><a class="glightbox" href="../_attachments/itzRSVPReservationPage.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/itzRSVPReservationPage.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+
+<h2 id="techzoneenvironment-extend-the-reservation">Extend the reservation</h2>
+<p>The <abbr title="IBM Technology Zone">ITZ</abbr> provisioning process takes approximately 15 minutes. Multiple emails are sent to you from <abbr title="IBM Technology Zone">ITZ</abbr> as the provisioning process runs. One email states the reservation is provisioning and the other email states that the environment is <strong>Ready</strong>. </p>
+<p>In rare cases, the provisioning process may fail. If you receive an email stating the reservation failed, try again by repeating Steps 1-3.</p>
+<p>When the reservation is in the <strong>Ready</strong> state, you can extend your reservation to a total of 6 days. Remember, IBM sellers need the environment to record their Stand and Deliver and Business Partners need an environment to answer quiz questions.</p>
+<ol start="4">
+<li>
+<p>In the IBM Technology Zone portal, expand <strong>My TechZone</strong> at the top and select <strong>My Reservations</strong>.</p>
+<p><a class="glightbox" href="../_attachments/itzMyReservations.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/itzMyReservations.png"></a></p>
+</li>
+<li>
+<p>Click the <strong>overflow icon</strong> (<a class="glightbox" href="../_attachments/overflowIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/overflowIcon.png"></a>) on the reservation tile and select <strong>Extend</strong>.</p>
+<p><a class="glightbox" href="../_attachments/itzExtendMenu.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/itzExtendMenu.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="6">
+<li>
+<p>Click the <strong>Select a date</strong> option, specify the date to extend to, and then click <strong>Extend</strong>.</p>
+<p><a class="glightbox" href="../_attachments/itzExtendRsvp.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/itzExtendRsvp.png"></a></p>
+</li>
+</ol>
+<p>If you anticipate needing more time, repeat Steps 5 and 6 to extend the reservation to the maximum of 6 days.</p>
+<div style="page-break-after: always;"></div>
+<h2 id="techzoneenvironment-accessing-the-demonstration-environment">Accessing the demonstration environment</h2>
+<p>Access to the IBM watsonx Assistant for Z demonstration environment is provided through a web interface to a fictitious company's intranet website.</p>
+<ol start="7">
+<li>
+<p>Click on reservation tile in the <abbr title="IBM Technology Zone">ITZ</abbr> <strong>My reservations</strong> page.</p>
+<p><a class="glightbox" href="../_attachments/itzRSVPTile.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/itzRSVPTile.png"></a></p>
+</li>
+<li>
+<p>Click <strong>Open your IBM Cloud environment</strong>.</p>
+<p><a class="glightbox" href="../_attachments/itzRSVPOpenEnvironment.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/itzRSVPOpenEnvironment.png"></a></p>
+<div class="admonition warning">
+<p class="admonition-title">You may be prompted to authenticate</p>
+<p>In some instances, you may be prompted to authenticate when attempting to access the <strong>Open our IBM Cloud environment</strong> link. Use the same IBM ID and password used to reserve the <abbr title="IBM Technology Zone">ITZ</abbr> environment.</p>
+</div>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+
+<h2 id="techzoneenvironment-the-demonstration-portal-page">The demonstration portal page</h2>
+<p>The demonstration portal page provides two ways of accessing the IBM watsonx Assistant for Z virtual assistant. </p>
+<h3 id="techzoneenvironment-the-chat-icon">The chat icon</h3>
+<p>The first method is to use the assistant chat icon that appears at the lower right of the page. The <strong>Hi! I'm a virtual assistant. How can I help you today?</strong> dialog appears after a few seconds as the page loads.</p>
+<ol start="9">
+<li>
+<p>Click the <strong>Virtual Assistant chat icon</strong>.</p>
+<p><a class="glightbox" href="../_attachments/chatIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/chatIcon.png"></a></p>
+</li>
+</ol>
+<p>This action opens the virtual assistant in the current browser page as a pop-up dialog. This approach provides an integrated view of the web page and the virtual assistant dialog; however, the dialog could be considered small for giving a live demonstration if the audience is expected to read the output.</p>
+<div style="page-break-after: always;"></div>
+
+<ol start="10">
+<li>
+<p>Close the <strong>Virtual Assistant</strong> dialog.</p>
+<p><a class="glightbox" href="../_attachments/closeVA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/closeVA.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+
+<h3 id="techzoneenvironment-the-full-page-virtual-assistant">The full page virtual assistant</h3>
+<p>The second user interface available for the virtual assistant is a full browser page experience.</p>
+<ol start="11">
+<li>
+<p>Scroll to the bottom of the page and click <strong>Techbot (in a new tab)</strong> under <strong>Technology</strong>.</p>
+<p><a class="glightbox" href="../_attachments/techBotFS.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/techBotFS.png"></a></p>
+<p>The full-page virtual assistant interface opens in a new browser window or tab (this is dependant on your browser preferences). The full-page virtual assistant interface is used for all screen captures in later chapters.</p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+
+<h3 id="techzoneenvironment-using-the-virtual-assistant">Using the virtual assistant</h3>
+<p>Enter a query into the field and press <span class="keys"><kbd class="key-enter">Enter</kbd></span> or click the <strong>Send</strong> icon (<a class="glightbox" href="../_attachments/sendIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/sendIcon.png"></a>).
+    <a class="glightbox" href="../_attachments/enterQuery.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../_attachments/enterQuery.png"></a></p>
+<p>Proceed to the next section to run through different IBM watsonx Assistant for Z client scenarios detailed in this demonstration guide.</p>
+<!-- Terminology -->
+<!-- Keep the list alphabetized for easy deduplication --></div></section>
+                        <h1 class='nav-section-title' id='section-demonstration-scenarios'>
+                            Demonstration scenarios <a class='headerlink' href='#section-demonstration-scenarios' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="scenarios-introduction"><div><h1 id="scenarios">Scenarios</h1>
+<p>This section includes expert-created a set of scenarios that illustrate the domain-specific knowledge of IBM watsonx Assistant for Z. Each scenario includes step-by-step guidance based on actual client interactions and workflows with IBM Z. Each scenario provides:</p>
+<ul>
+<li>A brief overview of the scenario.</li>
+<li>Any prerequisite or setup steps necessary for the scenario to work in the demonstration environment.</li>
+<li>A list of queries and Example output that illustrate the scenario.</li>
+<li>Any cleanup steps that must be run after the scenario.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Responses from the virtual assistant are likely to change</p>
+<p>Responses generated by IBM watsonx Assistant for Z are likely to change over time. The responses you see when you run through the scenarios may differ from the screen images captured in this guide. Using the exact queries specified will help assure a successful demonstration.</p>
+</div>
+<p>Each scenario overview is written as if they are being presented to a client versus the typical prose of the demonstration guide. The <strong>Speaker's script</strong> illustrates the style and how to start a client demonstration.</p>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>Hello <strong>[insert customer name]</strong>. Welcome to this demonstration of IBM watsonx Assistant for Z. Today, many early tenure IBM Z administrators spend hours looking for current information, accurate information, and performing time-consuming manual tasks. And they are very dependent on the Subject Matter Experts to complete their tasks.</p>
+<p>IBM watsonx Assistant for Z is a new generative <abbr title="Artificial intelligence">AI</abbr> assistant that melds automation with conversational <abbr title="Artificial intelligence">AI</abbr> to help transform how system programmers, operators, and developers of all experience levels engage with and manage their IBM Z. IBM watsonx Assistant for Z understands over 200 IBM Z products and is designed to enable clients to:</p>
+<ul>
+<li>
+<p>Expedite the onboarding process, quickly enhancing platform expertise of early tenure professionals with a side-by-side <abbr title="Artificial intelligence">AI</abbr> assistant, accelerating their journey to productivity with confidence.</p>
+</li>
+<li>
+<p>Improve productivity, autonomy, and confidence across <em>all</em> skill levels, by offering a central place to find answers and running automation to perform common and complex tasks.</p>
+</li>
+<li>
+<p>And you can also leverage the platform to ingest your own documentation further benefiting from this solution. I won't be covering this capability today, but as we move forward we can show how easy this is done, along with adding other skills using your own automation through Ansible, <abbr title="Restructured Extended Executor">REXX</abbr>, and <abbr title="Job Control Language">JCL</abbr>.</p>
+</li>
+</ul>
+<p>In this demo, we will run through a couple of scenarios that highlight the value IBM watsonx Assistant for Z can provide to various roles in your organization regardless of skill level. These scenarios also leverage skills using Ansible Automation to provide great flexibility when it comes to automating Z-specific tasks as part of your enterprise automation strategy. </p>
+<p>Let's get started.</p>
+</div>
+<p>Other Speaker's scripts are included in some scenarios for some prompts. This <a href="https://ibm.seismic.com/Link/Content/DC7b883BQDJqj8TPcPWqHGdcCRq3" target="_blank">sample client demonstration video</a> also provides additional talking points for the Db2 and certificate renewal scenarios.</p>
+<p>When you plan your demonstration, choose the scenarios that best fit your client's requirements.</p>
+<!-- Terminology -->
+<!-- Keep the list alphabetized for easy deduplication --></div></section><section class="print-page" id="scenarios-apf"><div><h1 id="scenario-authorized-program-facility">Scenario: Authorized Program Facility</h1>
+<h2 id="scenarios-apf-scenario-overview">Scenario overview</h2>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>Imagine you are an early-tenure systems programmer (<abbr title="Systems programmer">sysprog</abbr>) that is tasked with updating the Authorized Program Facility (<abbr title="Authorized Program Facility">APF</abbr>) authorized list on an logical partition (<abbr title="Logical Partition">LPAR</abbr>) and would like to quickly find guidance on doing this without having to read a bunch of manuals. In z/<abbr title="Operating System">OS</abbr>, the <abbr title="Authorized Program Facility">APF</abbr> list includes information about libraries that contain <abbr title="Authorized Program Facility">APF</abbr>-authorized programs. You would also like to take advantage of some simple automation to complete this task if possible. </p>
+<p>As you will see, in the last prompt, IBM watsonx Assistant for Z will respond with the command to run to add the library to the <abbr title="Authorized Program Facility">APF</abbr> authorized list, followed by prompting you to run a skill (issuing a z/<abbr title="Operating System">OS</abbr> console command) on your behalf which will perform the task.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Responses from the virtual assistant are likely to change</p>
+<p>Responses generated by IBM watsonx Assistant for Z are likely to change over time. The responses you see when you run the queries in this section may differ from the screen images captured in the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide. Using the exact queries specified will help assure a successful demonstration. Also, as updates to the environment are made, some confirmation dialogs may no longer be displayed as illustrated in the Example outputs.</p>
+</div>
+<h2 id="scenarios-apf-prerequisite-steps">Prerequisite steps</h2>
+<p>None.</p>
+<div style="page-break-after: always;"></div>
+
+<h2 id="scenarios-apf-prompts-and-example-outputs">Prompts and Example outputs</h2>
+<div class="admonition tip">
+<p class="admonition-title">Copy and paste the prompt</p>
+<p>Use the copy icon (<a class="glightbox" href="../scenarios/_attachments/copyIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/copyIcon.png"></a>) to copy prompts from this demonstration guide and then paste the prompt using <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-v">V</kbd></span>, or right click and select <code>Paste</code>.</p>
+</div>
+<ol>
+<li>
+<p>Ask the assistant what the <abbr title="Authorized Program Facility">APF</abbr> list is.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#scenarios-apf-__codelineno-0-1"></a>What is the APF list in z/OS? Provide a detailed explanation?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/apf-001.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/apf-001.png"></a></p>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response. </p>
+</div>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="2">
+<li>
+<p>Expand the results.</p>
+<p><a class="glightbox" href="../scenarios/_attachments/apf-001a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/apf-001a.png"></a></p>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/apf-001b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/apf-001b.png"></a>        </p>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>You expand this section and can see the referenced sources that were used to build the answer. This illustrates just part of the explainable <abbr title="Artificial intelligence">AI</abbr> capabilities of watsonx. Click on any of the document tiles to display the source document.</p>
+</div>
+</li>
+<li>
+<p>Ask the assistant how to update the <abbr title="Authorized Program Facility">APF</abbr> list.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#scenarios-apf-__codelineno-1-1"></a>How do you update the APF list in z/OS?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/apf-002.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/apf-002.png"></a></p>
+</li>
+<li>
+<p>Ask the assistant what the parmlib member to update the <abbr title="Authorized Program Facility">APF</abbr> list. </p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#scenarios-apf-__codelineno-2-1"></a>What is the parmlib member to update the APF list in z/OS?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/apf-003.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/apf-003.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="5">
+<li>
+<p>Ask the assistant what is the command to add loadlib for a volume in the <abbr title="Authorized Program Facility">APF</abbr> list.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#scenarios-apf-__codelineno-3-1"></a>What is the command to add PROD1.LOADLIB on volume PRD001 to the APF list?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/apf-004a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/apf-004a.png"></a></p>
+</li>
+<li>
+<p>Click <strong>Yes</strong> to run the command.</p>
+<p><a class="glightbox" href="../scenarios/_attachments/apf-004a1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/apf-004a1.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="7">
+<li>
+<p>Wait approximately 10 seconds and then click <strong>Apply</strong></p>
+<p><strong>Note</strong>: there are no additional parameters required in this form, this is why you see the <strong>“Form is empty”</strong> message.</p>
+<p><a class="glightbox" href="../scenarios/_attachments/apf-004b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/apf-004b.png"></a></p>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/apf-004c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/apf-004c.png"></a>           </p>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>Notice the Assistant's response for this command informs you that LOADLIB was added to the <abbr title="Authorized Program Facility">APF</abbr> list.</p>
+</div>
+<h2 id="scenarios-apf-cleanup-steps">Cleanup steps</h2>
+<p>None.</p>
+</li>
+</ol>
+<!-- Terminology -->
+<!-- Keep the list alphabetized for easy deduplication --></div></section><section class="print-page" id="scenarios-certrenewal"><div><h1 id="scenario-certificate-renewal">Scenario: Certificate renewal</h1>
+<h2 id="scenarios-certrenewal-scenario-overview">Scenario overview</h2>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>Now, change your role to that of a security administrator. You have just been informed that one of your <abbr title="Secure Sockets Layer">SSL</abbr> certificates signed by a Certificate Authority is expiring soon. Secure Sockets Layer (<abbr title="Secure Sockets Layer">SSL</abbr>) certificates, sometimes called digital certificates, are used to establish an encrypted connection between communicating parties over a network. Certificate management is crucial for maintaining the security of our company's z/<abbr title="Operating System">OS</abbr> environment, but it has been a while since you have performed this action. You recall there are many steps required on z/<abbr title="Operating System">OS</abbr> and various <abbr title="Resource Access Control Facility">RACF</abbr> commands that need to be run to renew a certificate. Rather than going to your senior security administrator for assistance, you leverage watsonx Assistant for Z to help automate the certificate renewal process. By automating these processes with Ansible, you ensure critical certificates are always up to date and reduce the risk of expired certificates disrupting your services.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Responses from the virtual assistant are likely to change</p>
+<p>Responses generated by IBM watsonx Assistant for Z are likely to change over time. The responses you see when you run the queries in this section may differ from the screen images captured in the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide. Using the exact queries specified will help assure a successful demonstration. Also, as updates to the environment are made, some confirmation dialogs may no longer be displayed as illustrated in the Example outputs.</p>
+</div>
+<div style="page-break-after: always;"></div>
+
+<h2 id="scenarios-certrenewal-prerequisite-steps">Prerequisite steps</h2>
+<p>To run this scenario, a certificate must first be created. </p>
+<details class="tip">
+<summary>Copy and paste the prompt</summary>
+<p>Use the copy icon (<a class="glightbox" href="../scenarios/_attachments/copyIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/copyIcon.png"></a>) to copy prompts from this demonstration guide and then paste the prompt using <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-v">V</kbd></span>, or right click and select <code>Paste</code>.</p>
+</details>
+<p>Using the virtual assistant:</p>
+<ol>
+<li>
+<p>Create a certificate.</p>
+<p><strong>Prompt:</strong></p>
+<p></p><div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#scenarios-certrenewal-__codelineno-0-1"></a>create a certificate
+</span></code></pre></div>
+<strong>Example output:</strong>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-Setup001a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-Setup001a.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="2">
+<li>
+<p>Complete the form for the <strong>z/<abbr title="Operating System">OS</abbr> Certs - Create Cert</strong> skill and click <strong>Apply</strong>.</p>
+<p><strong>Input values:</strong></p>
+<ul>
+<li>
+<p><strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "yourNameCert". Record the label as it is needed later.</em>&gt;</p>
+<ul>
+<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
+<li><strong>Expiration date</strong>: &lt;<em>Enter an expiration date within the next 30 days.</em>&gt;</li>
+<li><strong>Common name</strong>: &lt;<em>Enter a unique label of your choice, for example "company.com". Record the name as it is needed later. </em><em>Do NOT use test.com</em>**&gt;</li>
+<li><strong>SIGN WITH</strong>: <code>CERTAUTH</code></li>
+<li><strong>SIGN LABEL</strong>: <code>TESTCA</code>   </li>
+</ul>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-Setup001b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-Setup001b.png"></a></p>
+</li>
+</ul>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-Setup001c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-Setup001c.png"></a></p>
+</li>
+</ol>
+<p>The new certificate is created (despite the last message status of <strong>pending</strong>).</p>
+<div style="page-break-after: always;"></div>
+<h2 id="scenarios-certrenewal-prompts-and-example-outputs">Prompts and Example outputs</h2>
+<ol>
+<li>
+<p>Ask the assistant how to check on an expiring certificate.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#scenarios-certrenewal-__codelineno-1-1"></a>I have a SSL certificate on z/OS expiring soon. How do I check when my certificate is going to expire?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-001a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-001a.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="2">
+<li>
+<p>Click <strong>Yes</strong> to retrieve the certificate details.</p>
+</li>
+<li>
+<p>Complete the form with the certificate label and type (use the same values as specified in the prerequisite steps) and click <strong>Apply</strong>.</p>
+<p><strong>Input values:</strong></p>
+<ul>
+<li><strong>CERT LABEL</strong>: &lt;<em>Enter the unique label of the certificate created in the setup steps.</em>&gt;</li>
+<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
+</ul>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-001b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-001b.png"></a></p>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-001c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-001c.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="4">
+<li>
+<p>Wait approximately 10 seconds and then click <strong>Apply</strong>.</p>
+</li>
+<li>
+<p>Ask the assistant how to renew a certificate.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#scenarios-certrenewal-__codelineno-2-1"></a>What are the steps to renew a certificate on z/OS?
+</span></code></pre></div>
+<p><strong>Example output:</strong>
+<a class="glightbox" href="../scenarios/_attachments/cert-002a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-002a.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="6">
+<li>Click <strong>Yes</strong> to run the certificate renewal skill.</li>
+<li>
+<p>Complete the form to renew the certificate and click <strong>Apply</strong>.</p>
+<p><strong>Input values:</strong></p>
+<ul>
+<li><strong>CERT LABEL</strong>: &lt;<em>Enter the same label of the certificate created in the setup steps.</em>&gt;           </li>
+<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
+<li><strong>SIGN WITH</strong>: <code>CERTAUTH</code></li>
+<li><strong>SIGN LABEL</strong>: <code>TESTCA</code></li>
+<li><strong>extra_vars.new_expiry_date_survey</strong>: &lt;<em>Enter an expiration date on year from today.</em>&gt;</li>
+</ul>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-002b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-002b.png"></a></p>
+<p><strong>Example output:</strong></p>
+<p>No output is returned.</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Wait approximately 1 minute before continuing</p>
+<p>The search and renew skills just run can take up to a minute to complete. Wait a minute before proceeding.</p>
+</div>
+<div style="page-break-after: always;"></div>
+<ol start="8">
+<li>
+<p>Retrieve this renewed certificate and verify the date was changed.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#scenarios-certrenewal-__codelineno-3-1"></a>Get my certificate details.
+</span></code></pre></div>
+<p><strong>Example output:</strong>
+<a class="glightbox" href="../scenarios/_attachments/cert-003a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-003a.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="9">
+<li>
+<p>Complete the form with the certificate label and type (use the <strong>same</strong> values as specified in the prerequisite steps) and click <strong>Apply</strong>.</p>
+<p><strong>Input values:</strong></p>
+<ul>
+<li><strong>CERT LABEL</strong>: &lt;<em>Enter the unique label of the certificate created in the setup steps.</em>&gt;</li>
+<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
+</ul>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-003b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-003b.png"></a></p>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-003c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-003c.png"></a></p>
+</li>
+<li>
+<p>Wait approximately 10 seconds and then click <strong>Apply</strong>.</p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<h2 id="scenarios-certrenewal-cleanup-steps">Cleanup steps</h2>
+<p>Following the demo, cleanup the system by deleting the original certificate created.</p>
+<p>Using the virtual assistant:</p>
+<ol>
+<li>
+<p>Delete the certificate.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#scenarios-certrenewal-__codelineno-4-1"></a>delete cert
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-Delete001a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-Delete001a.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="2">
+<li>
+<p>Complete the form and click <strong>Apply</strong>.</p>
+<p><strong>Input values:</strong></p>
+<ul>
+<li><strong>CERT LABEL</strong>: &lt;<em>Enter the original certificate label that you created.</em>&gt;</li>
+<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
+</ul>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-Delete001b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-Delete001b.png"></a></p>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-Delete001c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-Delete001c.png"></a></p>
+</li>
+</ol>
+<!-- Terminology -->
+<!-- Keep the list alphabetized for easy deduplication --></div></section><section class="print-page" id="scenarios-db2versioning"><div><h1 id="scenario-db2-versioning">Scenario: Db2 versioning</h1>
+<h2 id="scenarios-db2versioning-scenario-overview">Scenario overview</h2>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>You are now a new database administrator (DBA) and need to quickly familiarize yourself with the Db2 subsystem in your company's IBM Z environment. You would like to understand more about Db2 on z/<abbr title="Operating System">OS</abbr> versus other platforms, the latest  supported version of Db2, and the process for migrating to a newer version. Most early-tenure DBAs don't have this experience. You leverage the virtual assistant that is customized with pre-existing automation your team has in place. And by leveraging the retrieval augmented generation (<abbr title="Retrieval augmented generation">RAG</abbr>) grounded on IBM Z-specific knowledge, you have confidence that the responses generated from the questions are accurate. You like the fact that you can go to one place to get answers to any question, on-demand, and can help automate some of the tasks, which in turn reduces your learning curve and increases your efficiency.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Responses from the virtual assistant are likely to change</p>
+<p>Responses generated by IBM watsonx Assistant for Z are likely to change over time. The responses you see when you run the queries in this section may differ from the screen images captured in the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide. Using the exact queries specified will help assure a successful demonstration. Also, as updates to the environment are made, some confirmation dialogs may no longer be displayed as illustrated in the Example outputs.</p>
+</div>
+<h2 id="scenarios-db2versioning-prerequisite-steps">Prerequisite steps</h2>
+<p>None.</p>
+<div style="page-break-after: always;"></div>
+<h2 id="scenarios-db2versioning-prompts-and-example-outputs">Prompts and Example outputs</h2>
+<details class="tip">
+<summary>Copy and paste the prompt</summary>
+<p>Use the copy icon (<a class="glightbox" href="../scenarios/_attachments/copyIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/copyIcon.png"></a>) to copy prompts from this demonstration guide and then paste the prompt using <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-v">V</kbd></span>, or right click and select <code>Paste</code>.</p>
+</details>
+<ol>
+<li>
+<p>Ask the assistant what is different about Db2.   </p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#scenarios-db2versioning-__codelineno-0-1"></a>Why is Db2 different than other database systems?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/db2-001a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/db2-001a.png"></a></p>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+</div>
+<p>Notice the detailed level of the response, and more importantly, notice the expandable section at the bottom of the response.</p>
+</li>
+<li>
+<p>Ask the assistant how Db2 differs on the z/<abbr title="Operating System">OS</abbr> platform and distributed platforms.</p>
+<p><strong>Prompt:</strong></p>
+<p></p><div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#scenarios-db2versioning-__codelineno-1-1"></a>What is the difference between Db2 for z/OS and Db2 on distributed systems?
+</span></code></pre></div>
+<strong>Example output:</strong>
+<p><a class="glightbox" href="../scenarios/_attachments/db2-002a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/db2-002a.png"></a></p>
+</li>
+<li>
+<p>Ask the assistant what is the latest release of Db2 for z/<abbr title="Operating System">OS</abbr>.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#scenarios-db2versioning-__codelineno-2-1"></a>What is the latest release of Db2 for z/OS?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/db2-003a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/db2-003a.png"></a></p>
+</li>
+<li>
+<p>Ask the assistant what version of z/<abbr title="Operating System">OS</abbr> is required for Db2 v13.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#scenarios-db2versioning-__codelineno-3-1"></a>What version of z/OS does Db2 v13 run on?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/db2-004a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/db2-004a.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="5">
+<li>
+<p>Ask the assistant how to check the version of Db2 on an <abbr title="Logical Partition">LPAR</abbr>.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#scenarios-db2versioning-__codelineno-4-1"></a>How do I check the Db2 for z/OS version on an LPAR using an operator command?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/db2-005a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/db2-005a.png"></a></p>
+</li>
+<li>
+<p>Ask the assistant if it can run the version check.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#scenarios-db2versioning-__codelineno-5-1"></a>Can you run this command for me to check my version level?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>A skill is triggered to use an Ansible playbook that runs the referenced operator command to return the Db2 details. </p>
+</div>
+<p><a class="glightbox" href="../scenarios/_attachments/db2-006a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/db2-006a.png"></a></p>
+</li>
+<li>
+<p>Wait approximately 10 seconds and then click <strong>Apply</strong>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked id="scenarios-db2versioning-sample-input" name="scenarios-db2versioning-__tabbed_1" type="radio"><div class="tabbed-labels"><label for="scenarios-db2versioning-sample-input">Sample input</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p><a class="glightbox" href="../scenarios/_attachments/db2-006a2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/db2-006a2.png"></a></p>
+<p><strong>Example output:</strong></p>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>See the skill returned the version of Db2 running on the <abbr title="Logical Partition">LPAR</abbr>. </p>
+</div>
+<p><a class="glightbox" href="../scenarios/_attachments/db2-006b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/db2-006b.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="8">
+<li>
+<p>Ask the assistant how to migrate from one version of Db2 to another.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#scenarios-db2versioning-__codelineno-6-1"></a>How do I migrate from Db2 v12 to Db2 v13 on z/OS?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/db2-007a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/db2-007a.png"></a></p>
+<h2 id="scenarios-db2versioning-cleanup-steps">Cleanup steps</h2>
+<p>None.</p>
+</li>
+</ol>
+<!-- Terminology -->
+<!-- Keep the list alphabetized for easy deduplication --></div></section><section class="print-page" id="scenarios-ipl"><div><h1 id="scenarios-initial-program-load">Scenarios: Initial Program Load</h1>
+<h2 id="scenarios-ipl-scenario-overview">Scenario overview</h2>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>You are now a Systems Programmer (<abbr title="Systems programmer">sysprog</abbr>) that is preparing for an upcoming Initial Programming Load (<abbr title="Initial Program Load">IPL</abbr>) scheduled for one of your IBM Z systems. It’s been a while since you helped prepare for an <abbr title="Initial Program Load">IPL</abbr> and you want to refamiliarize yourself with this process. Rather than spending time reading through the wide array of documentation available online, you leverage the conversational <abbr title="Artificial intelligence">AI</abbr> capabilities provided by IBM watsonx Assistant for Z to get accurate responses to your questions quickly, along with step-by-step guidance and links to documentation to learn more. When asking the assistant “How to perform an <abbr title="Initial Program Load">IPL</abbr> on IBM Z?”, you realize there’s some information needed about your system; for example, the <abbr title="Initial Program Load">IPL</abbr> volume and the <abbr title="Initial Program Load">IPL</abbr> LOAD PARM. The conversational skills capabilities provided by the assistant allows you to issue operator commands on the system directly within the assistant itself, serving as a one-stop shop for retrieving details required for the <abbr title="Initial Program Load">IPL</abbr> process to go smoothly and increasing efficiency.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Responses from the virtual assistant are likely to change</p>
+<p>Responses generated by IBM watsonx Assistant for Z are likely to change over time. The responses you see when you run the queries in this section may differ from the screen images captured in the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide. Using the exact queries specified will help assure a successful demonstration. Also, as updates to the environment are made, some confirmation dialogs may no longer be displayed as illustrated in the Example outputs.</p>
+</div>
+<h2 id="scenarios-ipl-prerequisite-steps">Prerequisite steps</h2>
+<p>None.</p>
+<div style="page-break-after: always;"></div>
+
+<h2 id="scenarios-ipl-prompts-and-example-outputs">Prompts and Example outputs</h2>
+<details class="tip">
+<summary>Copy and paste the prompt</summary>
+<p>Use the copy icon (<a class="glightbox" href="../scenarios/_attachments/copyIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/copyIcon.png"></a>) to copy prompts from this demonstration guide and then paste the prompt using <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-v">V</kbd></span>, or right click and select <code>Paste</code>.</p>
+</details>
+<ol>
+<li>
+<p>Ask the assistant what happens during an <abbr title="Initial Program Load">IPL</abbr>.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#scenarios-ipl-__codelineno-0-1"></a>What happens during an IPL on IBM Z?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/ipl-001a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-001a.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="2">
+<li>
+<p>Ask the assistance how to perform an <abbr title="Initial Program Load">IPL</abbr>.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#scenarios-ipl-__codelineno-1-1"></a>How do I perform an IPL on IBM Z? Provide a step by step guidance.
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/ipl-002a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-002a.png"></a></p>
+</li>
+<li>
+<p>Ask the assistant about the <abbr title="Initial Program Load">IPL</abbr> LOAD PARM.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#scenarios-ipl-__codelineno-2-1"></a>What is the IPL LOAD PARM for my running system and database?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/ipl-003a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-003a.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="4">
+<li>
+<p>Ask the assistant what the command is to find information about the <abbr title="Initial Program Load">IPL</abbr> for the system.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#scenarios-ipl-__codelineno-3-1"></a>What is the operator command to find the IPL INFO for my system?
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/ipl-004a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-004a.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="5">
+<li>
+<p>Ask the assistant to run the command.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#scenarios-ipl-__codelineno-4-1"></a>Run this command from the operator console.
+</span></code></pre></div>
+<p><strong>Example output:</strong></p>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>A skill is triggered to execute an operator command on the <abbr title="Logical Partition">LPAR</abbr>.</p>
+</div>
+<p><a class="glightbox" href="../scenarios/_attachments/ipl-005a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-005a.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="6">
+<li>
+<p>Enter <code>D IPLINFO</code> in the <strong>extra-vars</strong> entry field and click <strong>Apply</strong>.</p>
+<p><strong>Input:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/ipl-005b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-005b.png"></a></p>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/ipl-005b2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-005b2.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="7">
+<li>
+<p>Wait approximately 10 seconds and then click <strong>Apply</strong>.</p>
+<p><strong>Input:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/ipl-005c1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-005c1.png"></a></p>
+<p><strong>Example output:</strong></p>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>In the output you can see the last time the system was IPLed, the z/<abbr title="Operating System">OS</abbr> version, the <abbr title="Initial Program Load">IPL</abbr> LOAD PARM (LOADK2 member in SYS0.IPLPARM), and the <abbr title="Initial Program Load">IPL</abbr> boot volume (D25VS1).</p>
+</div>
+<p><a class="glightbox" href="../scenarios/_attachments/ipl-005c2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-005c2.png"></a></p>
+</li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="8">
+<li>
+<p>Ask the assistant what needs to be done after an <abbr title="Initial Program Load">IPL</abbr> finishes.</p>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#scenarios-ipl-__codelineno-5-1"></a>What needs to be done after an IPL completes successfully? Provide a detailed answer.
+</span></code></pre></div>
+<p><strong>Example output:</strong>   </p>
+<p><a class="glightbox" href="../scenarios/_attachments/ipl-006a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-006a.png"></a></p>
+</li>
+</ol>
+<h2 id="scenarios-ipl-cleanup-steps">Cleanup steps</h2>
+<p>None.</p>
+<!-- Terminology -->
+<!-- Keep the list alphabetized for easy deduplication --></div></section><section class="print-page" id="scenarios-extra"><div><h1 id="scenario-additional-prompts">Scenario: Additional prompts</h1>
+<h2 id="scenarios-extra-scenario-overview">Scenario overview</h2>
+<p>There are many other queries that an early tenure IBM Z systems programmer may ask. Here are some others you can experiment with.</p>
+<p><strong>Example outputs for these prompts are not provided.</strong></p>
+<h2 id="scenarios-extra-prerequisite-steps">Prerequisite steps</h2>
+<p>None.</p>
+<h2 id="scenarios-extra-prompts">Prompts</h2>
+<details class="tip">
+<summary>Copy and paste the prompt</summary>
+<p>Use the copy icon (<a class="glightbox" href="../scenarios/_attachments/copyIcon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/copyIcon.png"></a>) to copy prompts from this demonstration guide and then paste the prompt using <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-v">V</kbd></span>, or right click and select <code>Paste</code>.</p>
+</details>
+<h4 id="scenarios-extra-smf-data"><ins><abbr title="System Management Facility">SMF</abbr> data</ins></h4>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#scenarios-extra-__codelineno-0-1"></a>What is SMF?
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#scenarios-extra-__codelineno-1-1"></a>What are SMF records?
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#scenarios-extra-__codelineno-2-1"></a>What is the difference between SMF records and syslogs?
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#scenarios-extra-__codelineno-3-1"></a>Can I access SMF records in real time?
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#scenarios-extra-__codelineno-4-1"></a>Which SMF types include information about CICS?
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#scenarios-extra-__codelineno-5-1"></a>What kind of statistics information does SMF type 110, subtype 0002 include?
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#scenarios-extra-__codelineno-6-1"></a>What type of information do SMF 30 records include? Please provide a detailed answer.
+</span></code></pre></div>
+<h4 id="scenarios-extra-zos-software-maintenance"><ins>z/<abbr title="Operating System">OS</abbr> software maintenance</ins></h4>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#scenarios-extra-__codelineno-7-1"></a>What does applying maintenance mean in the context of a z/OS subsystem? Provide a detailed response on how to apply maintenance?
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#scenarios-extra-__codelineno-8-1"></a>How to check prerequisite APARs or PTFs when applying maintenance to a z/OS system? Provide a detailed response.
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#scenarios-extra-__codelineno-9-1"></a>How to check if a prerequisite APAR or PTF is already applied to the z/OS system?
+</span></code></pre></div>
+<h4 id="scenarios-extra-ispf-and-sdsf"><ins><abbr title="Interactive System Productivity Facility">ISPF</abbr> and <abbr title="System Display and Search Facility">SDSF</abbr></ins></h4>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#scenarios-extra-__codelineno-10-1"></a>Which tool in ISPF can I use to edit a JCL job? Please provide a step by step guidance.
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#scenarios-extra-__codelineno-11-1"></a>Which tool in ISPF can I use to submit a JCL job? Please provide a step by step guidance.
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#scenarios-extra-__codelineno-12-1"></a>How can I find out if a job completed successfully in SDSF? I need a step by step description.
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#scenarios-extra-__codelineno-13-1"></a>What is the expected return code when a job is executed successfully?
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#scenarios-extra-__codelineno-14-1"></a>How can I use a search function in ISPF to find a JCL job by its name? Please provide a step by step description.
+</span></code></pre></div>
+<h4 id="scenarios-extra-zos-hipers-and-pes"><ins>z/<abbr title="Operating System">OS</abbr> HIPERS and <abbr title="Pause elements">PEs</abbr></ins></h4>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#scenarios-extra-__codelineno-15-1"></a>How does IBM identify problems that are found in z/OS software?
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#scenarios-extra-__codelineno-16-1"></a>What happens during z/OS Problem Source Identification (PSI)? Provide a detailed response
+</span></code></pre></div>
+<p><strong>Prompt:</strong></p>
+<div class="highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#scenarios-extra-__codelineno-17-1"></a>Are PEs and HIPERs reported after the Problem Source Identification (PSI) process?
+</span></code></pre></div>
+<h2 id="scenarios-extra-cleanup-steps">Cleanup steps</h2>
+<p>None.</p>
+<!-- Terminology -->
+<!-- Keep the list alphabetized for easy deduplication --></div></section><section class="print-page" id="scenarios-conclusion"><div><h1 id="scenarios-conclusion">Scenarios: Conclusion</h1>
+<p>As mentioned in the demonstration guidance section, it is important to conclude your demonstration with a call to action.</p>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+<p>So that wraps up my demonstration of IBM watsonx Assistant for Z. As you can see, in the case of an early-tenure mainframe system programmer, or even a more experienced system programmer, rather than spending hours searching through documentation to find answers, they can leverage the domain specific Retrieval-Augmented Generation (<abbr title="Retrieval augmented generation">RAG</abbr>) grounded on IBM Z specific knowledge to get trusted answers in seconds. And it also allows them to free up time by automating some of their more manual tasks that they can otherwise spend on building expertise. </p>
+<p>Thank you for your time today. Would you agree to meeting again for a more comprehensive workshop?</p>
+</div>
+<!-- Terminology -->
+<!-- Keep the list alphabetized for easy deduplication --></div></section><h1 class='nav-section-title-end'>Ended: Demonstration scenarios</h1><section class="print-page" id="nextsteps"><div><h1 id="next-steps">Next steps</h1>
+<p>This IBM watsonx Assistant for Z for Technical Sales Level 3 demonstrated several of the IBM watsonx Assistant for Z capabilities. However, there is still more to learn about IBM watsonx Assistant for Z. Be sure to check out the <a href="https://www.ibm.com/products/watsonx-assistant-for-z?mhsrc=ibmsearch_a&amp;mhq=Watsonx%20assistant%20for%20z" target="_blank">offering landing page</a> and the <a href="https://www.ibm.com/docs/en/watsonx/waz/2.0" target="_blank">product documentation</a>. </p>
+<p>Also, the focus of the IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide was the <em>end-user</em> use of IBM watsonx Assistant for Z. To learn more about deploying, configuring, and customizing IBM watsonx Assistant for Z explore the other capabilities that are included in the <abbr title="IBM Technology Zone">ITZ</abbr> collection <a href="https://techzone.ibm.com/collection/6633e75d979046001eea2b77" target="_blank">here</a>. Included are guidance for running client pilots and the ability to manage an IBM watsonx Assistant for Z deployment. In the Velocity Pilot environment, you can explore all the capabilities of the offering like creating an assistant, importing documents, and adding automation skills.</p>
+<h2 id="nextsteps-earn-the-badge">Earn the badge</h2>
+<p>Finally, remember to complete the IBM watsonx Assistant for Z for Technical Sales Level 3 learning plan to earn the IBM watsonx Assistant for Z Technical Sales Intermediate badge.</p>
+<p><strong>IBM technical sellers</strong> must complete a Stand and Deliver exercise to validate their ability to demonstrate IBM watsonx Assistant for Z to potential clients. Refer to the evaluation checklist in the <a href="https://yourlearning.ibm.com/activity/PLAN-FEA26E32C03A" target="_blank">YourLearning learning plan</a> for the Stand and Deliver.</p>
+<p><strong>Business Partners</strong> must pass the IBM watsonx Assistant for Z for Technical Sales Level 3 quiz that is located in the <a href="https://learn.ibm.com/course/view.php?id=17043" target="_blank">IBM Training learning plan</a>. The Business Partner quiz verifies use of the demonstration environment and click-through demonstrations, and not one's general knowledge of the offering.</p>
+<!-- Terminology -->
+<!-- Keep the list alphabetized for easy deduplication --></div></section></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 IBM - V 2.0
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.footer", {"hide": ["toc"]}], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
