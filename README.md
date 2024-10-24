@@ -28,7 +28,7 @@ Three step process for this one:
     mkdocs build
     ```
 
-2. Generate the PDF file.
+2. Generate the PDF file. Local mkdocs test server needs to be running (```mkdocs serve```).
 
     ```
     node export_to_pdf.js http://localhost:8000/print_page/index.html docs/_pdf/'IBM watsonx Assistant for Z Demonstration Guide.pdf' 'IBM watsonx Assistant for Z Demonstration Guide'
