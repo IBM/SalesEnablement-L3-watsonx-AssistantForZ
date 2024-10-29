@@ -1,7 +1,7 @@
 # Project info
 site_name: IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide
 site_description: IBM watsonx Assistant for Z for Technical Sales Level 3 Demonstration Guide 
-site_author: Andrew R. Jones (andrewj@us.ibm.com)
+site_author: Andrew R. Jones (andrewj@us.ibm.com) and Max Weiss (maxwell.g.weiss@ibm.com)
 copyright: Copyright &copy; 2024 IBM - V 2.0
 
 # Repository
@@ -132,7 +132,7 @@ extra_css:
   - style.css
 extra:
   generator: false
-  supportEmail: "andrewj@us.ibm.com"
+  supportEmail: "andrewj@us.ibm.com;maxwell.g.weiss@ibm.com"
   supportSlack: 
     name: "#watsonx-assistant-z-technical"
     url: "https://ibm.enterprise.slack.com/archives/C07ARLXF2R1"
