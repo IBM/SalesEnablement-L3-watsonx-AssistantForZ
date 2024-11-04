@@ -3,3 +3,7 @@ pre code,  /* stackoverflow */
  {
   white-space: pre-wrap;
 }
+
+.md-grid {
+  max-width: initial; 
+}
