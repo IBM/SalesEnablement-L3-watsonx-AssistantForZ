@@ -24,7 +24,7 @@ None.
     **Prompt:**
 
     ```
-    What is the APF list in z/OS? Provide a detailed explanation?
+    What is the APF list in z/OS?
     ```
 
     **Example output:**

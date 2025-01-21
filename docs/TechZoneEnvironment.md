@@ -73,6 +73,10 @@ Access to the {{offering.name}} demonstration environment is provided through a 
 
     ![](_attachments/itzRSVPOpenEnvironment.png)
 
+    !!! Warning "For best results, use the Google Chrome browser."
+
+        Issues may be encountered with some browsers when accessing the demo environment. If the page does not load, try loading the page in the Google Chrome browser.
+
     !!! Warning "You may be prompted to authenticate"
 
         In some instances, you may be prompted to authenticate when attempting to access the **Open our IBM Cloud environment** link. Use the same IBM ID and password used to reserve the ITZ environment.
