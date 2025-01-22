@@ -113,7 +113,7 @@ Using the virtual assistant:
 
     **Example output:**
 
-    ![](_attachments/cert-Delete001a.png)
+    ![](_attachments/deleteCert01.png)
 <div style="page-break-after: always;"></div>
 2. Complete the form and click **Apply**.
  
@@ -122,8 +122,4 @@ Using the virtual assistant:
     - **CERT LABEL**: <*Enter the original certificate label that you created.*>
     - **CERT TYPE**: ```SITE```
 
-    ![](_attachments/cert-Delete001b.png)
-
-    **Example output:**
-    
-    ![](_attachments/cert-Delete001c.png)
+    ![](_attachments/deleteCert02.png)
