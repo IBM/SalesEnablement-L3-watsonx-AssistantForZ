@@ -1168,23 +1168,19 @@
 <div style="page-break-after: always;"></div>
 <ol start="2">
 <li>
-<p>Complete the form for the <strong>z/<abbr title="Operating System">OS</abbr> Certs - Create Cert</strong> skill and click <strong>Apply</strong>.</p>
+<p>Complete the form for the (<strong>a-f</strong>) <strong>z/<abbr title="Operating System">OS</abbr> Certs - Create Cert</strong> skill and click (<strong>g</strong>) <strong>Apply</strong>.</p>
 <p><strong>Input values:</strong></p>
 <ul>
-<li>
-<p><strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "yourNameCert". Record the label as it is needed later.</em>&gt;</p>
-<ul>
-<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
-<li><strong>Expiration date</strong>: &lt;<em>Enter an expiration date within the next 30 days.</em>&gt;</li>
-<li><strong>Common name</strong>: &lt;<em>Enter a unique label of your choice, for example "company.com". Record the name as it is needed later. </em><em>Do NOT use test.com</em>**&gt;</li>
-<li><strong>SIGN WITH</strong>: <code>CERTAUTH</code></li>
-<li><strong>SIGN LABEL</strong>: <code>TESTCA</code>   </li>
+<li><strong>a</strong> <strong>Certificate Label</strong>: &lt;<em>Enter a unique label of your choice, for example "yourNameCert". Record the label as it is needed later.</em>&gt;</li>
+<li><strong>b</strong> <strong>CERT TYPE</strong>: <code>SITE</code></li>
+<li><strong>c</strong> <strong>Expiration date</strong>: &lt;<em>Enter an expiration date within the next 30 days in the format YYYY-MM-DD</em>&gt;</li>
+<li><strong>d</strong> <strong>Common name</strong>: &lt;<em>Enter a unique label of your choice, for example "company.com". Record the name as it is needed later. </em><em>Do NOT use test.com</em>**&gt;</li>
+<li><strong>e</strong> <strong>SIGN WITH</strong>: <code>CERTAUTH</code></li>
+<li><strong>f</strong> <strong>SIGN LABEL</strong>: <code>TESTCA</code>   </li>
 </ul>
-<p><a class="glightbox" href="../scenarios/_attachments/cert-Setup001b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-Setup001b.png"></a></p>
-</li>
-</ul>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-Setup-1-a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-Setup-1-a.png"></a></p>
 <p><strong>Example output:</strong></p>
-<p><a class="glightbox" href="../scenarios/_attachments/cert-Setup001c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-Setup001c.png"></a></p>
+<p><a class="glightbox" href="../scenarios/CertRenewal/_attachments/cert-Setup-1-b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/CertRenewal/_attachments/cert-Setup-1-b.png"></a></p>
 </li>
 </ol>
 <p>The new certificate is created (despite the last message status of <strong>pending</strong>).</p>
@@ -1206,12 +1202,7 @@
 <p>Click <strong>Yes</strong> to retrieve the certificate details.</p>
 </li>
 <li>
-<p>Complete the form with the certificate label and type (use the same values as specified in the prerequisite steps) and click <strong>Apply</strong>.</p>
-<p><strong>Input values:</strong></p>
-<ul>
-<li><strong>CERT LABEL</strong>: &lt;<em>Enter the unique label of the certificate created in the setup steps.</em>&gt;</li>
-<li><strong>CERT TYPE</strong>: <code>SITE</code></li>
-</ul>
+<p>Enter the certificate label of the certificate created earlier..</p>
 <p><a class="glightbox" href="../scenarios/_attachments/cert-001b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-001b.png"></a></p>
 <p><strong>Example output:</strong></p>
 <p><a class="glightbox" href="../scenarios/_attachments/cert-001c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-001c.png"></a></p>
@@ -1221,19 +1212,19 @@
 <ol start="4">
 <li>
 <p>Wait approximately 10 seconds and then click <strong>Apply</strong>.</p>
+<p><a class="glightbox" href="../scenarios/_attachments/cert-001c-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-001c-2.png"></a></p>
 </li>
 <li>
-<p>Ask the assistant how to renew a certificate.</p>
-<p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#scenarios-certrenewal-__codelineno-2-1"></a>What are the steps to renew a certificate on z/OS?
-</span></code></pre></div>
+<p>Click <strong>Yes</strong> to renew the certificate.</p>
 <p><strong>Example output:</strong>
 <a class="glightbox" href="../scenarios/_attachments/cert-002a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-002a.png"></a></p>
 </li>
 </ol>
 <div style="page-break-after: always;"></div>
 <ol start="6">
-<li>Click <strong>Yes</strong> to run the certificate renewal skill.</li>
+<li>
+<p>Click <strong>Yes</strong> to run the certificate renewal skill.</p>
+</li>
 <li>
 <p>Complete the form to renew the certificate and click <strong>Apply</strong>.</p>
 <p><strong>Input values:</strong></p>
@@ -1258,7 +1249,7 @@
 <li>
 <p>Retrieve this renewed certificate and verify the date was changed.</p>
 <p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#scenarios-certrenewal-__codelineno-3-1"></a>Get my certificate details.
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#scenarios-certrenewal-__codelineno-2-1"></a>Get my certificate details.
 </span></code></pre></div>
 <p><strong>Example output:</strong>
 <a class="glightbox" href="../scenarios/_attachments/cert-003a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-003a.png"></a></p>
@@ -1289,7 +1280,7 @@
 <li>
 <p>Delete the certificate.</p>
 <p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#scenarios-certrenewal-__codelineno-4-1"></a>delete cert
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#scenarios-certrenewal-__codelineno-3-1"></a>delete cert
 </span></code></pre></div>
 <p><strong>Example output:</strong></p>
 <p><a class="glightbox" href="../scenarios/_attachments/cert-Delete001a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/cert-Delete001a.png"></a></p>
