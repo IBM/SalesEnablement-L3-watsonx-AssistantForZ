@@ -31,29 +31,29 @@ Using the virtual assistant:
     ![](_attachments/cert-Setup001a.png)
 
 <div style="page-break-after: always;"></div>
-2. Complete the form for the **z/OS Certs - Create Cert** skill and click **Apply**.
+2. Complete the form for the (**a-f**) **z/OS Certs - Create Cert** skill and click (**g**) **Apply**.
   
     **Input values:**
 
-    - **Certificate Label**: <*Enter a unique label of your choice, for example "yourNameCert". Record the label as it is needed later.*>
-        - **CERT TYPE**: ```SITE```
-        - **Expiration date**: <*Enter an expiration date within the next 30 days.*>
-        - **Common name**: <*Enter a unique label of your choice, for example "company.com". Record the name as it is needed later. **Do NOT use test.com***>
-        - **SIGN WITH**: ```CERTAUTH```
-        - **SIGN LABEL**: ```TESTCA```   
+    - (**a**) **Certificate Label**: <*Enter a unique label of your choice, for example "yourNameCert". Record the label as it is needed later.*>
+    - (**b**) **CERT TYPE**: ```SITE```
+    - (**c**) **Expiration date**: <*Enter an expiration date within the next 30 days in the format YYYY-MM-DD*>
+    - (**d**) **Common name**: <*Enter a unique label of your choice, for example "company.com". Record the name as it is needed later. **Do NOT use test.com***>
+    - (**e**) **SIGN WITH**: ```CERTAUTH```
+    - (**f**) **SIGN LABEL**: ```TESTCA```   
 
-        ![](_attachments/cert-Setup001b.png)
+    ![](_attachments/cert-Setup-1-a.png)
 
     **Example output:**
     
-    ![](_attachments/cert-Setup001c.png)
+    ![](_attachments/cert-Setup-1-b.png)
 
 The new certificate is created (despite the last message status of **pending**).
 
 <div style="page-break-after: always;"></div>
 ## Prompts and Example outputs
 
-1. Ask the assistant how to check on an expiring certificate.
+1. Ask the assistant how to check on an expiring certificate and then click **Yes** to retrieve the certificate details.
 
     **Prompt:**
 
@@ -66,80 +66,37 @@ The new certificate is created (despite the last message status of **pending**).
     ![](_attachments/cert-001a.png)
 
 <div style="page-break-after: always;"></div>
-2. Click **Yes** to retrieve the certificate details.
 
-3. Complete the form with the certificate label and type (use the same values as specified in the prerequisite steps) and click **Apply**.
+3. Enter the certificate label of the certificate created earlier.
  
-    **Input values:**
-   
-    - **CERT LABEL**: <*Enter the unique label of the certificate created in the setup steps.*>
-    - **CERT TYPE**: ```SITE```
-
     ![](_attachments/cert-001b.png)
 
-    **Example output:**
-    
-    ![](_attachments/cert-001c.png)
-<div style="page-break-after: always;"></div>
 4. Wait approximately 10 seconds and then click **Apply**.
 
-5. Ask the assistant how to renew a certificate.
+    ![](_attachments/cert-001-c.png)
 
-    **Prompt:**
+5. Review the certificate information and then click **Yes** to renew the certificate.
 
-    ```
-    What are the steps to renew a certificate on z/OS?
-    ```
-
-    **Example output:**
     ![](_attachments/cert-002a.png)
+
 <div style="page-break-after: always;"></div>
-6. Click **Yes** to run the certificate renewal skill.
-7. Complete the form to renew the certificate and click **Apply**.
 
-    **Input values:**
-
-    - **CERT LABEL**: <*Enter the same label of the certificate created in the setup steps.*>           
-    - **CERT TYPE**: ```SITE```
-    - **SIGN WITH**: ```CERTAUTH```
-    - **SIGN LABEL**: ```TESTCA```
-    - **extra_vars.new_expiry_date_survey**: <*Enter an expiration date on year from today.*>
+6. Enter a new date for the certificate in the form of **YYYY-MM-DD**.
     
     ![](_attachments/cert-002b.png)
  
-    **Example output:**
+7. Wait approximately 1 minute and then click **Yes**.
 
-    No output is returned.
+    ![](_attachments/cert-002c.png)
 
-!!! Warning "Wait approximately 1 minute before continuing"
+8. Wait approximately 30 seconds and then click **Apply**.
 
-    The search and renew skills just run can take up to a minute to complete. Wait a minute before proceeding.
-<div style="page-break-after: always;"></div>
-8. Retrieve this renewed certificate and verify the date was changed.
- 
-    **Prompt:**
+    ![](_attachments/cert-002d.png)
 
-    ```
-    Get my certificate details.
-    ```
+9. Verify the certificate expiration date has changed to the value specified in step 6.
 
-    **Example output:**
-    ![](_attachments/cert-003a.png)
-<div style="page-break-after: always;"></div>
-9. Complete the form with the certificate label and type (use the **same** values as specified in the prerequisite steps) and click **Apply**.
-    
-    **Input values:**
-   
-    - **CERT LABEL**: <*Enter the unique label of the certificate created in the setup steps.*>
-    - **CERT TYPE**: ```SITE```
+    ![](_attachments/cert-002e.png)
 
-    ![](_attachments/cert-003b.png)
-
-    **Example output:**
-    
-    ![](_attachments/cert-003c.png)
-
-10. Wait approximately 10 seconds and then click **Apply**.
 <div style="page-break-after: always;"></div>
 ## Cleanup steps
 Following the demo, cleanup the system by deleting the original certificate created.
