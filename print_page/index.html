@@ -1390,7 +1390,7 @@
 <li>
 <p>Ask the assistant what happens during an <abbr title="Initial Program Load">IPL</abbr>.</p>
 <p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#scenarios-ipl-__codelineno-0-1"></a>What happens during an IPL on IBM Z?
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#scenarios-ipl-__codelineno-0-1"></a>What happens during an IPL of a z/OS LPAR?
 </span></code></pre></div>
 <p><strong>Example output:</strong></p>
 <p><a class="glightbox" href="../scenarios/_attachments/ipl-001a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-001a.png"></a></p>
@@ -1401,15 +1401,15 @@
 <li>
 <p>Ask the assistance how to perform an <abbr title="Initial Program Load">IPL</abbr>.</p>
 <p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#scenarios-ipl-__codelineno-1-1"></a>How do I perform an IPL on IBM Z? Provide a step by step guidance.
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#scenarios-ipl-__codelineno-1-1"></a>What information is needed to perform an IPL on a z/OS LPAR?
 </span></code></pre></div>
 <p><strong>Example output:</strong></p>
 <p><a class="glightbox" href="../scenarios/_attachments/ipl-002a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-002a.png"></a></p>
 </li>
 <li>
-<p>Ask the assistant about the <abbr title="Initial Program Load">IPL</abbr> LOAD PARM.</p>
+<p>Ask the assistant what information is need to perform an <abbr title="Initial Program Load">IPL</abbr>.</p>
 <p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#scenarios-ipl-__codelineno-2-1"></a>What is the IPL LOAD PARM for my running system and database?
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#scenarios-ipl-__codelineno-2-1"></a>How do you retrieve the information needed to IPL a z/OS LPAR?
 </span></code></pre></div>
 <p><strong>Example output:</strong></p>
 <p><a class="glightbox" href="../scenarios/_attachments/ipl-003a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-003a.png"></a></p>
@@ -1418,44 +1418,22 @@
 <div style="page-break-after: always;"></div>
 <ol start="4">
 <li>
-<p>Ask the assistant what the command is to find information about the <abbr title="Initial Program Load">IPL</abbr> for the system.</p>
+<p>Ask the assistant to run the command to retrieve <abbr title="Initial Program Load">IPL</abbr> information.</p>
 <p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#scenarios-ipl-__codelineno-3-1"></a>What is the operator command to find the IPL INFO for my system?
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#scenarios-ipl-__codelineno-3-1"></a>Run command from operator console?
 </span></code></pre></div>
 <p><strong>Example output:</strong></p>
 <p><a class="glightbox" href="../scenarios/_attachments/ipl-004a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-004a.png"></a></p>
 </li>
 </ol>
 <div style="page-break-after: always;"></div>
+
 <ol start="5">
 <li>
-<p>Ask the assistant to run the command.</p>
-<p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#scenarios-ipl-__codelineno-4-1"></a>Run this command from the operator console.
+<p>Change <strong>extra_vars.zos_operator_command_survey</strong> field to <code>D IPLINFO</code>, wait approximately 10 seconds, and then click <strong>Apply</strong>.</p>
+<p><strong>Input:</strong>
+</p><div class="highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#scenarios-ipl-__codelineno-4-1"></a>D IPLINFO
 </span></code></pre></div>
-<p><strong>Example output:</strong></p>
-<div class="admonition quote">
-<p class="admonition-title">Speaker's script</p>
-<p>A skill is triggered to execute an operator command on the <abbr title="Logical Partition">LPAR</abbr>.</p>
-</div>
-<p><a class="glightbox" href="../scenarios/_attachments/ipl-005a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-005a.png"></a></p>
-</li>
-</ol>
-<div style="page-break-after: always;"></div>
-<ol start="6">
-<li>
-<p>Enter <code>D IPLINFO</code> in the <strong>extra-vars</strong> entry field and click <strong>Apply</strong>.</p>
-<p><strong>Input:</strong></p>
-<p><a class="glightbox" href="../scenarios/_attachments/ipl-005b.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-005b.png"></a></p>
-<p><strong>Example output:</strong></p>
-<p><a class="glightbox" href="../scenarios/_attachments/ipl-005b2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-005b2.png"></a></p>
-</li>
-</ol>
-<div style="page-break-after: always;"></div>
-<ol start="7">
-<li>
-<p>Wait approximately 10 seconds and then click <strong>Apply</strong>.</p>
-<p><strong>Input:</strong></p>
 <p><a class="glightbox" href="../scenarios/_attachments/ipl-005c1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-005c1.png"></a></p>
 <p><strong>Example output:</strong></p>
 <div class="admonition quote">
@@ -1466,11 +1444,26 @@
 </li>
 </ol>
 <div style="page-break-after: always;"></div>
-<ol start="8">
+
+<ol start="6">
+<li>
+<p>Wait approximately 10 seconds and then click <strong>Apply</strong>.</p>
+<p><strong>Example output:</strong></p>
+<p><a class="glightbox" href="../scenarios/_attachments/ipl-005c3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-005c3.png"></a></p>
+</li>
+<li>
+<p>Review the output of the command.</p>
+<p><strong>Example output:</strong></p>
+<div class="admonition quote">
+<p class="admonition-title">Speaker's script</p>
+</div>
+<p>In the output you can see the the returned information including the <abbr title="Initial Program Load">IPL</abbr> LOAD PARM (LOADK2 member in SYS0.IPLPARM), the last time the system was IPLed, the z/<abbr title="Operating System">OS</abbr> version, and the <abbr title="Initial Program Load">IPL</abbr> boot volume (D25VS1).</p>
+<p><a class="glightbox" href="../scenarios/_attachments/ipl-005c4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-005c4.png"></a></p>
+</li>
 <li>
 <p>Ask the assistant what needs to be done after an <abbr title="Initial Program Load">IPL</abbr> finishes.</p>
 <p><strong>Prompt:</strong></p>
-<div class="highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#scenarios-ipl-__codelineno-5-1"></a>What needs to be done after an IPL completes successfully? Provide a detailed answer.
+<div class="highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#scenarios-ipl-__codelineno-5-1"></a>What are the next steps for z/OS initialization after an IPL completes successfully? Provide a detailed answer.
 </span></code></pre></div>
 <p><strong>Example output:</strong>   </p>
 <p><a class="glightbox" href="../scenarios/_attachments/ipl-006a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../scenarios/_attachments/ipl-006a.png"></a></p>
