@@ -36,7 +36,7 @@ None.
     **Prompt:**
 
     ```
-    What is the difference between Db2 for z/OS and Db2 on distributed systems?
+    What is the difference between Db2 for z/OS and Db2 on distributed?
     ```
     **Example output:**
 
@@ -72,7 +72,7 @@ None.
     **Prompt:**
 
     ```
-    How do I check the Db2 for z/OS version on an LPAR using an operator command?
+    What is the operator command used to check the Db2 for z/OS version level?
     ```
 
     **Example output:**
@@ -84,7 +84,7 @@ None.
     **Prompt:**
 
     ```
-    Can you run this command for me to check my version level?
+    Run the command to check my version level?
     ```
 
     **Example output:**

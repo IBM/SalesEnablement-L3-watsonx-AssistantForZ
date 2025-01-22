@@ -23,7 +23,7 @@ None.
     **Prompt:**
 
     ```
-    What happens during an IPL on IBM Z?
+    What happens during an IPL of a z/OS LPAR?
     ```
 
     **Example output:**
@@ -35,66 +35,44 @@ None.
     **Prompt:**
 
     ```
-    How do I perform an IPL on IBM Z? Provide a step by step guidance.
+    What information is needed to perform an IPL on a z/OS LPAR?
     ```
 
     **Example output:**
 
     ![](_attachments/ipl-002a.png)
 
-3. Ask the assistant about the IPL LOAD PARM.
+3. Ask the assistant what information is need to perform an IPL.
 
     **Prompt:**
 
     ```
-    What is the IPL LOAD PARM for my running system and database?
+    How do you retrieve the information needed to IPL a z/OS LPAR?
     ```
 
     **Example output:**
 
     ![](_attachments/ipl-003a.png)
 <div style="page-break-after: always;"></div>
-4. Ask the assistant what the command is to find information about the IPL for the system.
+4. Ask the assistant to run the command to retrieve IPL information.
    
     **Prompt:**
 
     ```
-    What is the operator command to find the IPL INFO for my system?
+    Run command from operator console?
     ```
 
     **Example output:**
 
     ![](_attachments/ipl-004a.png)
 <div style="page-break-after: always;"></div>
-5. Ask the assistant to run the command.
 
-    **Prompt:**
-
-    ```
-    Run this command from the operator console.
-    ```
-
-    **Example output:**
-
-    !!! Quote "Speaker's script"
-
-        A skill is triggered to execute an operator command on the LPAR.
-            
-    ![](_attachments/ipl-005a.png)
-<div style="page-break-after: always;"></div>
-6. Enter ```D IPLINFO``` in the **extra-vars** entry field and click **Apply**.
+5. Change **extra_vars.zos_operator_command_survey** field to `D IPLINFO`, wait approximately 10 seconds, and then click **Apply**.
 
     **Input:**
-
-    ![](_attachments/ipl-005b.png)
-    
-    **Example output:**
-
-    ![](_attachments/ipl-005b2.png)
-<div style="page-break-after: always;"></div>
-7. Wait approximately 10 seconds and then click **Apply**.
-
-    **Input:**
+    ```
+    D IPLINFO
+    ```
 
     ![](_attachments/ipl-005c1.png)
 
@@ -106,12 +84,29 @@ None.
     
     ![](_attachments/ipl-005c2.png)
 <div style="page-break-after: always;"></div>
+
+6. Wait approximately 10 seconds and then click **Apply**.
+
+    **Example output:**
+        
+    ![](_attachments/ipl-005c3.png)
+
+7. Review the output of the command.
+
+    **Example output:**
+
+    !!! Quote "Speaker's script"
+
+    In the output you can see the the returned information including the IPL LOAD PARM (LOADK2 member in SYS0.IPLPARM), the last time the system was IPLed, the z/OS version, and the IPL boot volume (D25VS1).
+
+    ![](_attachments/ipl-005c4.png)
+
 8. Ask the assistant what needs to be done after an IPL finishes.
     
     **Prompt:**
 
     ```
-    What needs to be done after an IPL completes successfully? Provide a detailed answer.
+    What are the next steps for z/OS initialization after an IPL completes successfully? Provide a detailed answer.
     ```
 
     **Example output:**   
